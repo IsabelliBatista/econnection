@@ -1,17 +1,13 @@
-<footer class="bg-dark container-fluid text-white mt-2 p-5">
-    <div class="container">
-        <section class="justify-content-center">
-          <div>
-            <h3>RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h3>
-          </div>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="email@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">ASSINE</button>
-            </div>
-          </div>
-        </section> 
+<footer class="footer container-fluid text-white">
+    <div class="container p-4">
+      <h4 class="text-center">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Digite seu e-mail aqui." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">ASSINE</button>
+        </div>
       </div>
+    </div>
   <div class="container">
     <div class="row">
       <div class="col-sm">

@@ -1,20 +1,21 @@
 <header>
-  <div class="container d-flex justify-content-between mt-2 mb-2">
-    <a class="navbar-brand">LOGO</a>
+  <div class="container-md d-flex justify-content-between mt-1 mb-1">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" alt="Logo eConnection">
+    </a>
     <div class="d-flex align-items-center ">
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-      <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-    
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+      </form>
     <span>
         <a href="login.php" class="p-2 text-reset"><i class="fas fa-user"></i></a>
         <a href="carrinho.php" class="p-2 text-reset"><i class="fas fa-shopping-cart"></i></a>    
     </span>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div>
+  <nav class="navbar navbar-expand-lg">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -83,4 +84,5 @@
       </ul>
     </div>
   </nav>
+  </div>
 </header>

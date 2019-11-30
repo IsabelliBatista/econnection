@@ -1,5 +1,35 @@
 /* RESETS */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+html {
+  font-size: 18px;
+}
+
+/* HEADER  */
+.navbar {
+  background-color: #000;
+}
+
+/* BODY */
+
+/* FOOTER  */
+.footer {
+  background-color: #000;
+}
+
+@media (min-width: 576px) {
+  display: block;
+}
+
+
+/* @media screen and media (max-width: 800px){
+  .menu-search {
+    display: flex;
+    flex-flow: wrap;
+  }
+} */
+

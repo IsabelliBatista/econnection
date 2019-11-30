@@ -33,15 +33,18 @@
     </section>
 
     <!-- CARD COM TEXTO QUEM SOMOS -->
-    <section class="container mt-5">         
-      <article class="container d-flex align-content-center">
-          <div class="sm-6">
-            <h2>Lorem title</h2>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
-          </div class="sm-6">
+    <div class="contanier p-5">
+      <div class="row mt-2">
+        <div class="col sm-6">
+          <h2>Lorem title</h2>
+          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+        </div>
+        <div class="col sm-6">
           <img src="assets/img/eco.jpeg" >
-        </article>
-      </section>
+        </div>
+      </div>
+    </div>
+  
     
     <!-- CARD PRODUTOS EM DESTAQUE -->
     <div class="container mt-5">
