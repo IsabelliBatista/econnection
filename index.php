@@ -78,52 +78,60 @@
     </section>
 
     <!-- CARD COM TEXTO QUEM SOMOS -->
-    <section class="container p-10">
-      <div class="row no-gutters bg-light position-relative">
-        <div class="col-md-6 position-static p-4 pl-md-0">
-          <h5 class="mt-0">Columns with stretched link</h5>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-        </div>
-        <div class="col-md-6 mb-md-0 p-md-4">
-          <img src="assets/img/quem-somos.png" class="w-100" alt="Quem somos">
-        </div>
-      </div>
-    </section>
+    <section class="container mt-5">         
+      <article class="container d-flex align-content-center">
+          <div class="sm-6">
+            <h2>Lorem title</h2>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+          </div class="sm-6">
+          <img src="assets/img/eco.jpeg" >
+        </article>
+      </section>
     
     <!-- CARD PRODUTOS EM DESTAQUE -->
-    <section class="container">
-        <div class="card-deck">
-            <div class="card">
+    <div class="container mt-5">
+      <h1 class="text-uppercase text-bold text-center p-5"> 
+        Destaques
+      </h1>
+    </div>  
+    <section class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card border-light h-100">
               <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title">Produto</h5>
+                <p class="card-text">This is a longer card with supporting text.</p>
+                <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                <a href="#" class="btn btn-outline-secondary">Comprar</a>
               </div>
             </div>
-            <div class="card">
-              <img src="assets/img/destaq-ecobag.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100">
+                <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Produto</h5>
+                  <p class="card-text">This is a longer card with supporting text.</p>
+                  <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                  <a href="#" class="btn btn-outline-secondary">Comprar</a>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/destq-copo.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100">
+              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title">Produto</h5>
+                <p class="card-text">This is a longer card with supporting text.</p>
+                <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                <a href="#" class="btn btn-outline-secondary">Comprar</a>
               </div>
             </div>
           </div>
     </section>
-
   </main>
-  <footer>
     <?php require_once("assets/inc/footer.php"); ?>
-  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
