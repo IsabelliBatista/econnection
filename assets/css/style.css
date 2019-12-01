@@ -8,28 +8,16 @@
 html {
   font-size: 18px;
 }
-
 /* HEADER  */
 .navbar {
   background-color: #000;
 }
-
 /* BODY */
 
 /* FOOTER  */
 .footer {
   background-color: #000;
 }
+/* MEDIA QUERYS */
 
-@media (min-width: 576px) {
-  display: block;
-}
-
-
-/* @media screen and media (max-width: 800px){
-  .menu-search {
-    display: flex;
-    flex-flow: wrap;
-  }
-} */
 
