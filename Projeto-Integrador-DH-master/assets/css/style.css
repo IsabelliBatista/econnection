@@ -1,0 +1,23 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 18px;
+}
+/* HEADER  */
+.navbar {
+  background-color: #000;
+}
+/* BODY */
+
+/* FOOTER  */
+.footer {
+  background-color: #000;
+}
+/* MEDIA QUERYS */
+
+
