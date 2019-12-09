@@ -1,6 +1,6 @@
-<footer class="footer container-fluid text-white">
+<footer class="footer container-fluid text-white mt-5">
     <div class="container p-4">
-      <h4 class="text-center">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
+      <h4 class="text-center mt-3 mb-5">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Digite seu e-mail aqui." aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-  <div class="container">
+  <div class="container pb-3">
     <div class="row">
       <div class="col-sm">
         <h6 class="text-uppercase mb-3">Categorias</h6>

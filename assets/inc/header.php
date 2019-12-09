@@ -1,7 +1,7 @@
 <header>
   <div class="container-md d-flex justify-content-between mt-1 mb-1">
     <a class="navbar-brand" href="#">
-      <img src="assets/img/logo.png" alt="Logo eConnection">
+      <img src="assets/img/logo2.1.png" alt="Logo eConnection">
     </a>
     <div class="d-flex align-items-center ">
       <form class="form-inline">
@@ -21,6 +21,20 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav justify-content-around">
+        <li class="nav-item  active">
+            <div class="dropdown">
+                <button class="btn text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="../index.php">Início</a>
+                </button>
+            </div>
+        </li>
+        <li class="nav-item  active">
+            <div class="dropdown">
+                <button class="btn text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="../quemsomos.php">Quem Somos</a>
+                </button>
+            </div>
+        </li>
         <li class="nav-item  active">
             <div class="dropdown">
                 <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

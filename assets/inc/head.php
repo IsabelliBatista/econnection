@@ -33,7 +33,7 @@
     <link rel="shortcut icon" sizes="60x60" href="assets/img/logo.png">
 
     <!-- Favicon (imagem que fica na aba do navegador) -->
-    <link rel="icon" type="image/png" sizes="60x60" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="assets/img/favicon.png">
     
     <!-- Título da aba do navegador -->
     <title><?php echo $title;?></title>
