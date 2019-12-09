@@ -58,12 +58,15 @@ main article div p{
 main section{
 }
 .card-img-top1{
-	width: 90px;
+	width: 50px!important;
 	margin: 0 auto;
 }
 
 .card-img-top2{
-	border-radius: 150px;
+	border-radius: 150px!important;
+}
+.imgisa{
+	width: 200px;
 }
 
 /*p/ mobile*/

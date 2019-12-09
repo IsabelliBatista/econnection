@@ -52,38 +52,38 @@
         Destaques
       </h1>
     </div>  
-    <section class="container mt-5">
+    <section class="container mt-5 ">
         <div class="row row-cols-1 row-cols-md-3">
           <div class="col mb-4">
             <div class="card border-light h-100">
-              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
                 <p class="card-text">This is a longer card with supporting text.</p>
-                <a href="#" class="btn btn-outline-secondary">Detalhes</a>
-                <a href="#" class="btn btn-outline-secondary">Comprar</a>
+                <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
+                <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
               </div>
             </div>
           </div>
           <div class="col mb-4">
             <div class="card border-light h-100">
-                <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
+                <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
                 <div class="card-body">
                   <h5 class="card-title">Produto</h5>
                   <p class="card-text">This is a longer card with supporting text.</p>
-                  <a href="#" class="btn btn-outline-secondary">Detalhes</a>
-                  <a href="#" class="btn btn-outline-secondary">Comprar</a>
+                  <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
+                  <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
                 </div>
               </div>
           </div>
           <div class="col mb-4">
             <div class="card border-light h-100">
-              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/copo-black.png" class="card-img-top" alt="Copo Black" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
                 <p class="card-text">This is a longer card with supporting text.</p>
-                <a href="#" class="btn btn-outline-secondary">Detalhes</a>
-                <a href="#" class="btn btn-outline-secondary">Comprar</a>
+                <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
+                <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
               </div>
             </div>
           </div>

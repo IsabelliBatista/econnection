@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style-quemsomos.css">
-    <title>Quem Somos</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style-quemsomos.css">
+		
     <?php $title="Quem Somos";?>
 	<?php require_once("assets/inc/head.php");?>
+	<style>
+		.imgisa{
+	width: 270px;
+}
+	</style>
 </head>
 
   <body>
@@ -36,28 +37,28 @@
 	  		</div>
   		</article>
   		<section class="container d-flex justify-content-around mt-5 text-center">
-  			<div class="card border border-white" style="width: 18rem;">
+  			<div class="card border border-white">
 			  <img src="assets/img/iconfinder_dove_216243.png" class="card-img-top card-img-top1" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 				<p class="align-self-center">Lorem Ipsum é simplesmente</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 18rem;">
+			<div class="card border border-white">
 			  <img src="assets/img/iconfinder_heart13_216262.png" class="card-img-top card-img-top1" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="align-self-center">Lorem Ipsum é simplesmente</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 18rem;">
+			<div class="card border border-white">
 			  <img src="assets/img/iconfinder_leaves1_216276.png" class="card-img-top card-img-top1" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="align-self-center">Lorem Ipsum é simplesmente</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 18rem;">
+			<div class="card border border-white">
 			  <img src="assets/img/iconfinder_world7_216380.png" class="card-img-top card-img-top1" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
@@ -70,28 +71,28 @@
   	<main class="mt-5">
   		
   		<section class="container d-flex justify-content-around text-center">
-  			<div class="card border border-white" style="width: 16rem;">
+  			<div class="card border border-white">
 			  <img src="assets/img/Ingrid.jpeg" class="card-img-top card-img-top2" alt="Ingrid">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 16rem;">
-			  <img src="assets/img/Isabelli.jpeg" class="card-img-top card-img-top2" alt="...">
+			<div class="card border border-white">
+			  <img src="assets/img/Isabelli.jpeg" class="card-img-top card-img-top2 imgisa" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 16rem;">
+			<div class="card border border-white">
 			  <img src="assets/img/Joyce.jpg" class="card-img-top card-img-top2" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			  </div>
 			</div>
-			<div class="card border border-white" style="width: 16rem;">
+			<div class="card border border-white">
 			  <img src="assets/img/Mayara.jpg" class="card-img-top card-img-top2" alt="...">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>

@@ -23,16 +23,16 @@
       <ul class="navbar-nav justify-content-around">
         <li class="nav-item  active">
             <div class="dropdown">
-                <button class="btn text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <a href="../index.php">Início</a>
-                </button>
+                <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                  <a class="btn text-white text-uppercase" href="./index.php">Início</a>
+                <!-- </button> -->
             </div>
         </li>
         <li class="nav-item  active">
             <div class="dropdown">
-                <button class="btn text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <a href="../quemsomos.php">Quem Somos</a>
-                </button>
+                <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                  <a href="./quemsomos.php" class="btn text-white text-uppercase">Quem Somos</a>
+                <!-- </button> -->
             </div>
         </li>
         <li class="nav-item  active">
