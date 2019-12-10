@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 /*Header*/
-header article:nth-child(1){
+header article:first-child{
 	padding: 70px;
 	/*ackground-color: #ccc;*/
 	/*background-image: url("assets/css/img-sobre-nos.jpg");
@@ -17,7 +17,8 @@ header section h2{
 	padding: 40px;
 }
 .teste{
-	background-image: url("assets/css/img-sobre-nos.jpg");
+	background-image: url("../img/img-sobre-nos.jpg");
+	height: 100px;
 }
 header section article p{
 	padding: 20px 90px 0 50px;
@@ -55,8 +56,7 @@ main article div p{
 	display: none;
 }
 /*Main Quem Somos*/
-main section{
-}
+
 .card-img-top1{
 	width: 50px!important;
 	margin: 0 auto;
