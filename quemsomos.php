@@ -1,23 +1,13 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="assets/css/style-quemsomos.css">
-		
     <?php $title="Quem Somos";?>
 	<?php require_once("assets/inc/head.php");?>
-	<style>
-		.imgisa{
-	width: 270px;
-}
-	</style>
-</head>
 
   <body>
   	<?php require_once("assets/inc/header.php");?>
-  	<header>
-  		<article class="teste"><h1 class="text-center container">Quem Somos</h1></article>
+  	<header class="header-somos">
+  		<article class="bg-header-somos"><h1 class="text-center container">Quem Somos</h1></article>
 
   		<section class="container">
   			<h2 class="text-center">EConnection</h2>
@@ -27,7 +17,7 @@
   			</article>
   		</section>
   	</header>
-  	<main class="mt-5">
+  	<main class="mt-5 main-somos">
   		<article class="">
   			<div class="container d-flex">
 	  			<h3>Objetivos</h3>
@@ -36,7 +26,7 @@
 	  			<p class="align-self-center">Lorem Ipsum é simplesmente bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao</p>
 	  		</div>
   		</article>
-  		<section class="container d-flex justify-content-around mt-5 text-center">
+  		<section class="container d-flex justify-content-around mt-5 text-center txt-itens">
   			<div class="card border border-white">
 			  <img src="assets/img/iconfinder_dove_216243.png" class="card-img-top card-img-top1" alt="...">
 			  <div class="card-body">
@@ -70,7 +60,7 @@
   	<div class="divisor"></div>
   	<main class="mt-5">
   		
-  		<section class="container d-flex justify-content-around text-center">
+  		<section class="container d-flex justify-content-around text-center txt-itens">
   			<div class="card border border-white">
 			  <img src="assets/img/Ingrid.jpeg" class="card-img-top card-img-top2" alt="Ingrid">
 			  <div class="card-body">
@@ -79,21 +69,21 @@
 			  </div>
 			</div>
 			<div class="card border border-white">
-			  <img src="assets/img/Isabelli.jpeg" class="card-img-top card-img-top2 imgisa" alt="...">
+			  <img src="assets/img/Isabelli.jpeg" class="card-img-top card-img-top2 imgisa" alt="Isabelli">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			  </div>
 			</div>
 			<div class="card border border-white">
-			  <img src="assets/img/Joyce.jpg" class="card-img-top card-img-top2" alt="...">
+			  <img src="assets/img/Joyce.jpg" class="card-img-top card-img-top2" alt="Joyce">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 			  </div>
 			</div>
 			<div class="card border border-white">
-			  <img src="assets/img/Mayara.jpg" class="card-img-top card-img-top2" alt="...">
+			  <img src="assets/img/Mayara.jpg" class="card-img-top card-img-top2" alt="Mayara">
 			  <div class="card-body">
 			    <h5 class="card-title">Card title</h5>
 			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

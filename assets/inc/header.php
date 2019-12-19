@@ -1,5 +1,5 @@
 <header>
-  <div class="container-md d-flex justify-content-between mt-1 mb-1">
+  <div class="container-md d-flex justify-content-between mt-1 mb-1 div-header-itens">
     <a class="navbar-brand" href="#">
       <img src="assets/img/logo2.1.png" alt="Logo eConnection">
     </a>
