@@ -7,17 +7,27 @@
 
 <body class="login-body">
 <div class="container div-group">
-	<h3>Login</h3>
-    	<form>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Email</label>
-		    <input type="email" class="form-control col-12" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Login</li>
+	  </ol>
+	</nav>
+	<!-- <h3 class="text-center">Login</h3> -->
+    	<form class="form-signin">
+		  <img class="mb-5 ml-4" src="assets/img/logo.png" alt="">
+		  <!-- <h3 class="h3 mb-3 font-weight-normal">Login</h3> -->
+		  <label for="inputEmail" class="sr-only">Email</label>
+		  <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email" required autofocus>
+		  <label for="inputPassword" class="sr-only">Senha</label>
+		  <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Senha" required>
+		  <div class="checkbox mb-3">
+		    <label>
+		      <input type="checkbox" value="remember-me"> Lembrar
+		    </label>
 		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputPassword1">Senha</label>
-		    <input type="password" class="form-control col-12" id="exampleInputPassword1">
-		  </div>
-		  <button type="submit" class="btn btn-primary">Entrar</button>
+		  <button class="btn btn-lg btn-success btn-block" type="submit">Entrar</button>
+		  <p class="mt-4 mb-3 text-muted text-center">&copy; 2019-2020</p>
 		</form>
     </div>
 

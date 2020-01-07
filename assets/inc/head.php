@@ -31,6 +31,8 @@
     <meta name="apple-mobile-web-app-title" content="eConnection">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" sizes="60x60" href="assets/img/logo.png">
+    <!-- Estilo do Foundation -->
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 
     <!-- Favicon (imagem que fica na aba do navegador) -->
     <link rel="icon" type="image/png" sizes="60x60" href="assets/img/favicon.png">

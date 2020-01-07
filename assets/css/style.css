@@ -11,10 +11,10 @@ html {
 /* FONTS  */
 @font-face {
      font-family: Signatra;
-     src: url('assets/fonts/Signatra.otf');
+     src: url('../fonts/Signatra.otf');
 }
 h2{
-	font-family: Signatra;
+	font-family: "Signatra";
 }
 /* HEADER  */
 .navbar {
