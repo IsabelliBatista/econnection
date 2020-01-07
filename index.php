@@ -38,11 +38,11 @@
   <div class="container mt-5">
     <div class="row">
       <div class="medium-8 columns">
-        <p><img src="https://placehold.it/900x450&text=Promoted Article" alt="main article image"></p>
+        <p><img src="assets/img/galeria1.jpg" alt="img-galeria"></p>
       </div>
       <div class="medium-4 columns">
-        <p><img src="https://placehold.it/400x200&text=Other cool article" alt="article promo image" alt="advertisement for deep fried Twinkies"></p>
-        <p><img src="https://placehold.it/400x200&text=Other cool article" alt="article promo image"></p>
+        <p><img src="assets/img/galeria2.jpg" alt="img-galeria"></p>
+        <p><img src="assets/img/galeria3.jpg" alt="img-galeria"></p>
       </div>
     </div>
   </div>
@@ -149,7 +149,7 @@
             <h4>Top Products</h4>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="https://placehold.it/100x100">
+                <img class="thumbnail" src="assets/img/tops_posts.jpg">
               </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -158,7 +158,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -167,7 +167,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -179,7 +179,7 @@
             <h4>Top Products</h4>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="https://placehold.it/100x100">
+                <img class="thumbnail" src="assets/img/tops_posts.jpg">
               </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ulla</h5>
@@ -188,7 +188,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -197,7 +197,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -209,7 +209,7 @@
             <h4>Top Products</h4>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="https://placehold.it/100x100">
+                <img class="thumbnail" src="assets/img/tops_posts.jpg">
               </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -218,7 +218,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ull</h5>
@@ -227,7 +227,7 @@
           </div>
           <div class="media-object">
             <div class="media-object-section">
-              <img class="thumbnail" src="https://placehold.it/100x100">
+              <img class="thumbnail" src="assets/img/tops_posts.jpg">
             </div>
             <div class="media-object-section">
               <h5>Nunc Eu Ulla</h5>
