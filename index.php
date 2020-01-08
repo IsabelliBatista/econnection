@@ -34,6 +34,37 @@
 
 </header>
 <main>
+  <!-- CARD COM EXPLICAÇÃO BREVE -->
+  <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
+    <div class="col mb-4">
+      <div class="card border-light h-100">
+        <img src="" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Marketplace</h5>
+          <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card border-light h-100">
+        <img src="assets/img/.jpg" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Produtos Sustentáveis</h5>
+          <p class="card-text">Fortaler as marcas e Divulgar produtos ecológicos</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card border-light h-100">
+        <img src="assets/img/.jpg" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Loja</h5>
+          <p class="card-text">Encontre aqui uma loja perto de você</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- IMAGENS COM OS DESTAQUES -->
   <div class="container mt-5">
     <div class="row">
@@ -48,26 +79,11 @@
   </div>
 
   
-
-  <!-- CARD COM TEXTO QUEM SOMOS -->
-  <div class="container p-5 ">
-    <div class="row mt-2">
-      <div class="col sm-6">
-        <h2>Lorem title</h2>
-        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
-      </div>
-      <div class="col sm-6">
-        <img src="assets/img/eco.jpeg" class="card-home-img">
-      </div>
-    </div>
-  </div>
-
-  
   <!-- CARD PRODUTOS EM DESTAQUE -->
   <div class="container mt-5">
-    <h1 class="text-uppercase text-bold text-center p-5"> 
+    <h2 class="text-bold text-center p-5"> 
       Destaques
-    </h1>
+    </h2>
   </div>  
   <section class="container mt-5 ">
       <div class="row row-cols-1 row-cols-md-3">

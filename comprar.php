@@ -9,6 +9,14 @@
     <main>
         <!-- NOME E PREÇO DO PRODUTO-->
         <div class="container-sm">
+            <!-- CAMINHO DE PÁGINAS-->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
+                </ol>
+              </nav>
+
             <div class="container-fluid col mb-2  text-center">
                 <h2 class="mt-5 mb-5">Copo Sustentavel Diversas Cores</h2>
                 <h3>R$ 0,00</h3>
@@ -72,7 +80,7 @@
         
         <!-- CARD PRODUTOS EM DESTAQUE -->
         <div class=" card border-light h-100">
-        <h2 class="text-uppercase text-bold text-center p-5"> 
+        <h2 class="text-bold text-center p-5"> 
             Produtos Similares
         </h2>
         </div>  

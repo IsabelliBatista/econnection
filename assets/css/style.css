@@ -12,10 +12,27 @@ html {
 @font-face {
      font-family: Signatra;
      src: url('../fonts/Signatra.otf');
+     font-family: Comfortaa;
+     src: url('../fonts/Comfortaa-Regular.ttf');
+     font-family: Comfortaa-Bold;
+     src: url('../fonts/Comfortaa-Bold.ttf');
 }
-h2{
+h2, h1{
 	font-family: "Signatra";
+  font-size: 45px;
 }
+p{
+  font-family: "Comfortaa";
+}
+h4,h5{
+  font-family:Comfortaa-Bold;
+}
+.home-section-card{
+  margin: 0 auto;
+}
+/*.card-img-top:hover{
+  background-image: url('../img/copo-yellow.jpg');
+}*/
 /* HEADER  */
 .navbar {
   background-color: #000;
