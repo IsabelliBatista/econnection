@@ -1,13 +1,13 @@
-<footer class="footer container-fluid text-white mt-5">
-    <div class="container p-4">
-      <h4 class="text-center mt-3 mb-5">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Digite seu e-mail aqui." aria-label="Recipient's username" aria-describedby="button-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">ASSINE</button>
-        </div>
+<footer class="footer text-white mt-5">
+  <div class="container p-4">
+    <h4 class="text-center mt-3 mb-5">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Digite seu e-mail aqui." aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">ASSINE</button>
       </div>
     </div>
+  </div>
   <div class="container pb-3">
     <div class="row">
       <div class="col-sm">
@@ -39,4 +39,5 @@
       </div>
     </div>
   </div>
+  <div class="footer-copy"><p class="p-copy">© 2020 E-Connection. Todos os direitos reservados</p></div>
 </footer>

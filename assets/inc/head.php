@@ -20,7 +20,10 @@
     
     <!-- Indica se deve ou não ser indexado e 'seguido' pelos mecanismos de busca. Há um arquivo para isso também, o robots.txt. -->
     <meta name="robots" content="index,follow">
-
+    
+    <!-- Meta sobre a fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    
     <!-- Meta sobre a autoria do site -->
     <meta name="author" content="Ingrid, Isabelli, Joyce, Mayara ">
     <meta name="copyright" content="JIMI group">

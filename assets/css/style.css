@@ -10,25 +10,51 @@ html {
 }
 /* FONTS  */
 @font-face {
-     font-family: Signatra;
+     /*font-family: Signatra;
      src: url('../fonts/Signatra.otf');
      font-family: Comfortaa;
      src: url('../fonts/Comfortaa-Regular.ttf');
      font-family: Comfortaa-Bold;
-     src: url('../fonts/Comfortaa-Bold.ttf');
+     src: url('../fonts/Comfortaa-Bold.ttf');*/
+     font-family: Open-Sans-Bold;
+     src: url('../fonts/OpenSans-Bold.ttf');
+
 }
-h2, h1{
-	font-family: "Signatra";
-  font-size: 45px;
+h2{
+	font-family: Open-Sans-Bold;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+.txt-preco{
+  color: #899f37;
 }
 p{
-  font-family: "Comfortaa";
+  font-family: Montserrat;
 }
-h4,h5{
-  font-family:Comfortaa-Bold;
+h5{
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+h5:hover{
+  color: #899f37;
 }
 .home-section-card{
   margin: 0 auto;
+}
+
+/*BOTAO*/
+.btn-card{
+  background-color: #899f37;
+  color: #fff;
+}
+.btn-card:hover{
+
+  background-color: transparent;
+  border-color: #899f37;
+  color: #899f37;
 }
 /*.card-img-top:hover{
   background-image: url('../img/copo-yellow.jpg');
@@ -46,12 +72,16 @@ h4,h5{
 .div-header-itens{
   flex-wrap: wrap;
 }
-/*DIV DESTAQUES*/
-.div-destaques img{
-  height: 300px;
-  width: 300px;
-  flex-wrap: wrap;
+.footer-copy{
+  background-color: #899f37;
 }
+.footer-copy p{
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
 /* PAGINA QUEM SOMOS*/
 
 /*Header*/

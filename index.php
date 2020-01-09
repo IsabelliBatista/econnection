@@ -38,7 +38,7 @@
   <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
     <div class="col mb-4">
       <div class="card border-light h-100">
-        <img src="" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <img src="assets/img/itens1.png" class="m-auto" alt="e-connection" width="100" height="100">
         <div class="card-body">
           <h5 class="card-title">Marketplace</h5>
           <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
@@ -47,7 +47,7 @@
     </div>
     <div class="col mb-4">
       <div class="card border-light h-100">
-        <img src="assets/img/.jpg" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <img src="assets/img/itens2.png" class="m-auto" alt="e-connection"  width="100" height="100">
         <div class="card-body">
           <h5 class="card-title">Produtos Sustentáveis</h5>
           <p class="card-text">Fortaler as marcas e Divulgar produtos ecológicos</p>
@@ -56,7 +56,7 @@
     </div>
     <div class="col mb-4">
       <div class="card border-light h-100">
-        <img src="assets/img/.jpg" class="card-img-top" alt="FALTA IMAGEM" width="300" height="200">
+        <img src="assets/img/itens3.png" class="m-auto" alt="e-connection"  width="100" height="100">
         <div class="card-body">
           <h5 class="card-title">Loja</h5>
           <p class="card-text">Encontre aqui uma loja perto de você</p>
@@ -66,7 +66,7 @@
   </section>
 
   <!-- IMAGENS COM OS DESTAQUES -->
-  <div class="container mt-5">
+  <!-- <div class="container mt-5">
     <div class="row">
       <div class="medium-8 columns">
         <p><img src="assets/img/galeria1.jpg" alt="img-galeria"></p>
@@ -76,90 +76,118 @@
         <p><img src="assets/img/galeria3.jpg" alt="img-galeria"></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   
-  <!-- CARD PRODUTOS EM DESTAQUE -->
-  <div class="container mt-5">
-    <h2 class="text-bold text-center p-5"> 
-      Destaques
-    </h2>
-  </div>  
-  <section class="container mt-5 ">
-      <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-            <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Produto</h5>
-              <p class="card-text">This is a longer card with supporting text.</p>
-              <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-              <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+  <!-- CARD PRODUTOS EM DESTAQUE --> 
+  <div class="card-produtos">
+    <section class="container mt-5 ">
+        <h2 class="text-bold mt-5 mb-5"> 
+          Conheça nossos produtos
+        </h2>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Produto1.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">This is a longer card with supporting text.</p>
-                <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-                <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
+                <p class="card-text txt-preco">R$ 10,00</p>
+                <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
               </div>
             </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-            <img src="assets/img/copo-black.png" class="card-img-top" alt="Copo Black" width="300" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Produto</h5>
-              <p class="card-text">This is a longer card with supporting text.</p>
-              <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-              <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
-            </div>
           </div>
-        </div>
-  </section>
-  <section class="container mt-5 mb-5">
-      <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-            <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Produto</h5>
-              <p class="card-text">This is a longer card with supporting text.</p>
-              <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-              <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-              <img src="assets/img/destaq-canudo.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Produto2.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">This is a longer card with supporting text.</p>
-                <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-                <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
+                <p class="card-text txt-preco">R$ 10,00</p>
+                <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
               </div>
             </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-light h-100">
-            <img src="assets/img/copo-black.png" class="card-img-top" alt="Copo Black" width="300" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Produto</h5>
-              <p class="card-text">This is a longer card with supporting text.</p>
-              <a href="comprar.php" class="btn btn-outline-secondary">Detalhes</a>
-              <a href="comprar.php" class="btn btn-outline-secondary">Comprar</a>
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Produto3.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <p class="card-text txt-preco">R$ 10,00</p>
+                <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              </div>
             </div>
           </div>
-        </div>
-  </section>
+    </section>
+    <section class="container mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+              <div class="card border-light h-100 text-center">
+                <img src="assets/img/Produto4.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Produto</h5>
+                  <p class="card-text txt-preco">R$ 10,00</p>
+                  <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Produto5.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <p class="card-text txt-preco">R$ 10,00</p>
+                <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Produto6.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <p class="card-text txt-preco">R$ 10,00</p>
+                <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              </div>
+            </div>
+          </div>
+    </section>
 
+
+    <section class="container mt-5 ">
+        <h2 class="text-bold mt-5 mb-5"> 
+          Alguns Parceiros
+        </h2>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Parceiro1.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <a href="" class="btn btn-card">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Parceiro2.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <a href="" class="btn btn-card">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card border-light h-100 text-center">
+              <img src="assets/img/Parceiro3.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
+              <div class="card-body">
+                <h5 class="card-title">Produto</h5>
+                <a href="" class="btn btn-card">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
   <!-- IMAGENS COM OS PRODUTOS TOPS -->
-  <div class="container">
+  <!-- <div class="container">
       <div class="row">
         <div class="medium-4 columns">
             <h4>Top Products</h4>
@@ -251,8 +279,8 @@
             </div>
           </div>
         </div>
-        </div>
-  </div>
+      </div>
+    </div> -->
   </main>
     <?php require_once("assets/inc/footer.php"); ?>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

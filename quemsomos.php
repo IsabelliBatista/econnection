@@ -37,36 +37,36 @@
 	  			<p class="align-self-center">Lorem Ipsum é simplesmente bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao</p>
 	  		</div>
   		</article>
-  		<section class="container d-flex justify-content-around mt-5 text-center txt-itens">
-  			<div class="card border border-white">
-			  <img src="assets/img/iconfinder_dove_216243.png" class="card-img-top card-img-top1" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Card title</h5>
-				<p class="align-self-center">Lorem Ipsum é simplesmente</p>
-			  </div>
-			</div>
-			<div class="card border border-white">
-			  <img src="assets/img/iconfinder_heart13_216262.png" class="card-img-top card-img-top1" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Card title</h5>
-			    <p class="align-self-center">Lorem Ipsum é simplesmente</p>
-			  </div>
-			</div>
-			<div class="card border border-white">
-			  <img src="assets/img/iconfinder_leaves1_216276.png" class="card-img-top card-img-top1" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Card title</h5>
-			    <p class="align-self-center">Lorem Ipsum é simplesmente</p>
-			  </div>
-			</div>
-			<div class="card border border-white">
-			  <img src="assets/img/iconfinder_world7_216380.png" class="card-img-top card-img-top1" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Card title</h5>
-			    <p class="align-self-center">Lorem Ipsum é simplesmente</p>
-			  </div>
-			</div>
-  		</section>
+  		 <!-- CARD COM EXPLICAÇÃO BREVE -->
+		  <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
+		    <div class="col mb-4">
+		      <div class="card border-light h-100">
+		        <img src="assets/img/itens1.png" class="m-auto" alt="e-connection" width="100" height="100">
+		        <div class="card-body">
+		          <h5 class="card-title">Marketplace</h5>
+		          <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col mb-4">
+		      <div class="card border-light h-100">
+		        <img src="assets/img/itens2.png" class="m-auto" alt="e-connection"  width="100" height="100">
+		        <div class="card-body">
+		          <h5 class="card-title">Produtos Sustentáveis</h5>
+		          <p class="card-text">Fortaler as marcas e Divulgar produtos ecológicos</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col mb-4">
+		      <div class="card border-light h-100">
+		        <img src="assets/img/itens3.png" class="m-auto" alt="e-connection"  width="100" height="100">
+		        <div class="card-body">
+		          <h5 class="card-title">Loja</h5>
+		          <p class="card-text">Encontre aqui uma loja perto de você</p>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
   	</main>
   	<div class="divisor"></div>
   	<!-- <main class="mt-5">
