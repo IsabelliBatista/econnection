@@ -25,7 +25,14 @@ h2{
   text-transform: uppercase;
   font-size: 27px;
 }
-
+h1{
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  font-size: 44px;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+  font-weight: bolder;
+}
 .txt-preco{
   color: #899f37;
 }
@@ -78,6 +85,21 @@ h5:hover{
 .navbar {
   background-color: #000;
 }
+.navbar-toggler{
+  border-color: #fff;
+}
+.logo-nav{
+  margin: 0 auto;
+}
+.icons-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons-nav input{
+    margin: 10px;
+}
+
 /* BODY */
 
 /* FOOTER  */
@@ -100,9 +122,6 @@ h5:hover{
 /* PAGINA QUEM SOMOS*/
 
 /*Header*/
-.header-somos article:first-child{
-  padding: 70px;
-}
 .header-somos section h2{
   margin-top: 10px;
   padding: 40px;
@@ -111,11 +130,10 @@ h5:hover{
   background-image: url("../img/img-sobre-nos.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 200px;
 }
 .bg-header-somos h1{
   color: #fff;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 .header-somos section article p{
   padding: 20px 90px 0 50px;
@@ -189,14 +207,22 @@ h5:hover{
 
 /* MEDIA QUERYS */
 @media only screen and (max-width: 768px){
-  /* MENU */
+  /* HEADER */
   .form-inline{
       display: none;
   }
   .align-items-center{
     margin: 0 auto;
   }
-
+  .icons-nav{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  .div-header-itens{
+    flex-direction: column;
+    align-items: center;
+  }
   /*PAGINA INDEX*/
   }
   .card-home-img{
@@ -230,7 +256,13 @@ h5:hover{
     background-color: #899f37;
   }
   .main-somos article div p{
-  padding: 0;
+    padding: 0;
+  }
+  footer .row{
+    margin-left: 0px;
+  }
+
+
 }
 
 
