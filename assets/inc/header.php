@@ -37,6 +37,13 @@
         </li>
         <li class="nav-item  active">
             <div class="dropdown">
+                <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                  <a href="./parceiros.php" class="btn text-white text-uppercase">Parceiros</a>
+                <!-- </button> -->
+            </div>
+        </li>
+        <li class="nav-item  active">
+            <div class="dropdown">
                 <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Casa
                 </button>

@@ -23,7 +23,6 @@
   		<section class="container">
   			<h2 class="text-center">EConnection</h2>
   			<article class="container">
-  				<img src="assets/img/img-sobre-nos.jpg" >
   				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
   			</article>
   		</section>
@@ -31,7 +30,7 @@
   	<main class="mt-5 main-somos">
   		<article class="">
   			<div class="container d-flex">
-	  			<h3>Objetivos</h3>
+	  			<h5 class="main-somos-h5">Objetivos</h5>
 	  			<div class="barra"></div>
 	  			<div class="barra2"></div>
 	  			<p class="align-self-center">Lorem Ipsum é simplesmente bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao</p>
