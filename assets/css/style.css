@@ -99,8 +99,19 @@ h5:hover{
 .icons-nav input{
     margin: 10px;
 }
+/*breadcrumb*/
 
-/* BODY */
+.breadcrumb{
+  background-color: #fff;
+}
+.breadcrumb-item {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 
 /* FOOTER  */
 .footer {
@@ -184,8 +195,7 @@ h5:hover{
 .card-img-top2{
   border-radius: 150px;
 }
-
-
+  
 /*PAGINA LOGIN*/
 .login-body{
   background-image: url("../img/fundo-login.jpg");
@@ -201,8 +211,18 @@ h5:hover{
   margin: 150px auto;
   box-shadow: 0 0 1em #696969;
 }
-
-
+/*.section-comprar{
+    display: flex;
+    align-items: center;
+}
+.desc-produto{
+  display: flex;
+  flex-direction:column;
+}
+*/
+.carousel-slide{
+  width: 500px;
+}
 
 
 /* MEDIA QUERYS */
@@ -229,7 +249,11 @@ h5:hover{
     max-width: 250px;
   }
 
-
+  /*PAGINA COMPRAR*/
+  /*.section-comprar{
+    display: flex;
+    flex-wrap: wrap;
+  }*/
 
   /* PAGINA QUEM SOMOS*/
   .header-somos section article {

@@ -7,7 +7,8 @@
 <body>
     <?php require_once("assets/inc/header.php"); ?>
     <main>
-        <!-- NOME E PREÇO DO PRODUTO-->
+        <article class="bg-header-somos"><h1 class="text-center container">Comprar</h1></article>
+        
         <div class="container-sm">
             <!-- CAMINHO DE PÁGINAS-->
               <nav aria-label="breadcrumb">
@@ -16,59 +17,107 @@
                   <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
                 </ol>
               </nav>
-
-            <div class="container-fluid col mb-2  text-center">
-                <h2 class="mt-5 mb-5">Copo Sustentavel Diversas Cores</h2>
-                <h3>R$ 0,00</h3>
-            </div>
-            <!-- IMAGENS DOS PRODUTOS-->
-            <div class="mt-2 ml-2 float-left">
-                <div id="#carouselExampleControls" class="carousel slide" data-ride="carousel"  style= "width: 500px; height:400px; margin: 0 auto">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/img/copo-black.png" class="rounded float-right" alt="Copo Black" width="500" height="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/copo-pink.jpg" class="rounded float-right" alt="Copo Pink" width="500" height="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/copo-yellow.jpg" class="rounded float-right" alt="Copo Yellow" width="500" height="400">
-                        </div>
+        <div class="section-comprar">
+            <section class="mb-5 section-comprar float-left">
+                <!-- IMAGENS DOS PRODUTOS-->
+                <div>
+                    <div class="mt-2 ml-2">
+                        <div id="#carouselExampleControls" class="carousel slide carousel-slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/prodAmostra1.jpg" class="rounded " alt="Copo Black" width="400" height="400">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/prodAmostra2.jpg" class="rounded " alt="Copo Pink" width="400" height="400">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/prodAmostra3.jpg" class="rounded " alt="Copo Yellow" width="400" height="400">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/prodAmostra4.jpg" class="rounded " alt="Copo Yellow" width="400" height="400">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>           
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>           
-            </div>
-        <!-- DESCRIÇÃO DO PRODUTO -->
-            <div class="container col mb-2  text-justify col-8">
-                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
-                <div class="form-inline col-sm-2 my-1">
-                    <div class="form-group mt-2 mb-2">   
-                        <label for="cor" class="mr-3">Escolha a Cor:   </label>
-                        <select class="form-control" id="cor">
+                </div>
+            </section>
+            <section class="d-flex">
+                <div class="desc-produto">
+                    <!-- DESCRIÇÃO DO PRODUTO -->
+                    <h2>COPO SUSTENTAVEL DIVERSAS CORES</h2>
+                    <h2>R$ 0,00</h2>
+                    <p class="text-justify">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+                        como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+                    <div>
+                        <div class="form-group col-md-5">
+                          <select id="cor" class="form-control">
+                            <option selected>Escolha a Cor:</option>
                             <option>Preto</option>
-                            <option>Azul</option>
-                            <option>Rosa</option>
-                            <option>Amarelo</option>
-                            <option>Verde</option>
-                            <option>Vermelho</option>
-                        </select>
+                                    <option>Azul</option>
+                                    <option>Rosa</option>
+                                    <option>Amarelo</option>
+                                    <option>Verde</option>
+                                    <option>Vermelho</option>
+                          </select>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="input row col-sm-3 my-1">
-                    <div class="input-group-prepend ">
-                        <span class="input-group-text"><i class="fas fa-truck"></i></span>
-                        <input type="text" class="form-control" aria-label="CEP"placeholder="Informe seu CEP">
+                    <div>
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">CEP</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-truck"></i></span>
+                            </div>
+                            <input type="text" class="form-control col-5" id="inlineFormInputGroup" placeholder="Informe o CEP">
+                          </div>
+                        </div>
                     </div>
+                    <a href="#" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
                 </div>
-                <a href="#" class="btn btn-success mt-3">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
+
+            </section>
+        </div> 
+
+        <!-- CARD COM EXPLICAÇÃO BREVE -->
+          <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
+            <div class="col mb-4">
+              <div class="card border-light h-100">
+                <img src="assets/img/itens1.png" class="m-auto" alt="e-connection" width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Marketplace</h5>
+                  <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                </div>
+              </div>
             </div>
+            <div class="col mb-4">
+              <div class="card border-light h-100">
+                <img src="assets/img/itens2.png" class="m-auto" alt="e-connection"  width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Produtos Sustentáveis</h5>
+                  <p class="card-text">Fortaler as marcas e Divulgar produtos ecológicos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card border-light h-100">
+                <img src="assets/img/itens3.png" class="m-auto" alt="e-connection"  width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Loja</h5>
+                  <p class="card-text">Encontre aqui uma loja perto de você</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
                 <!-- MAPA -->
             <div class="container mt-5">
                 <div class="container map-responsive">
