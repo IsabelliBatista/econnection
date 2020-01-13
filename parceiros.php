@@ -80,7 +80,21 @@
             </div>
           </div>
     </section>
-
+    <div class="container banner-card ser-parceiro">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/fundo3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="mb-5">Seja Nosso Parceiro</h5>
+              <p class="mb-5">Clique aqui para saber mais</p>
+              <a href="contact.php" class="btn btn-card mb-4">Saber Mais</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
     <?php require_once("assets/inc/footer.php"); ?>
 
     <!-- Optional JavaScript -->

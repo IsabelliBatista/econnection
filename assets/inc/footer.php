@@ -19,17 +19,17 @@
       </div>
       <div class="col-sm">
         <h6 class="text-uppercase mb-3">Ajuda</h6>
-        <p><a href="#" class="text-white-50">Dúvidas Frequentes</a></p>
-        <p><a href="#" class="text-white-50">Atendimento</a></p>
+        <p><a href="./FAQ.php" class="text-white-50">Dúvidas Frequentes</a></p>
+        <p><a href="./contact.php" class="text-white-50">Atendimento</a></p>
         <p><a href="#" class="text-white-50">Mapa do Site</a></p>
         <p><a href="#" class="text-white-50">Glossário da Sustentabilidade</a></p>
       </div>
       <div class="col-sm">
         <h6 class="text-uppercase mb-3">eConnection</h6>
-        <p><a href="#" class="text-white-50">Sobre nós</a></p>
+        <p><a href="./quemsomos.php" class="text-white-50">Sobre nós</a></p>
         <p><a href="#" class="text-white-50">Institucional</a></p>
-        <p><a href="#" class="text-white-50">Seja nosso parceiro</a></p>
-        <p><a href="#" class="text-white-50">Políticas de troca e devoluções</a></p>
+        <p><a href="./parceiros.php" class="text-white-50">Seja nosso parceiro</a></p>
+        <p><a href="./politica.php" class="text-white-50">Políticas de troca e devoluções</a></p>
         </div>
       <div class="col-sm">
         <h6 class="text-uppercase mb-3">Social</h6>
