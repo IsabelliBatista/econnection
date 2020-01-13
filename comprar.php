@@ -17,15 +17,17 @@
                   <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
                 </ol>
               </nav>
+
+
         <div class="section-comprar">
-            <section class="mb-5 section-comprar float-left">
+            <section class="mb-5 section-comprar float-sm-left">
                 <!-- IMAGENS DOS PRODUTOS-->
                 <div>
                     <div class="mt-2 ml-2">
                         <div id="#carouselExampleControls" class="carousel slide carousel-slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/prodAmostra1.jpg" class="rounded " alt="Copo Black" width="400" height="400">
+                                    <img src="assets/img/prodAmostra1.jpg" class="rounded img-amostra " alt="Copo Black" width="400" height="400">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="assets/img/prodAmostra2.jpg" class="rounded " alt="Copo Pink" width="400" height="400">
@@ -49,7 +51,8 @@
                     </div>
                 </div>
             </section>
-            <section class="d-flex">
+
+            <section class="d-flex desc-prod">
                 <div class="desc-produto">
                     <!-- DESCRIÇÃO DO PRODUTO -->
                     <h2>COPO SUSTENTAVEL DIVERSAS CORES</h2>
@@ -61,14 +64,13 @@
                           <select id="cor" class="form-control">
                             <option selected>Escolha a Cor:</option>
                             <option>Preto</option>
-                                    <option>Azul</option>
-                                    <option>Rosa</option>
-                                    <option>Amarelo</option>
-                                    <option>Verde</option>
-                                    <option>Vermelho</option>
+                            <option>Azul</option>
+                            <option>Rosa</option>
+                            <option>Amarelo</option>
+                            <option>Verde</option>
+                            <option>Vermelho</option>
                           </select>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div>
                         <div class="col-auto">
@@ -83,7 +85,6 @@
                     </div>
                     <a href="#" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
                 </div>
-
             </section>
         </div> 
 
