@@ -13,10 +13,8 @@
 	    <li class="breadcrumb-item active" aria-current="page">Login</li>
 	  </ol>
 	</nav>
-	<!-- <h3 class="text-center">Login</h3> -->
     	<form class="form-signin">
 		  <img class="mb-5 ml-4" src="assets/img/logo.png" alt="">
-		  <!-- <h3 class="h3 mb-3 font-weight-normal">Login</h3> -->
 		  <label for="inputEmail" class="sr-only">Email</label>
 		  <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email" required autofocus>
 		  <label for="inputPassword" class="sr-only">Senha</label>
