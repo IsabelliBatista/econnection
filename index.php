@@ -64,20 +64,6 @@
       </div>
     </div>
   </section>
-
-  <!-- IMAGENS COM OS DESTAQUES -->
-  <!-- <div class="container mt-5">
-    <div class="row">
-      <div class="medium-8 columns">
-        <p><img src="assets/img/galeria1.jpg" alt="img-galeria"></p>
-      </div>
-      <div class="medium-4 columns">
-        <p><img src="assets/img/galeria2.jpg" alt="img-galeria"></p>
-        <p><img src="assets/img/galeria3.jpg" alt="img-galeria"></p>
-      </div>
-    </div>
-  </div> -->
-
   
   <!-- CARD PRODUTOS --> 
   <div class="card-produtos">

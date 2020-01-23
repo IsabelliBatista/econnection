@@ -22,11 +22,101 @@
 		  <label for="inputPassword" class="sr-only">Senha</label>
 		  <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Senha" required>
 		  <div class="checkbox mb-3">
-		    <label>
-		      <input type="checkbox" value="remember-me"> Lembrar
-		    </label>
-		  </div>
+				<label>
+				<input type="checkbox" value="remember-me"> Lembrar-me
+				</label>
+				
+								<button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#ExemploModalCentralizado">Esqueci minha senha</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="TituloModalCentralizado">Reset de Senha</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					<div class="form-row">
+		<div class="form-group col-md-8">
+		  <label for="inputEmail4">Digite o Email Cadastrado </label>
+		 <input type="email" class="form-control" id="inputEmail4" placeholder="Email"required>
+		 <small id="passwordHelpInline" class="text-muted">Digite o mesmo cadastrado no site</small>
+		</div>
+		</div>
+		
+
+					</div>
+					
+						
+						<button type="button" class="btn btn-success">Resetar Senha</button>
+						
+					
+					</div>
+				</div>
+				</div>
+				
+		  
+		  
 		  <button class="btn btn-lg btn-success btn-block" type="submit">Entrar</button>
+		  <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#ExemploModal">Cadastre-se</button>
+		 
+		  <div class="modal fade" id="ExemploModal" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+           <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+           <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalCentralizado">Cadastro de Usuario</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+             <div class="modal-body">
+        
+
+  
+		
+		
+  
+</form>
+<form>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+		   <label for="inputNome4">Nome</label>
+		   <input type="text" class="form-control" placeholder="Nome"required>
+		</div>
+		<div class="form-group col-md-6">
+		   <label for="inputsobrenome4">Sobrenome</label>
+		  <input type="text" class="form-control" placeholder="Sobrenome"required>
+		</div>
+	<div class="form-group col-md-5">
+			<label for="inputcpf4">CPF</label>
+			<input type="text" class="form-control" placeholder="CPF"required>
+			</div>
+		<div class="form-group col-md-7">
+		  <label for="inputEmail4">Email</label>
+		 <input type="email" class="form-control" id="inputEmail4" placeholder="Email"required>
+		</div>
+		<div class="form-group col-md-6">
+		  <label for="inputPassword4">Senha</label>
+		 <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+		  <small id="passwordHelpInline" class="text-muted">Deve ter entre 8 e 20 caracteres.</small>
+		</div>
+		<div class="form-group col-md-6">
+		  <label for="inputPassword4">Repetir Senha</label>
+		  <input type="password" class="form-control" id="inputPassword4" placeholder="Senha"required>
+		 
+		</div>
+	</div>
+</form>
+   <div class="modal-footer">
+        <button type="button" class="btn btn-success">Criar Usuario</button>
+    </div>
+</div>
+ </div>
+</div>
+
 		  <p class="mt-4 mb-3 text-muted text-center">&copy; 2019-2020</p>
 		</form>
     </div>

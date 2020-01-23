@@ -10,17 +10,11 @@ html {
   font-size: 18px;
 }
 
-/* FONTS  */  
+/* FONTS  */
+
 @font-face {
-     /*font-family: Signatra;
-     src: url('../fonts/Signatra.otf');
-     font-family: Comfortaa;
-     src: url('../fonts/Comfortaa-Regular.ttf');
-     font-family: Comfortaa-Bold;
-     src: url('../fonts/Comfortaa-Bold.ttf');*/
      font-family: Open-Sans-Bold;
      src: url('../fonts/OpenSans-Bold.ttf');
-
 }
 
 h2 {
@@ -52,7 +46,7 @@ h5 {
   letter-spacing: 1.8px;
   font-size: 18px;
   font-weight: bold;
-} 
+}
 
 h5:hover {
   color: #899f37;
@@ -77,7 +71,7 @@ h5:hover {
 
 .home-section-card {
   margin: 0 auto;
-} 
+}
 
 /*LOGO*/
 .logo-nav img {
@@ -91,30 +85,23 @@ h5:hover {
 }
 
 /*BOTAO*/
-.btn-card{
+.btn-card {
   background-color: #899f37;
   color: #fff;
 }
-.btn-card:hover{
 
+.btn-card:hover {
   background-color: transparent;
   border-color: #899f37;
   color: #899f37;
 }
-/*.card-img-top:hover{
-  background-image: url('../img/copo-yellow.jpg');
-}*/
+
 /* HEADER  */
 .navbar {
   background-color: #000;
 }
 .navbar-toggler {
   border-color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  text-align: center;
 }
 
 .logo-nav {
@@ -127,11 +114,12 @@ h5:hover {
   align-items: center;
 }
 
-.icons-nav input {
+.icons-nav input{
     margin: 10px;
 }
 
 /*breadcrumb*/
+
 .breadcrumb {
   background-color: #fff;
 }
@@ -143,7 +131,6 @@ h5:hover {
   font-size: 15px;
   font-weight: bold;
 }
-
 
 /* FOOTER  */
 .footer {
@@ -167,32 +154,38 @@ h5:hover {
 
 /* PAGINA QUEM SOMOS*/
 /*Header*/
-.header-somos section h2{
+.header-somos section h2 {
   margin-top: 10px;
   padding: 40px;
 }
-.bg-header-somos{
+
+.bg-header-somos {
   background-image: url("../img/img-sobre-nos.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
-.bg-header-somos h1{
+
+.bg-header-somos h1 {
   color: #fff;
   padding: 60px 0;
 }
-.header-somos section article p{
+
+.header-somos section article p {
   padding: 20px 90px 0 50px;
 }
-.header-somos section article{
+
+.header-somos section article {
   display: flex;
   align-content: space-around;
 }
-.header-somos img{
+
+.header-somos img {
   background-size: cover;
   max-width: 400px;
 }
+
 /*Main*/
-.main-somos article{
+.main-somos article {
   margin-top: 10px;
   padding: 40px;
   background-image: url("../img/scott-webb-hDyO6rr3kqk-unsplash.jpg");
@@ -201,43 +194,50 @@ h5:hover {
   justify-content: center;
   align-content: center;
 }
-.main-somos article div h3{
+
+.main-somos article div h3 {
   padding: 10px 20px;
 }
-.main-somos article div p{
+
+.main-somos article div p {
   padding: 0 100px 0 40px;
 }
-.txt-itens{
+
+.txt-itens {
   flex-wrap: wrap;
 }
-.barra{
+
+.barra {
   width: 3px;
   height: 80px;
   background-color: #899f37;
   display: block;
 }
-.barra2{
+
+.barra2 {
   display: none;
 }
+
 /*Main Quem Somos*/
 
-.card-img-top1{
+.card-img-top1 {
   width: 50px;
   margin: 0 auto;
 }
 
-.card-img-top2{
+.card-img-top2 {
   border-radius: 150px;
 }
   
 /*PAGINA LOGIN*/
-.login-body{
+.login-body {
   background-image: url("../img/fundo-login.jpg");
   background-size: cover;
   background-attachment: fixed;
   /*background-color: #20b2aa;*/
 }
-.div-group{
+
+.div-group {
   background-color: #fff;
   width: 400px;
   padding: 30px;
@@ -245,63 +245,55 @@ h5:hover {
   margin: 150px auto;
   box-shadow: 0 0 1em #696969;
 }
-/*.section-comprar{
-    display: flex;
-    align-items: center;
-}
-.desc-produto{
-  display: flex;
-  flex-direction:column;
-}
-*/
-.carousel-slide{
+
+.carousel-slide {
   width: 500px;
 }
+
 /*PAGINA FAQ*/
-.faq-h2 button{
+.faq-h2 button {
   color: #899f37;
 }
-.faq-h2 button:hover{
+
+.faq-h2 button:hover {
   color: #000;
   text-decoration: none;
 }
 
 /* MEDIA QUERYS */
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   .section-comprar{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
   /* HEADER */
   .form-inline{
       display: none;
   }
+
   .align-items-center{
     margin: 0 auto;
   }
-  .icons-nav{
+
+  .icons-nav {
     display: flex;
     justify-content: center;
     margin: 15px 0;
   }
-  .div-header-itens{
+
+  .div-header-itens {
     flex-direction: column;
     align-items: center;
   }
-  /*PAGINA INDEX*/
-  }
+
+ /*PAGINA INDEX*/
   .card-home-img{
     max-width: 250px;
   }
-
-  /*PAGINA COMPRAR*/
-  /*.section-comprar{
-    display: flex;
-    flex-wrap: wrap;
-  }*/
 
   /* PAGINA QUEM SOMOS*/
   .header-somos section article {
@@ -309,28 +301,34 @@ h5:hover {
       align-items: center;
       text-align: center;
   }
+
   .header-somos section article p {
       padding: 30px 0;
   }
-  .main-somos article div{
+
+  .main-somos article div {
       flex-direction: column;
       align-items: center;
       text-align: center;
   }
-  .barra{
+
+  .barra {
     display: none;
   }
-  .barra2{
+
+  .barra2 {
     display: block;
     height: 3px;
     width: 80px;
     margin: 10px 0;
     background-color: #899f37;
   }
-  .main-somos article div p{
+
+  .main-somos article div p {
     padding: 0;
   }
-  footer .row{
+
+  footer .row {
     margin-left: 0px;
   }
 

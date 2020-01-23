@@ -25,8 +25,8 @@
           </div>
            <button type="submit" class="btn btn-card mb-5">Enviar</button>
         </form>
-        <p class="text-center">Caso prefira nos ligar, nosso número é: <a href="">(11) 3892 6715</a></p>
-        <p class="text-center">Para assessoria de imprensa: <a href="">imprensa@insectashoes.com</a></p>
+        <p class="text-center">Caso prefira nos ligar, nosso número é: <a href="">(11) 4321 1234</a></p>
+        <p class="text-center">Para assessoria de imprensa: <a href="">imprensa@econnection.com.br</a></p>
     </div>
 
     <?php require_once("assets/inc/footer.php"); ?>

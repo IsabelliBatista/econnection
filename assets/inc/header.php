@@ -28,23 +28,17 @@
         <ul class="navbar-nav justify-content-around">
           <li class="nav-item  active">
               <div class="dropdown">
-                  <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                    <a class="btn text-white text-uppercase" href="./index.php">Início</a>
-                  <!-- </button> -->
+                  <a class="btn text-white text-uppercase" href="./index.php">Início</a>
               </div>
           </li>
           <li class="nav-item  active">
               <div class="dropdown">
-                  <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                    <a href="./quemsomos.php" class="btn text-white text-uppercase">Quem Somos</a>
-                  <!-- </button> -->
+                  <a href="./quemsomos.php" class="btn text-white text-uppercase">Quem Somos</a>
               </div>
           </li>
           <li class="nav-item  active">
               <div class="dropdown">
-                  <!-- <button class="btn text-white text-uppercase" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                    <a href="./parceiros.php" class="btn text-white text-uppercase">Parceiros</a>
-                  <!-- </button> -->
+                  <a href="./parceiros.php" class="btn text-white text-uppercase">Parceiros</a>
               </div>
           </li>
           <li class="nav-item  active">
