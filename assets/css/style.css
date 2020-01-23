@@ -5,10 +5,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 html {
   font-size: 18px;
 }
-/* FONTS  */
+
+/* FONTS  */  
 @font-face {
      /*font-family: Signatra;
      src: url('../fonts/Signatra.otf');
@@ -20,12 +22,14 @@ html {
      src: url('../fonts/OpenSans-Bold.ttf');
 
 }
-h2{
+
+h2 {
 	font-family: Open-Sans-Bold;
   text-transform: uppercase;
   font-size: 27px;
 }
-h1{
+
+h1 {
   font-family: Montserrat;
   text-transform: uppercase;
   letter-spacing: 4.8px;
@@ -33,47 +37,58 @@ h1{
   text-shadow: #000 0.1em 0.1em 0.2em;
   font-weight: bolder;
 }
-h6{
 
-}
-.txt-preco{
+.txt-preco {
   color: #899f37;
 }
-p{
+
+p {
   font-family: Montserrat;
 }
-h5{
+
+h5 {
   font-family: Montserrat;
   text-transform: uppercase;
   letter-spacing: 1.8px;
   font-size: 18px;
   font-weight: bold;
-}
-h5:hover{
+} 
+
+h5:hover {
   color: #899f37;
 }
-.main-somos-h5{
+
+.main-somos-h5 {
   font-size: 30px;
   font-family: Montserrat;
   text-transform: uppercase;
   letter-spacing: 1.8px;
   font-weight: bold;
 }
-.header-somos h2{
+
+.header-somos h2 {
   color: #899f37;
   font-size: 35px;
 }
-.banner-card h5{
+
+.banner-card h5 {
   font-size: 40px;
 }
-.home-section-card{
+
+.home-section-card {
   margin: 0 auto;
-}
+} 
+
 /*LOGO*/
-.logo-nav img{
+.logo-nav img {
   max-width: 165px;
 }
+
 /*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-align: center;
+}
 
 /*BOTAO*/
 .btn-card{
@@ -93,25 +108,34 @@ h5:hover{
 .navbar {
   background-color: #000;
 }
-.navbar-toggler{
+.navbar-toggler {
   border-color: #fff;
 }
-.logo-nav{
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-align: center;
+}
+
+.logo-nav {
   margin: 0 auto;
 }
-.icons-nav{
+
+.icons-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.icons-nav input{
+
+.icons-nav input {
     margin: 10px;
 }
-/*breadcrumb*/
 
-.breadcrumb{
+/*breadcrumb*/
+.breadcrumb {
   background-color: #fff;
 }
+
 .breadcrumb-item {
   font-family: Montserrat;
   text-transform: uppercase;
@@ -125,13 +149,16 @@ h5:hover{
 .footer {
   background-color: #000;
 }
-.div-header-itens{
+
+.div-header-itens {
   flex-wrap: wrap;
 }
-.footer-copy{
+
+.footer-copy {
   background-color: #899f37;
 }
-.footer-copy p{
+
+.footer-copy p {
   padding: 20px;
   text-align: center;
   font-size: 14px;
@@ -139,7 +166,6 @@ h5:hover{
 }
 
 /* PAGINA QUEM SOMOS*/
-
 /*Header*/
 .header-somos section h2{
   margin-top: 10px;
@@ -307,8 +333,4 @@ h5:hover{
   footer .row{
     margin-left: 0px;
   }
-
-
-}
-
 
