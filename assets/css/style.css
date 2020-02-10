@@ -13,12 +13,12 @@ html {
 /* FONTS  */
 
 @font-face {
-     font-family: Open-Sans-Bold;
-     src: url('../fonts/OpenSans-Bold.ttf');
+  font-family: Open-Sans-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 h2 {
-	font-family: Open-Sans-Bold;
+  font-family: Open-Sans-Bold;
   text-transform: uppercase;
   font-size: 27px;
 }
@@ -114,8 +114,8 @@ h5:hover {
   align-items: center;
 }
 
-.icons-nav input{
-    margin: 10px;
+.icons-nav input {
+  margin: 10px;
 }
 
 /*breadcrumb*/
@@ -228,7 +228,7 @@ h5:hover {
 .card-img-top2 {
   border-radius: 150px;
 }
-  
+
 /*PAGINA LOGIN*/
 .login-body {
   background-image: url("../img/fundo-login.jpg");
@@ -262,20 +262,20 @@ h5:hover {
 
 /* MEDIA QUERYS */
 @media only screen and (max-width: 900px) {
-  .section-comprar{
+  .section-comprar {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
+/* HEADER */
 @media only screen and (max-width: 768px) {
-  /* HEADER */
-  .form-inline{
-      display: none;
+  .form-inline {
+    display: none;
   }
 
-  .align-items-center{
+  .align-items-center {
     margin: 0 auto;
   }
 
@@ -290,26 +290,24 @@ h5:hover {
     align-items: center;
   }
 
- /*PAGINA INDEX*/
-  .card-home-img{
+  .card-home-img {
     max-width: 250px;
   }
 
-  /* PAGINA QUEM SOMOS*/
   .header-somos section article {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .header-somos section article p {
-      padding: 30px 0;
+    padding: 30px 0;
   }
 
   .main-somos article div {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .barra {
@@ -330,5 +328,48 @@ h5:hover {
 
   footer .row {
     margin-left: 0px;
+  }
+}
+/*Página listar_produtos*/
+
+.space-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.space-button .fa-trash-alt {
+  color: red;
+}
+
+.space-button .fa-pen {
+  color: #007bff;
+}
+
+.space-button .fa-plus {
+  color: green;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .teste {
+    display: none;
+  }
+  .space-button {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+  .mobile-dropdown {
+    display: none;
   }
 }
