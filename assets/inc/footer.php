@@ -20,7 +20,7 @@
       <div class="col-sm">
         <h6 class="text-uppercase mb-3">Ajuda</h6>
         <p><a href="./FAQ.php" class="text-white-50">Dúvidas Frequentes</a></p>
-        <p><a href="./contact.php" class="text-white-50">Atendimento</a></p>
+        <p><a href="./contato.php" class="text-white-50">Atendimento</a></p>
         <p><a href="#" class="text-white-50">Mapa do Site</a></p>
         <p><a href="#" class="text-white-50">Glossário da Sustentabilidade</a></p>
       </div>
