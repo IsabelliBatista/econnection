@@ -1,4 +1,8 @@
-@extends('layouts.mainTemplate')
+@extends('layouts.templatePrincipal')
+
+@section('title')
+    Home - eConnection
+@endsection
 
 @section('content')
 <div class="container">
