@@ -1,0 +1,375 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 18px;
+}
+
+/* FONTS  */
+
+@font-face {
+  font-family: Open-Sans-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+h2 {
+  font-family: Open-Sans-Bold;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+h1 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  font-size: 44px;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+  font-weight: bolder;
+}
+
+.txt-preco {
+  color: #899f37;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+h5 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h5:hover {
+  color: #899f37;
+}
+
+.main-somos-h5 {
+  font-size: 30px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+}
+
+.header-somos h2 {
+  color: #899f37;
+  font-size: 35px;
+}
+
+.banner-card h5 {
+  font-size: 40px;
+}
+
+.home-section-card {
+  margin: 0 auto;
+}
+
+/*LOGO*/
+.logo-nav img {
+  max-width: 165px;
+}
+
+/*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  text-align: center;
+}
+
+/*BOTAO*/
+.btn-card {
+  background-color: #899f37;
+  color: #fff;
+}
+
+.btn-card:hover {
+  background-color: transparent;
+  border-color: #899f37;
+  color: #899f37;
+}
+
+/* HEADER  */
+.navbar {
+  background-color: #000;
+}
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.logo-nav {
+  margin: 0 auto;
+}
+
+.icons-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons-nav input {
+  margin: 10px;
+}
+
+/*breadcrumb*/
+
+.breadcrumb {
+  background-color: #fff;
+}
+
+.breadcrumb-item {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* FOOTER  */
+.footer {
+  background-color: #000;
+}
+
+.div-header-itens {
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  background-color: #899f37;
+}
+
+.footer-copy p {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* PAGINA QUEM SOMOS*/
+/*Header*/
+.header-somos section h2 {
+  margin-top: 10px;
+  padding: 40px;
+}
+
+.bg-header-somos {
+  background-image: url("../img/img-sobre-nos.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-header-somos h1 {
+  color: #fff;
+  padding: 60px 0;
+}
+
+.header-somos section article p {
+  padding: 20px 90px 0 50px;
+}
+
+.header-somos section article {
+  display: flex;
+  align-content: space-around;
+}
+
+.header-somos img {
+  background-size: cover;
+  max-width: 400px;
+}
+
+/*Main*/
+.main-somos article {
+  margin-top: 10px;
+  padding: 40px;
+  background-image: url("../img/scott-webb-hDyO6rr3kqk-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-somos article div h3 {
+  padding: 10px 20px;
+}
+
+.main-somos article div p {
+  padding: 0 100px 0 40px;
+}
+
+.txt-itens {
+  flex-wrap: wrap;
+}
+
+.barra {
+  width: 3px;
+  height: 80px;
+  background-color: #899f37;
+  display: block;
+}
+
+.barra2 {
+  display: none;
+}
+
+/*Main Quem Somos*/
+
+.card-img-top1 {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.card-img-top2 {
+  border-radius: 150px;
+}
+
+/*PAGINA LOGIN*/
+.login-body {
+  background-image: url("../img/fundo-login.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-color: #20b2aa;*/
+}
+
+.div-group {
+  background-color: #fff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 6px;
+  margin: 150px auto;
+  box-shadow: 0 0 1em #696969;
+}
+
+.carousel-slide {
+  width: 500px;
+}
+
+/*PAGINA FAQ*/
+.faq-h2 button {
+  color: #899f37;
+}
+
+.faq-h2 button:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* MEDIA QUERYS */
+@media only screen and (max-width: 900px) {
+  .section-comprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* HEADER */
+@media only screen and (max-width: 768px) {
+  .form-inline {
+    display: none;
+  }
+
+  .align-items-center {
+    margin: 0 auto;
+  }
+
+  .icons-nav {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .div-header-itens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-home-img {
+    max-width: 250px;
+  }
+
+  .header-somos section article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-somos section article p {
+    padding: 30px 0;
+  }
+
+  .main-somos article div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .barra {
+    display: none;
+  }
+
+  .barra2 {
+    display: block;
+    height: 3px;
+    width: 80px;
+    margin: 10px 0;
+    background-color: #899f37;
+  }
+
+  .main-somos article div p {
+    padding: 0;
+  }
+
+  footer .row {
+    margin-left: 0px;
+  }
+}
+/*Página listar_produtos*/
+
+.space-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.space-button .fa-trash-alt {
+  color: red;
+}
+
+.space-button .fa-pen {
+  color: #007bff;
+}
+
+.space-button .fa-plus {
+  color: green;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .teste {
+    display: none;
+  }
+  .space-button {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+  .mobile-dropdown {
+    display: none;
+  }
+}
