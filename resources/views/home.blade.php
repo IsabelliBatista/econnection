@@ -61,4 +61,119 @@
   </div>
 </section>
 
+<!-- CARD PRODUTOS --> 
+<section class="card-produtos">
+  <div class="container mt-5 ">
+      <h2 class="text-bold mt-5 mb-5"> 
+        Conheça nossos produtos
+      </h2>
+  </div>
+  {{-- Primeira seção de produtos --}}
+  <section class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{-- Segunda seção de produtos --}}
+  <section class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!--PARCEIROS-->
+<section class="container mt-5 ">
+  <h2 class="text-bold mt-5 mb-5"> 
+    Alguns Parceiros
+  </h2>
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card border-light h-100 text-center">
+        <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Produto</h5>
+          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card border-light h-100 text-center">
+        <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Produto</h5>
+          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card border-light h-100 text-center">
+        <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Produto</h5>
+          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+
 @endsection
