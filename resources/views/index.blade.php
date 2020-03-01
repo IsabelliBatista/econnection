@@ -1,4 +1,4 @@
-@extends('layouts.templatePrincipal')
+@extends('layouts.master')
 
 @section('title')
     Home - eConnection

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-BR">
 <head>
   <!-- Configurações como characters, viewport, cache... -->
   <meta charset="utf-8">
@@ -40,7 +40,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>@yield('title')</title>
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
@@ -65,10 +65,11 @@
 </head>
 <body>
   <header>
+    {{-- Barra do topo --}}
     <div class="container-md d-flex justify-content-between mt-1 mb-1 div-header-itens">
       <div>
         <a class="logo-nav" href="index.php">
-          <img src="./public/img/logo.png" alt="Logo eConnection">
+          <img src="{{ asset('img/logo.png') }}" alt="Logo eConnection">
         </a>
       </div>
       <div class="icons-nav">
@@ -83,6 +84,7 @@
       </div>
     </div>
 
+    {{-- Menu de navegação --}}
     <div>
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,10 +160,13 @@
       </nav>
     </div>
   </header>
+  {{-- Conteúdo principal --}}
     <main class="py-4">
         @yield('content')
     </main>
   </div>
+
+  {{-- Rodapé da página --}}
   <footer class="footer text-white mt-5">
     <div class="container p-3">
       <h4 class="text-center mt-2 mb-3">RECEBA NOSSAS OFERTAS E NOVIDADES POR E-MAIL.</h4>
