@@ -78,7 +78,7 @@
           <button class="btn" type="submit"><i class="fas fa-search"></i></button>
         </form>
         <span>
-          <a href="login.php" class="p-2 text-reset"><i class="fas fa-user"></i></a>
+          <a href="#login" class="p-2 text-reset" data-toggle="modal" data-target="#login"><i class="fas fa-user"></i></a>
           <a href="carrinho.php" class="p-2 text-reset"><i class="fas fa-shopping-cart"></i></a>    
         </span>
       </div>
@@ -160,6 +160,102 @@
       </nav>
     </div>
   </header>
+
+  {{-- Modal de login --}}
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Fazer Login:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha.">
+              <button type="button" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#lembrarSenha">Esqueci minha senha</button>
+            </div>
+          </form>
+        </div>
+        <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</button>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- Modal de cadastro --}}
+  <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="cadastro" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Fazer cadastro: </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nomeCliente">Nome Completo:</label>
+              <input type="text" class="form-control" id="nomeCliente" aria-describedby="nomeCliente" placeholder="Digite seu nome completo.">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha.">
+              <small id="passwordHelpInline" class="text-muted">Senha deve ter entre 8 e 20 caracteres.</small>
+            </div>
+          </form>
+        </div>     
+        <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#login">Já possui cadastro? Faça login!</button>   
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- Modal de Esqueci minha senha --}}
+  <div class="modal fade" id="lembrarSenha" tabindex="-1" role="dialog" aria-labelledby="lembrarSenha" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Não lembra sua senha?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Digite seu email:</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#login">Login</button> 
+            <button type="submit" class="btn btn-success">Redefinir senha</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
   {{-- Conteúdo principal --}}
     <main>
         @yield('content')
