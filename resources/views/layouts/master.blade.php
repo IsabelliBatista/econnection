@@ -79,7 +79,7 @@
         </form>
         <span>
           <a href="#login" class="p-2 text-reset" data-toggle="modal" data-target="#login"><i class="fas fa-user"></i></a>
-          <a href="carrinho.php" class="p-2 text-reset"><i class="fas fa-shopping-cart"></i></a>    
+          <a href="/carrinho" class="p-2 text-reset"><i class="fas fa-shopping-cart"></i></a>    
         </span>
       </div>
     </div>
@@ -94,17 +94,17 @@
           <ul class="navbar-nav justify-content-around">
             <li class="nav-item  active">
               <div class="dropdown">
-                <a class="btn text-white text-uppercase" href="./index.php">Início</a>
+                <a class="btn text-white text-uppercase" href="/">Início</a>
               </div>
             </li>
             <li class="nav-item  active">
               <div class="dropdown">
-                <a href="./quemsomos.php" class="btn text-white text-uppercase">Quem Somos</a>
+                <a href="/quemsomos" class="btn text-white text-uppercase">Quem Somos</a>
               </div>
             </li>
             <li class="nav-item  active">
               <div class="dropdown">
-                <a href="./parceiros.php" class="btn text-white text-uppercase">Parceiros</a>
+                <a href="/parceiros" class="btn text-white text-uppercase">Parceiros</a>
               </div>
             </li>
             <li class="nav-item  active">
@@ -173,6 +173,7 @@
         </div>
         <div class="modal-body">
           <form>
+            @csrf
             <div class="form-group">
               <label for="email">Email:</label>
               <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
@@ -206,6 +207,7 @@
         </div>
         <div class="modal-body">
           <form>
+            @csrf
             <div class="form-group">
               <label for="nomeCliente">Nome Completo:</label>
               <input type="text" class="form-control" id="nomeCliente" aria-describedby="nomeCliente" placeholder="Digite seu nome completo.">
@@ -242,6 +244,7 @@
           </div>
           <div class="modal-body">
             <form>
+              @csrf
               <div class="form-group">
                 <label for="email">Digite seu email:</label>
                 <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
@@ -284,17 +287,17 @@
         </div>
         <div class="col-sm">
           <h6 class="text-uppercase mb-3">Ajuda</h6>
-          <p><a href="./FAQ.php" class="text-white-50">Dúvidas Frequentes</a></p>
-          <p><a href="./contato.php" class="text-white-50">Atendimento</a></p>
+          <p><a href="/faq" class="text-white-50">Dúvidas Frequentes</a></p>
+          <p><a href="/contato" class="text-white-50">Atendimento</a></p>
           <p><a href="#" class="text-white-50">Mapa do Site</a></p>
           <p><a href="#" class="text-white-50">Glossário da Sustentabilidade</a></p>
         </div>
         <div class="col-sm">
           <h6 class="text-uppercase mb-3">eConnection</h6>
-          <p><a href="./quemsomos.php" class="text-white-50">Sobre nós</a></p>
+          <p><a href="/quemsomos" class="text-white-50">Sobre nós</a></p>
           <p><a href="#" class="text-white-50">Institucional</a></p>
-          <p><a href="./parceiros.php" class="text-white-50">Seja nosso parceiro</a></p>
-          <p><a href="./politica.php" class="text-white-50">Políticas de troca e devoluções</a></p>
+          <p><a href="/parceiros" class="text-white-50">Seja nosso parceiro</a></p>
+          <p><a href="/politica" class="text-white-50">Políticas de troca e devoluções</a></p>
           </div>
         <div class="col-sm">
           <h6 class="text-uppercase mb-3">Social</h6>

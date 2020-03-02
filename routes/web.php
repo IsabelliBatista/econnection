@@ -17,9 +17,33 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/index', function(){
     return view('index');
+});
+
+Route::get('/parceiros', function(){
+    return view('parceiros');
+});
+
+Route::get('/quemsomos', function(){
+    return view('quemsomos');
+});
+
+Route::get('/politica', function(){
+    return view('politica');
+});
+
+Route::get('/contato', function(){
+    return view('contato');
+});
+
+Route::get('/faq', function(){
+    return view('faq');
+});
+
+Route::get('/carrinho', function(){
+    return view('comprar');
 });
 
