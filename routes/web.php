@@ -52,7 +52,7 @@ Route::get('/contato', function(){
 });
 
 Route::get('/comprar', function(){
-    return view('checkout');
+    return view('comprar');
 });
 
 Route::get('/checkout', function(){
