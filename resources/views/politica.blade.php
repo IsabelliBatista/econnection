@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Quem Somos - eConnection
+    Política - eConnection
 @endsection
 
 @section('content')
