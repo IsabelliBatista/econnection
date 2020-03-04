@@ -230,12 +230,6 @@ h5:hover {
 }
 
 /*PAGINA LOGIN*/
-.login-body {
-  background-image: url("../img/fundo-login.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  /*background-color: #20b2aa;*/
-}
 
 .div-group {
   background-color: #fff;
@@ -330,6 +324,7 @@ h5:hover {
     margin-left: 0px;
   }
 }
+
 /*Página listar_produtos*/
 
 .space-button {
