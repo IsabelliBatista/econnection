@@ -17,30 +17,30 @@
 
         <div class="col-md-8 order-md-2 mb-4 m-auto mt-5">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-muted">Your cart</span>
+            <span class="text-muted">Seu Carrinho</span>
             <span class="badge badge-secondary badge-pill">3</span>
           </h4>
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
-                <h6 class="my-0">Product name</h6>
+                <h6 class="my-0">Nome do Produto</h6>
                 <small class="text-muted">Brief description</small>
               </div>
-              <span class="text-muted">$12</span>
+              <span class="text-muted">R$12</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
-                <h6 class="my-0">Second product</h6>
+                <h6 class="my-0">Segundo Produto</h6>
                 <small class="text-muted">Brief description</small>
               </div>
-              <span class="text-muted">$8</span>
+              <span class="text-muted">R$8</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
-                <h6 class="my-0">Third item</h6>
+                <h6 class="my-0">Terceiro Item</h6>
                 <small class="text-muted">Brief description</small>
               </div>
-              <span class="text-muted">$5</span>
+              <span class="text-muted">R$5</span>
             </li>
             <li class="list-group-item d-flex justify-content-between bg-light">
               <div class="text-success">
