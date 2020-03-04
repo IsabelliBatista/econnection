@@ -35,7 +35,7 @@
   <link rel="shortcut icon" sizes="60x60" href="assets/img/logo.png">
 
   <!-- Favicon - Validar caminho da imagem-->
-  <link rel="icon" type="image/png" sizes="60x60" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="60x60" href="{{ asset('img/favicon.png') }}">
 
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
