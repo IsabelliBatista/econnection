@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Carrinho - eConnection
+    Parceiros - eConnection
 @endsection
 
 @section('content')
