@@ -107,52 +107,24 @@
               </div>
             </li>
             <li class="nav-item  active">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Casa
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Composteira Residencial</a>
-                  <a class="dropdown-item" href="#">Limpeza Ecológica</a>
-                  <a class="dropdown-item" href="#">Rotina Sustentável</a>
+                <div class="dropdown">
+                  <a href="/parceiros" class="btn text-white text-uppercase">Casa</a>
                 </div>
-              </div>
             </li>
-            <li class="nav-item ">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cuidados 
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Cabelos</a>
-                  <a class="dropdown-item" href="#">Barbear Clássico</a>
-                  <a class="dropdown-item" href="#">Higiene Bucal</a>
+            <li class="nav-item  active">
+                <div class="dropdown">
+                  <a href="/parceiros" class="btn text-white text-uppercase">Cuidados</a>
                 </div>
-              </div>
             </li>
-            <li class="nav-item ">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  100 Plástico
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Canudos e Copos Reutilizáveis</a>
-                  <a class="dropdown-item" href="#">Ecobags, Kit Hortifruti e Compras a granel</a>
-                  <a class="dropdown-item" href="#">Kits Lixo Zero</a>
+            <li class="nav-item  active">
+                <div class="dropdown">
+                  <a href="/parceiros" class="btn text-white text-uppercase">100 Plástico</a>
                 </div>
-              </div>        
             </li>
-            <li class="nav-item ">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Acessórios
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Acessórios para Yoga e Meditação</a>
-                  <a class="dropdown-item" href="#">Brinquedos Educativos</a>
-                  <a class="dropdown-item" href="#">Decoração</a>
+            <li class="nav-item  active">
+                <div class="dropdown">
+                  <a href="/parceiros" class="btn text-white text-uppercase">Acessórios</a>
                 </div>
-              </div> 
             </li>
           </ul>
         </div>
@@ -288,15 +260,12 @@
           <h6 class="text-uppercase mb-3">Ajuda</h6>
           <p><a href="/faq" class="text-white-50">Dúvidas Frequentes</a></p>
           <p><a href="/contato" class="text-white-50">Atendimento</a></p>
-          <p><a href="#" class="text-white-50">Mapa do Site</a></p>
-          <p><a href="#" class="text-white-50">Glossário da Sustentabilidade</a></p>
+          <p><a href="/politica" class="text-white-50">Políticas de troca e devoluções</a></p>
         </div>
         <div class="col-sm">
           <h6 class="text-uppercase mb-3">eConnection</h6>
           <p><a href="/quemsomos" class="text-white-50">Sobre nós</a></p>
-          <p><a href="#" class="text-white-50">Institucional</a></p>
           <p><a href="/parceiros" class="text-white-50">Seja nosso parceiro</a></p>
-          <p><a href="/politica" class="text-white-50">Políticas de troca e devoluções</a></p>
           </div>
         <div class="col-sm">
           <h6 class="text-uppercase mb-3">Social</h6>
