@@ -9,7 +9,7 @@ class Pedidos extends Model
     protected $table = 'pedidos';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'status_pedido', 'clientes_id', 'produtos_id', 'vendedor_id'
+        'status_pedido', 'clientes_id', 'produtos_id', 'vendedor_id', 'produtos_id', 'vendedor_id'
     ];
 
     public function clientes(){
