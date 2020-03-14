@@ -68,7 +68,7 @@
     <div class="container-md d-flex justify-content-between mt-1 mb-1 div-header-itens">
       <div>
         <a class="logo-nav" href="index.php">
-          <img src="{{ asset('img/logo.png') }}" alt="Logo eConnection">
+          <img src="{{ asset('img/logo.png') }}" href="{{ url('/') }}" alt="Logo eConnection">
         </a>
       </div>
       <div class="icons-nav">
@@ -77,18 +77,44 @@
           <button class="btn" type="submit"><i class="fas fa-search"></i></button>
         </form>
         <span>
-          <a href="#login" class="p-2 text-reset" data-toggle="modal" data-target="#login"><i class="fas fa-user"></i></a>
+
+          <!-- Authentication Links -->
+          @guest    
+            <a class="p-2 text-reset" data-toggle="modal" data-target="#login" href="{{ route('login') }}"><i class="fas fa-user"></i></a>
+            
+            @if (Route::has('register'))
+                  {{-- <a class="nav-link" href="{{ route('register') }}">{{ __('') }}</a> --}}
+            @endif
+
+            @else
+            <li class="nav-item dropdown list-unstyled">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }}
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+              </div>
+            </li>
+          @endguest
           <a href="/carrinho" class="p-2 text-reset"><i class="fas fa-shopping-cart"></i></a>    
         </span>
       </div>
-    </div>
+    </div>       
 
     {{-- Menu de navegação --}}
     <div>
       <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
           <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav justify-content-around">
             <li class="nav-item  active">
@@ -143,25 +169,61 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form method="POST" action="{{ route('login') }}">
             @csrf
+
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+
+              <label for="email">{{ __('E-mail:') }}</label>
+              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="seunome@email.com" required autocomplete="email" autofocus>
+                
+                @error('email')
+                  <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span>
+                @enderror
+
             </div>
+
             <div class="form-group">
-              <label for="senha">Senha:</label>
-              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha.">
-              <button type="button" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#lembrarSenha">Esqueci minha senha</button>
+              
+              <label for="password">{{ __('Senha:') }}</label>
+              <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Digite sua senha." required autocomplete="current-password">
+
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+                
+                <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                <label for="remember">
+                  {{ __('Lembrar-me') }}
+                </label>
+
+                <div>
+                  @if (Route::has('password.request'))
+
+                  <a class="btn btn-link btn-sm" href="{{ route('password.request') }}" data-dismiss="modal" data-toggle="modal" data-target="#lembrarSenha">
+                    {{ __('Esqueceu sua senha?') }}
+                  </a>
+                  
+                  @endif
+                </div>
+                
             </div>
-          </form>
-        </div>
-        <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</button>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-success">Login</button>
-        </div>
+          </div>
+          
+          @if (Route::has('register'))
+          <button href="{{ route('register') }}" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</button>
+          @endif
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-success"> {{ __('Login') }}</button>
+          </div>
+          
+        </form>
       </div>
     </div>
   </div>
@@ -214,11 +276,21 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="POST" action="{{ route('password.update') }}">
               @csrf
+
+              <input type="hidden" name="token" value="{{ $token }}">
+
               <div class="form-group">
-                <label for="email">Digite seu email:</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+                <label for="email">{{ __('Digite seu email:') }}</label>
+                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+
+                @error('email')
+                  <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span>
+                @enderror
+
               </div>
             </form>
           </div>

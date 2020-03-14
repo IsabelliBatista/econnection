@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-  eConnection - Produtos sustentáveis
+  Logado eConnection - Produtos sustentáveis
 @endsection
 
 @section('content')
