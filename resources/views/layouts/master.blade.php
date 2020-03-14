@@ -276,28 +276,36 @@
             </button>
           </div>
           <div class="modal-body">
-            <form method="POST" action="{{ route('password.update') }}">
+            @if (session('status'))
+              <div class="alert alert-success" role="alert">
+                  {{ session('status') }}
+              </div>
+            @endif
+
+            <form method="POST" action="{{ route('password.email') }}">
               @csrf
 
-              <input type="hidden" name="token" value="{{ $token }}">
+              <div>
+                  <label for="email">{{ __('Digite seu email:') }}</label>
 
-              <div class="form-group">
-                <label for="email">{{ __('Digite seu email:') }}</label>
-                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                  <div>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                @error('email')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                @enderror
-
+                    @error('email')
+                      <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
+                    @enderror
+                  </div>
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#login">Login</button> 
-            <button type="submit" class="btn btn-success">Redefinir senha</button>
-          </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">
+                {{ __('Enviar o Link para Redefinir a Senha') }}
+              </button>
+            </div>
+          </form>
         </div>
       </div>
   </div>
