@@ -239,28 +239,62 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form method="POST" action="{{ route('register') }}">
             @csrf
+
             <div class="form-group">
-              <label for="nomeCliente">Nome Completo:</label>
-              <input type="text" class="form-control" id="nomeCliente" aria-describedby="nomeCliente" placeholder="Digite seu nome completo.">
+              <label for="nome">{{ __('Nome Completo:') }}</label>
+              <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+              @error('name')
+                <span class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </span>
+              @enderror
             </div>
+
             <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu email.">
+
+              <label for="email">{{ __('E-mail') }}:</label>
+              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+
             </div>
+
             <div class="form-group">
-              <label for="senha">Senha:</label>
-              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha.">
+
+              <label for="senha">{{ __('Senha:') }}</label>
+              <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+              
+              @error('password')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+              @enderror
+              
+            </div>
+            
+            <div class="form-group">
+              
+              <label for="password-confirm">{{ __('Confirme a Senha:') }}</label>
+              <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
               <small id="passwordHelpInline" class="text-muted">Senha deve ter entre 8 e 20 caracteres.</small>
+           
             </div>
-          </form>
-        </div>     
-        <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#login">Já possui cadastro? Faça login!</button>   
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-success">Cadastrar</button>
-        </div>
+
+
+          </div>     
+          <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#login">Já possui cadastro? Faça login!</button>   
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-success"> {{ __('Cadastrar') }}</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
