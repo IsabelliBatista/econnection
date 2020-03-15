@@ -285,12 +285,12 @@
               </div>
 
 
-            </div>     
-            <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#login">Já possui cadastro? Faça login!</button>   
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-              <button type="submit" class="btn btn-success"> {{ __('Cadastrar') }}</button>
-            </div>
+              </div>     
+              <button class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#login">Já possui cadastro? Faça login!</button>   
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-success"> {{ __('Cadastrar') }}</button>
+              </div>
           </form>
         </div>
       </div>

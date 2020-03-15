@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddForeignKeyVendedorEndereco extends Migration
+class AddForeignKeyPedidosUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class AddForeignKeyVendedorEndereco extends Migration
      */
     public function up()
     {
-        Schema::table('vendedor', function (Blueprint $table) {
-            $table->unsignedBigInteger('endereco_id');
+        Schema::table('pedidos', function (Blueprint $table) {
+            $table->unsignedBigInteger('user_id');
 
-            $table->foreign('endereco_id')->references('id')->on('endereco');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -27,9 +27,9 @@ class AddForeignKeyVendedorEndereco extends Migration
      */
     public function down()
     {
-        Schema::table('vendedor', function (Blueprint $table) {
+        Schema::table('pedidos', function (Blueprint $table) {
             Schema::disableForeignKeyConstraints();
-            $table->dropForeign(['endereco_id']);
+            $table->dropForeign(['user_id']);
             Schema::enableForeignKeyConstraints();
         });
     }
