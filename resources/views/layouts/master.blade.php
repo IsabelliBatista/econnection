@@ -212,7 +212,7 @@
             </div>
             
             @if (Route::has('register'))
-            <button href="{{ route('register') }}" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</button>
+            <a href="{{ route('register') }}" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</a>
             @endif
             
             <div class="modal-footer">

@@ -18,10 +18,6 @@ class CreateTableVendedor extends Migration
             $table->string('razao_social');
             $table->string('nome_fantasia');
             $table->bigInteger('cnpj');
-            $table->string('telefone', 20);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
             $table->timestamps();
         });
     }
