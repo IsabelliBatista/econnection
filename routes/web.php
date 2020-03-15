@@ -58,3 +58,8 @@ Route::get('/checkout', function(){
 Route::get('/loja', function(){
     return view('loja');
 });
+
+
+Route::get('/cadastrarProdutos', function(){
+    return view('cadastrarProdutos');
+});

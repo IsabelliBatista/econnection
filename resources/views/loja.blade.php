@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-  eConnection - Produtos sustentáveis
+  Loja - eConnection
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
 <!-- Selecionar por categoria --> 
 <section class="container categorias">
     <form action="" >
-        <label for="categoria"><h2>Categoria</h2></label>
+        <label for="categoria" class="categoria"><h2>Categoria</h2></label>
         <select name="categoria" id="categoria" class="select-categ">
             <option value="Copo" class="select-categ">Copo</option>
             <option value="Toalha">Toalha</option>
@@ -22,7 +22,7 @@
         </select>
 
         <label for="marca"><h2>Marca</h2></label>
-        <select name="marca" id="marca">
+        <select name="marca" id="marca" class="">
             <option value="pazemgaia">Paz em Gaia</option>
             <option value="insecta">Insecta</option>
             <option value="ideiacrua">Ideia Crua</option>

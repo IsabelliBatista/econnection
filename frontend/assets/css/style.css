@@ -262,10 +262,11 @@ h5:hover {
 
 
 /*Categorias*/
-.categorias{
+label .categoria{
+  display: flex;
 }
-.select-categ{
-  width: 150px;
+select .select-categ{
+  width: 250px;
 
 }
 
