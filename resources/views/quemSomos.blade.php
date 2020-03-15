@@ -9,15 +9,15 @@
 <header class="header-somos">
     <article class="bg-header-somos"><h1 class="text-center container">Quem Somos</h1></article>
 
-<!-- CAMINHO DE PÁGINAS-->
-<div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
-        </ol>
-    </nav>
-</div>
+    <!-- CAMINHO DE PÁGINAS-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
+            </ol>
+        </nav>
+    </div>
 
     <section class="container">
         <h2 class="text-center">EConnection</h2>
