@@ -59,7 +59,10 @@ Route::get('/loja', function(){
     return view('loja');
 });
 
-
 Route::get('/cadastrarProdutos', function(){
     return view('cadastrarProdutos');
 });
+
+Route::get('/listarProdutos', function(){
+    return view('listarProdutos');
+}); 
