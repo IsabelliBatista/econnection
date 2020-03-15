@@ -260,6 +260,15 @@ h5:hover {
   text-decoration: none;
 }
 
+
+/*Categorias*/
+.categorias{
+}
+.select-categ{
+  width: 150px;
+
+}
+
 /* MEDIA QUERYS */
 @media only screen and (max-width: 900px) {
   .section-comprar {

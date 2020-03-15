@@ -55,3 +55,6 @@ Route::get('/checkout', function(){
     return view('checkout');
 });
 
+Route::get('/loja', function(){
+    return view('loja');
+});
