@@ -102,6 +102,22 @@ Route::middleware(['auth'])->group(function (){
     // Excluindo Produto
     Route::delete('/categoria/remover/{id}', 'CategoriaController@removendoCategoria');
 
+    
+
+
+    // Listar marcas
+    Route::get('/marcas', 'MarcaController@listandoMarcas')->name('marcas');
+
+    // Adicionar marca
+    Route::get('/marcas/adicionar', 'MarcaController@adicionandoMarca')->name('marcas-adicionar');
+    Route::post('/marcas/adicionar', 'MarcaController@salvandoMarca');
+
+    // Modificando marca
+    Route::get('/marcas/modificar/{id}', 'MarcaController@modificandoMarca');
+    Route::put('/marcas/modificar/{id}', 'MarcaController@alterandoMarca');
+
+    // Excluindo marca
+    Route::delete('/marcas/remover/{id}', 'MarcaController@removendoMarca');
 
 
 });

@@ -13,7 +13,7 @@ class ProdutosController extends Controller
     public function listandoProdutos(){
         $produtos = Produto::orderBy('id', 'ASC')->paginate(10);
 
-        return view('produto.listando')->with('produto', $produtos);
+        return view('produto.listarProdutos')->with('produto', $produtos);
     }
 
     public function listandoCatalogo(){
