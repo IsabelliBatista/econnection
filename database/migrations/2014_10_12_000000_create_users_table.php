@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->bigInteger('cpf');
             $table->string('telefone', 20);
             $table->date('data_nasc');
-            $table->string('sexo', 1);
+            $table->string('sexo');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -12,9 +12,9 @@
           <div class="card">
               <div class="card-body">
                 <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro:') }}</h2>
-                  <form method="POST" action="{{ route('register') }}">
+                  <form method="POST" action="/cadastrarUsuario">
                       @csrf
-
+                      {{ method_field('POST') }}
                       <div class="form-group row">
                           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome Completo:') }}</label>
 
@@ -91,7 +91,7 @@
                         <label for="dataNasc" class="col-md-4 col-form-label text-md-right">{{ __('Data de Nascimento:') }}</label>
 
                         <div class="col-md-6">
-                            <input id="dataNasc" type="date" class="form-control"  name="dataNasc" value="{{ old('dataNasc') }}" required autocomplete="dataNasc" autofocus>
+                            <input id="dataNasc" type="date" class="form-control"  name="dataNasc" value="{{ old('dataNasc') }}" autocomplete="dataNasc" autofocus>
                         </div>
                       </div>
 
