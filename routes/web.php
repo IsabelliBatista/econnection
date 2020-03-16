@@ -88,6 +88,17 @@ Route::middleware(['auth'])->group(function (){
     // Excluindo produto
     Route::delete('/produtos/remover/{id}', 'ProdutoController@removendoProduto');
 
+    // Listar Gêneros
+    Route::get('/categorias', 'CategoriaController@listandocategorias')->name('categorias');
+
+     // Adicionar Gênero
+    Route::get('/categorias/adicionar', 'CategoriaController@adicionandoCategoria')->name('categorias-adicionar');
+    Route::post('/categorias/adicionar', 'CategoriaController@salvandoCategoria');
+
+    // Modificando Gênero
+    Route::get('/categorias/modificar/{id}', 'CategoriaController@modificandoCategoria');
+    Route::put('/categorias/modificar/{id}', 'CategoriaController@alterandoCategoria');
+
     // Excluindo Produto
     Route::delete('/categoria/remover/{id}', 'CategoriaController@removendoCategoria');
 
