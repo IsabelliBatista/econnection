@@ -51,7 +51,7 @@
      -->
 
 
-    <form method="POST" action="/filmes/adicionar" enctype="multipart/form-data">
+    <form method="POST" action="/produtos/adicionar" enctype="multipart/form-data">
         @csrf
         {{ method_field('POST') }}
         <div class="form-group col-md-6 col-sm-12">
@@ -81,7 +81,7 @@
             <label for="categoria">Categoria</label>
             <select class="form-control{{$errors->has('categoria') ? ' is-invalid':''}}" name="categoria" id="categoria">
                 <option value="">Selecione um gênero</option>
-                @foreach ($categorias as $categoria)
+                @foreach ($errors as $categoria)
                     <option value="{{$categoria->id}}">{{$categoria->descricao}}</option>
                 @endforeach
             </select>
@@ -92,7 +92,7 @@
             <label for="marca">Marca</label>
             <select class="form-control{{$errors->has('marca') ? ' is-invalid':''}}" name="marca" id="marca">
                 <option value="">Selecione um protagonista</option>
-                @foreach ($marcaes as $marca)
+                @foreach ($marcas as $marca)
                     <option value="{{$marca->id}}">{{$marca->nome}}</option>
                 @endforeach
             </select>

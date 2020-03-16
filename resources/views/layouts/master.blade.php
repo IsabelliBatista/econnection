@@ -130,24 +130,9 @@
                 </div>
               </li>
               <li class="nav-item">
-                  <div class="dropdown">
-                    <a href="/parceiros" class="btn text-white text-uppercase">Casa</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <div class="dropdown">
-                    <a href="/parceiros" class="btn text-white text-uppercase">Cuidados</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <div class="dropdown">
-                    <a href="/parceiros" class="btn text-white text-uppercase">100 Plástico</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <div class="dropdown">
-                    <a href="/parceiros" class="btn text-white text-uppercase">Acessórios</a>
-                  </div>
+                <div class="dropdown">
+                  <a href="/loja" class="btn text-white text-uppercase">Comprar</a>
+                </div>
               </li>
             </ul>
           </div>
