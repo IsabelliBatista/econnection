@@ -211,9 +211,7 @@
               </div>
             </div>
             
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="btn btn-link btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#cadastro">Não possui cadastro? Cadastre-se!</a>
-            @endif
+            <a href="/cadastrarUsuario" class="btn btn-link btn-sm">Não possui cadastro? Cadastre-se!</a>
             
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
