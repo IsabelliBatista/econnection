@@ -20,52 +20,50 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/parceiros', function(){
-    return view('parceiros');
+    return view('institucional.parceiros');
 });
 
 Route::get('/quemsomos', function(){
-    return view('quemsomos');
+    return view('institucional.quemsomos');
 });
 
 Route::get('/politica', function(){
-    return view('politica');
+    return view('institucional.politica');
 });
 
 Route::get('/contato', function(){
-    return view('contato');
+    return view('institucional.contato');
 });
 
 Route::get('/faq', function(){
-    return view('faq');
+    return view('institucional.faq');
 });
 
 Route::get('/carrinho', function(){
-    return view('comprar');
+    return view('comprar.comprar');
 });
 
-Route::get('/contato', function(){
-    return view('contato');
-});
 
 Route::get('/comprar', function(){
-    return view('comprar');
+    return view('comprar.comprar');
 });
 
 Route::get('/checkout', function(){
-    return view('checkout');
+    return view('comprar.checkout');
 });
 
 Route::get('/loja', function(){
-    return view('loja');
+    return view('produto.loja');
 });
-
-Route::get('/produtos/cadastrarProdutos', function(){
-    return view('cadastrarProdutos');
+Route::get('/cadastrarProdutos', function(){
+    return view('produtos.cadastrarProdutos');
 });
 
 Route::get('/listarProdutos', function(){
     return view('listarProdutos');
 });
+
+
 
 // Cátalogo de Filmes
 Route::get('/catalogo', 'FilmeController@listandoCatalogo')->name('catalogo');
