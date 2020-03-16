@@ -59,14 +59,42 @@ Route::get('/loja', function(){
     return view('loja');
 });
 
-Route::get('/cadastrarProdutos', function(){
+Route::get('/produtos/cadastrarProdutos', function(){
     return view('cadastrarProdutos');
 });
 
 Route::get('/listarProdutos', function(){
     return view('listarProdutos');
-<<<<<<< HEAD
-}); 
-=======
 });
->>>>>>> fcd2c58584c003b4d8ff11b12444610a0e03a2dc
+
+// Cátalogo de Filmes
+Route::get('/catalogo', 'FilmeController@listandoCatalogo')->name('catalogo');
+Route::get('/catalogo/genero/{id}', 'GeneroController@listandoFilmesPorGenero');
+
+// Filtrar Filme
+Route::get('/filtrar-filmes', 'FilmeController@filtrarFilme')->name('search');
+
+// Usuários Logados
+Auth::routes();
+
+Route::middleware(['auth'])->group(function (){
+    // Listar Filmes
+    Route::get('/filmes', 'FilmeController@listandoFilmes')->name('filmes');
+
+    // Adicionar Filme
+    Route::get('/filmes/adicionar', 'FilmeController@adicionandoFilme')->name('filmes-adicionar');
+    Route::post('/filmes/adicionar', 'FilmeController@salvandoFilme');
+
+    // Modificando Filme
+    Route::get('/filmes/modificar/{id}', 'FilmeController@modificandoFilme');
+    Route::put('/filmes/modificar/{id}', 'FilmeController@alterandoFilme');
+
+    // Excluindo Filme
+    Route::delete('/filmes/remover/{id}', 'FilmeController@removendoFilme');
+
+    // Excluindo Filme
+    Route::delete('/generos/remover/{id}', 'GeneroController@removendoGenero');
+
+
+
+});

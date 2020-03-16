@@ -4,81 +4,115 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Produto;
+use App\Categoria;
+use App\Marca;
 
 class CadastrarProdutosController extends Controller
 {
-    public function index(){
-        $produtos = Produto::all();
+    public function listandoProdutos(){
+        $produtos = Produto::orderBy('id', 'ASC')->paginate(10);
 
-        return view('listarProdutos')->with('produtos', $produtos);
+        return view('produto.listando')->with('produto', $produtos);
     }
 
-    // retornando formulario para criar filmes
-    public function create(){
-        return view('cadastrarProdutos');
+    public function listandoCatalogo(){
+        $produtos = Produto::orderBy('titulo', 'ASC')->paginate(9);
+        $categorias = Categoria::all();
+
+        return view('catalogo')->with(['produtos' => $produtos, 'categorias' => $categorias]);
     }
 
-    // criando registro na tabela filmes
-    public function store(Request $request){
-        $request->validate([
-            'nome' => 'required',
-            'descricao' => 'required',
-            'preco' => 'required',
-            'marca' => 'required',
-            'imagem' => 'required',
-            'categoria' => 'required'
+    public function adicionandoProdutos(){
+        $marcas = Marca::orderBy('nome', 'ASC')->get();
+        $categorias = Categoria::orderBy('descricao', 'ASC')->get();
+
+        return view('produto.adicionando')->with(['marcas' => $marcas, 'categorias' => $categorias]);
+    }
+
+    public function salvandoProdutos(ProdutosRequest $request){
+        $request->all();
+
+        $arquivo = $request->file('imagem');
+        if (empty($arquivo)) {
+            $caminhoRelativo = null;
+        } else {
+            $arquivo->storePublicly('uploads');
+            $caminhoAbsoluto = public_path()."/storage/uploads";
+            $nomeArquivo = $arquivo->getClientOriginalName();
+            $caminhoRelativo = "storage/uploads/$nomeArquivo";
+            $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+        }
+
+        $produto = Produto::create([
+            "titulo" => $request->input('titulo'),
+            "sinopse" => $request->input('sinopse'),
+            "imagem" => $caminhoRelativo,
+            "categoria_id" => $request->input('categoria'),
+            "id_protagonista" => $request->input('marca')
         ]);
 
-        Produto::create([
-            'nome' => $request->input('nome'),
-            'descricao' => $request->input('descricao'),
-            'preco' => $request->input('preco'),
-            'marca' => $request->input('marca'),
-            'imagem' => 'caminho_imagem',
-            'categoria' => $request->input('categoria'),
-        ]);
+        $produto->save();
 
-        return redirect('/listarProdutos');
+        return redirect('/produtos');
     }
 
-    //retornando formulario para editar filmes
-    public function edit($id){
-        $produtos = Produto::find($id);
+    public function modificandoProdutos($id){
+        $produto = Produto::find($id);
 
-        return view('editaProduto')->with('produtos', $produtos);
+        $marcas = Marcas::orderBy('nome', 'ASC')->get();
+        $categorias = Categoria::orderBy('descricao', 'ASC')->get();
+
+        return view('produto.editando')->with(
+            ["produto" => $produto, "marcas" => $marcas, "categorias" => $categorias]
+        );
     }
 
-    // alterando filme
-    public function update(Request $request, $id){
-        $request->validate([
-            'nome' => 'required',
-            'descricao' => 'required',
-            'preco' => 'required',
-            'marca' => 'required',
-            'imagem' => 'required',
-            'categoria' => 'required'
-        ]);
+    public function alterandoProdutos(ProdutosRequest $request, $id){
+        $produto = Produto::find($id);
 
-        $produtos = Produto::find($id);
+        $request->all();
 
-        $produtos->nome = $request->input('nome');
-        $produtos->descricao = $request->input('descricao');
-        $produtos->preco = $request->input('preco');
-        $produtos->marca = $request->input('marca');
-        $produtos->imagem = $request->input('imagem');
-        $produtos->categoria = $request->input('categoria');
+        $arquivo = $request->file('imagem');
+        if (empty($arquivo)) {
+            $caminhoRelativo = $produto->imagem;
+        } else {
+            $arquivo->storePublicly('uploads');
+            $caminhoAbsoluto = public_path()."/storage/uploads";
+            $nomeArquivo = $arquivo->getClientOriginalName();
+            $caminhoRelativo = "storage/uploads/$nomeArquivo";
+            $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+        }
 
-        $produtos->save();
+        $produto->titulo = $request->input('titulo');
+        $produto->sinopse = $request->input('sinopse');
+        $produto->imagem = $caminhoRelativo;
+        $produto->id_protagonista = $request->input('marcas');
+        $produto->categoria_id = $request->input('categoria');
 
-        return redirect('/listarProdutos');
+        $produto->save();
+
+        return redirect('/produtos');
     }
- 
-    // excluindo filme
-    public function delete($id){
-        $produtos = Produto::find($id);
 
-        $cadastrarprodutos->delete();
+    public function removendoProduto($id){
+        $produto = Produto::find($id);
 
-        return redirect('/listarProdutos');
-    }    
+        $produto->delete();
+
+        return redirect('/produtos');
+    }
+
+    public function filtrarProdutos(Request $request){
+        $categorias = Categoria::all();
+
+        $search = $request->input('search');
+
+        $produtos = Produto::
+              where('titulo', 'like', '%'.$search.'%')
+              ->orWhere('sinopse', 'like', '%'.$search.'%')
+              ->paginate(9);
+
+        return view('catalogo')->with(['produtos' => $produtos, 'search' => $search, 'categorias' => $categorias]);
+    }
 }
