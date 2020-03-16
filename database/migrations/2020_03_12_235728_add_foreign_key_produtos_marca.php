@@ -15,7 +15,6 @@ class AddForeignKeyProdutosMarca extends Migration
     {
         Schema::table('produtos', function (Blueprint $table) {
             $table->unsignedBigInteger('marca_id');
-
             $table->foreign('marca_id')->references('id')->on('marca');
         });
     }

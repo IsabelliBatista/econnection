@@ -65,8 +65,4 @@ Route::get('/cadastrarProdutos', function(){
 
 Route::get('/listarProdutos', function(){
     return view('listarProdutos');
-<<<<<<< HEAD
 }); 
-=======
-});
->>>>>>> fcd2c58584c003b4d8ff11b12444610a0e03a2dc

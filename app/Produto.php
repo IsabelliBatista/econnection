@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Marca;
+use App\Categoria;
 
 class Produto extends Model
 {
@@ -13,10 +15,10 @@ class Produto extends Model
     ];
 
     public function categoria(){
-        return $this->hasOne('App\Categoria', 'id', 'categoria_id');
+        return $this->hasOne(Categoria::class, 'id', 'categoria_id');
     }
 
     public function marca(){
-        return $this->hasOne('App\Marca', 'id', 'marca_id');
+        return $this->hasOne(Marca::class, 'id', 'marca_id');
     }
 }
