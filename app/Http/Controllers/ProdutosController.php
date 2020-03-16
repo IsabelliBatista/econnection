@@ -24,10 +24,6 @@ class ProdutosController extends Controller
     }
 
     public function adicionandoProdutos(Request $request){
-        $request->validate([
-            'nome'=>'required,string,min:10,max:255',
-            
-        ]);
         $produto = new Produto;
         $produto = $request->all();
         $marcas = Marca::orderBy('nome', 'ASC')->get();
