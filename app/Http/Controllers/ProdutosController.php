@@ -23,7 +23,13 @@ class ProdutosController extends Controller
         return view('catalogo')->with(['produtos' => $produtos, 'categorias' => $categorias]);
     }
 
-    public function adicionandoProdutos(){
+    public function adicionandoProdutos(Request $request){
+        $request->validate([
+            'nome'=>'required,string,min:10,max:255',
+            
+        ]);
+        $produto = new Produto;
+        $produto = $request->all();
         $marcas = Marca::orderBy('nome', 'ASC')->get();
         $categorias = Categoria::orderBy('descricao', 'ASC')->get();
 

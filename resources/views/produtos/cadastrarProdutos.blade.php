@@ -89,14 +89,7 @@
         </div>
 
         <div class="form-group col-md-6 col-sm-12">
-            <label for="marca">Marca</label>
-            <select class="form-control{{$errors->has('marca') ? ' is-invalid':''}}" name="marca" id="marca">
-                <option value="">Selecione um protagonista</option>
-                @foreach ($marcas as $marca)
-                    <option value="{{$marca->id}}">{{$marca->nome}}</option>
-                @endforeach
-            </select>
-            <div class="invalid-feedback">{{ $errors->first('marca') }}</div>
+           
         </div>
 
         <div class="form-group col-md-2">

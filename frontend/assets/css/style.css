@@ -53,6 +53,7 @@ h5:hover {
 }
 
 .main-somos-h5 {
+  margin: 30px;
   font-size: 30px;
   font-family: Montserrat;
   text-transform: uppercase;
@@ -269,6 +270,17 @@ select .select-categ{
   width: 250px;
 
 }
+/*Card*/
+#image-card{
+  width: 200px;
+}
+#image-card:hover{
+  width: 150px;
+}
+
+
+
+
 
 /* MEDIA QUERYS */
 @media only screen and (max-width: 900px) {
