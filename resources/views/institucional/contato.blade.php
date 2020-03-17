@@ -8,7 +8,7 @@
 <article class="bg-header-somos"><h1 class="text-center container">Contato</h1></article>
 <div class="container">
     <h2 class="text-center mt-5 mb-5">Fale Conosco</h2>
-    <p class="text-center">Talvez a gente já tenha a resposta pra sua pergunta. <a href="FAQ.php">Dá uma olhadinha aqui.</a></p>
+    <p class="text-center">Talvez a gente já tenha a resposta pra sua pergunta. <a href="/faq">Dá uma olhadinha aqui.</a></p>
     <form class=" col-7 m-auto">
       <div class="form-group">
         <label for="exampleFormControlInput1">Nome</label>

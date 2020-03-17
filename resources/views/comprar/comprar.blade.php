@@ -139,7 +139,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
