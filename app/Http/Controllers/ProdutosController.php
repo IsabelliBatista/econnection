@@ -127,8 +127,8 @@ class ProdutosController extends Controller
             'description' => $request->input('description'),
             'price' => $request->input('price'),
             'image' => $request->input('image'),
-            'brand' => $request->input('brand'),    
-            'category' => $request->input('category')
+            'marca_id' => $request->input('marca'),    
+            'categoria_id' => $request->input('category')
         ]);
 
         $produtos->save();

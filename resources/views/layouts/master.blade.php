@@ -131,7 +131,7 @@
               </li>
               <li class="nav-item">
                 <div class="dropdown">
-                  <a href="/loja" class="btn text-white text-uppercase">Comprar</a>
+                  <a href="/loja" class="btn text-white text-uppercase">Loja</a>
                 </div>
               </li>
             </ul>

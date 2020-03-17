@@ -72,32 +72,32 @@
                       </div>
 
                       <div class="form-group row">
-                          <label for="brand" class="col-md-4 col-form-label text-md-right">{{ __('Marca:') }}</label>
+                          <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('Marca:') }}</label>
 
                           <div class="col-md-7">
-                              <input id="brand" type="text" class="form-control @error('brand') is-invalid @enderror" name="brand" required autocomplete="new-brand">
+                              <input id="marca" type="text" class="form-control @error('marca') is-invalid @enderror" name="marca" required autocomplete="new-marca">
 
-                              @error('brand')
+                              @error('marca')
                                   <span class="invalid-feedback" role="alert">
                                       <strong>{{ $message }}</strong>
                                   </span>
                               @enderror
                           </div>
                       </div>
-
+                
                         <div class="form-group row">
                             <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('Categoria:') }}</label>
 
                             <div class="col-md-7">
                                 <select id="category" class="form-control" name="category" value="{{ old('category') }}" required autocomplete="category" autofocus>
                                     <option selected>Selecione a Categoria</option>
-                                    <option>Copo</option>
-                                    <option>Absorvente</option>
-                                    <option>Cabelo</option>
-                                    <option>Canudo</option>
-                                    <option>Dental</option>
-                                    <option>Sabonete</option>
-                                    <option>Toalha</option>
+                                    <option value="1">Copo</option>
+                                    <option value="2">Absorvente</option>
+                                    <option value="3">Cabelo</option>
+                                    <option value="4">Canudo</option>
+                                    <option value="5">Dental</option>
+                                    <option value="6">Sabonete</option>
+                                    <option value="7">Toalha</option>
                                 </select>
                             </div>
                         </div>
