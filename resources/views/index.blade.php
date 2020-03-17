@@ -77,7 +77,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@
         <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
         <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@
         <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
