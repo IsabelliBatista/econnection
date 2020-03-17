@@ -1,6 +1,6 @@
 # eConnection
 
-eConnetion é um marketplace para venda de produtos sustentáveis, onde os clientes podem comprar produtos de pequenos produtores da sua região.
+eConnetion é um ecommerce para venda de produtos sustentáveis, onde os clientes podem comprar produtos de pequenos produtores da sua região.
 
 Aplicação desenvolvida durante o curso de Desenvolvimento Web Full Stack na Digital House. Visando integrar todo o conteúdo aprendido durante as aulas. Usando Laravel 6.
 
