@@ -12,7 +12,7 @@
           <div class="card">
               <div class="card-body">
                 <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro:') }}</h2>
-                  <form method="POST" action={{ route('register') }}>
+                  <form method="POST" action="/cadastrarUsuario">
                       @csrf
                       {{ method_field('POST') }}
                       <div class="form-group row">

@@ -63,6 +63,7 @@ Route::get('/loja', function(){
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
+
 Route::post('/cadastrarUsuario', 'UserController@create')->name('user');
 
 

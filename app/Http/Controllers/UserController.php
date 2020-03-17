@@ -66,34 +66,36 @@ class UserController extends Controller
      * @return \App\User
      */
     
-    protected function create(array $data)
+    protected function create(Request $request)
     {
 
         $user = User::create([
-            'name' => $data->input('name'),
-            'email' => $data->input('email'),
-            'password' => Hash::make($data->input('password')),
-            'cpf' => $data->input('cpf'),
-            'telefone' => $data->input('telefone'),
-            'data_nasc' => $data->input('dataNasc'),
-            'sexo' => $data->input('sexo'),
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => Hash::make($request->input('password')),
+            'cpf' => $request->input('cpf'),
+            'telefone' => $request->input('telefone'),
+            'data_nasc' => $request->input('dataNasc'),
+            'sexo' => $request->input('sexo'),
         ]);
-
+        
         $user->save();
 
         $endereco = Endereco::create([
-            'rua' => $data->input('rua'),
-            'numero' => $data->input('numero'),
-            'bairro' => $data->input('bairro'),
-            'cidade' => $data->input('cidade'),
-            'cep' => $data->input('cep'),
-            'complemento' => $data->input('complemento'),
+            'rua' => $request->input('rua'),
+            'numero' => $request->input('numero'),
+            'bairro' => $request->input('bairro'),
+            'cidade' => $request->input('cidade'),
+            'cep' => $request->input('cep'),
+            'complemento' => $request->input('complemento'),
             'user_id' => $user->id,
         ]);
         
        $endereco->save();
 
-       return $user;
+       auth()->login($user);
+
+       return redirect()->to('/home');
 
     }
 }
