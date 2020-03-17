@@ -12,7 +12,7 @@
       <!-- CAMINHO DE PÁGINAS-->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
           </ol>
         </nav>
@@ -139,7 +139,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="/comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>

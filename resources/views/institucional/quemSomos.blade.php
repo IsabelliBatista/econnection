@@ -13,7 +13,7 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
             </ol>
         </nav>
@@ -29,7 +29,7 @@
 <main class="mt-5 main-somos">
     <article class="">
         <div class="container d-flex">
-            <h5 class="main-somos-h5">Objetivos</h5>
+            <h5 class="main-somos-h5 m-5">Objetivos</h5>
             <div class="barra"></div>
             <div class="barra2"></div>
             <p class="align-self-center">Lorem Ipsum é simplesmente bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao</p>

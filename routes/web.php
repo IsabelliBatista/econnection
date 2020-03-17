@@ -69,7 +69,7 @@ Route::post('/cadastrarUsuario', 'UserController@create')->name('user');
 Route::get('/cadastrarProdutos', function(){
     return view('produtos.cadastrarProdutos');
 });
-Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('home');
+Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
 
 // // Cátalogo de Produtos
