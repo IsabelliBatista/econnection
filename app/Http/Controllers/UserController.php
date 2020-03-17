@@ -7,47 +7,94 @@ use App\Endereco;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
+
 
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    
-    protected function create(Request $request)
+        /*
+    |--------------------------------------------------------------------------
+    | Register Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles the registration of new users as well as their
+    | validation and creation. By default this controller uses a trait to
+    | provide this functionality without requiring any additional code.
+    |
+    */
+
+    use RegistersUsers;
+
+    /**
+     * Where to redirect users after registration.
+     *
+     * @var string
+     */
+    protected $redirectTo = '/home';
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        // $request->validate([
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        //     'password' => ['required', 'string', 'min:8', 'confirmed'],
-        // ]);
+        $this->middleware('guest');
+    }
+
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @param  array  $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+    }
+
+    /**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array  $data
+     * @return \App\User
+     */
+    
+    protected function create(array $data)
+    {
+
         $user = User::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'password' => Hash::make($request->input('password')),
-            'cpf' => $request->input('cpf'),
-            'telefone' => $request->input('telefone'),
-            'data_nasc' => '2020-02-02',
-            //'data_nasc' => $request->input('data_nasc'),
-            'sexo' => $request->input('sexo'),
+            'name' => $data->input('name'),
+            'email' => $data->input('email'),
+            'password' => Hash::make($data->input('password')),
+            'cpf' => $data->input('cpf'),
+            'telefone' => $data->input('telefone'),
+            'data_nasc' => $data->input('dataNasc'),
+            'sexo' => $data->input('sexo'),
         ]);
 
         $user->save();
 
         $endereco = Endereco::create([
-            'rua' => $request->input('rua'),
-            'numero' => $request->input('numero'),
-            'bairro' => $request->input('bairro'),
-            'cidade' => $request->input('cidade'),
-            'cep' => $request->input('cep'),
-            'complemento' => 'complemento teste',
-            'user_id' => 1
+            'rua' => $data->input('rua'),
+            'numero' => $data->input('numero'),
+            'bairro' => $data->input('bairro'),
+            'cidade' => $data->input('cidade'),
+            'cep' => $data->input('cep'),
+            'complemento' => $data->input('complemento'),
+            'user_id' => $user->id,
         ]);
         
        $endereco->save();
 
+       return $user;
 
-
-        return redirect('/home');
     }
 }
 

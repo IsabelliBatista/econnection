@@ -17,12 +17,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'cpf', 'telefone', 'data_nasc', 'sexo', 'endereco_id'
+        'name', 'email', 'password', 'cpf', 'telefone', 'data_nasc', 
     ];
-
-    public function endereco(){
-        return $this->hasMany(Endereco::class, 'id', 'endereco_id');
-    }
 
 
     /**

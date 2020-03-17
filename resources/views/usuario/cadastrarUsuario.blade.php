@@ -12,7 +12,7 @@
           <div class="card">
               <div class="card-body">
                 <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro:') }}</h2>
-                  <form method="POST" action="/cadastrarUsuario">
+                  <form method="POST" action={{ route('register') }}>
                       @csrf
                       {{ method_field('POST') }}
                       <div class="form-group row">
@@ -83,7 +83,7 @@
                         <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone:') }}</label>
 
                         <div class="col-md-6">
-                            <input id="telefone" type="phone" class="form-control"  name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" autofocus>
+                            <input id="telefone" type="text" class="form-control"  name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" autofocus>
                         </div>
                       </div>
 
@@ -103,7 +103,16 @@
                                     <option selected>Selecione seu Gênero</option>
                                     <option>Feminino</option>
                                     <option>Masculino</option>
+                                    <option>Não Binário</option>
                                 </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="complemento" class="col-md-4 col-form-label text-md-right">{{ __('Complemento:') }}</label>
+    
+                            <div class="col-md-6">
+                                <input id="complemento" type="text" class="form-control"  name="complemento" value="{{ old('complemento') }}" required autocomplete="complemento" autofocus>
                             </div>
                         </div>
 
