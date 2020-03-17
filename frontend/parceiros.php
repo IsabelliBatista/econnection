@@ -19,7 +19,7 @@
     </div>
     <section class="container mt-5 ">
         <div>
-            <p class="text-center">Somos um Marketplace de empresas sustentáveis</p>
+            <p class="text-center">Somos um Ecommerce de empresas sustentáveis</p>
         </div>
         <div class="row row-cols-1 row-cols-md-3">
           <div class="col mb-4">
@@ -27,7 +27,7 @@
               <img src="assets/img/Parceiro1.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
               <img src="assets/img/Parceiro2.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
               <img src="assets/img/Parceiro3.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
               <img src="assets/img/Parceiro1.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
               <img src="assets/img/Parceiro2.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
               <img src="assets/img/Parceiro3.jpg" class="card-img-top" alt="Canudo" width="300" height="200">
               <div class="card-body">
                 <h5 class="card-title">Produto</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
               </div>
             </div>
           </div>

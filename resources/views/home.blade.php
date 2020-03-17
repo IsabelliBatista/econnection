@@ -36,8 +36,8 @@
     <div class="card border-light h-100">
       <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" id="image-card">
       <div class="card-body">
-        <h5 class="card-title">Marketplace</h5>
-        <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+        <h5 class="card-title">Ecommerce</h5>
+        <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
       </div>
     </div>
   </div>
