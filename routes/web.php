@@ -55,13 +55,10 @@ Route::get('/checkout', function(){
 Route::get('/loja', function(){
     return view('produtos.loja');
 });
-Route::get('/cadastrarProdutos', function(){
-    return view('produtos.cadastrarProdutos');
-});
 
-Route::get('/listarProdutos', function(){
-    return view('produtos.listarProdutos');
-});
+// Route::get('/listarProdutos', function(){
+//     return view('produtos.listarProdutos');
+// });
 
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
@@ -69,60 +66,65 @@ Route::get('/cadastrarUsuario', function(){
 Route::post('/cadastrarUsuario', 'UserController@create')->name('user');
 
 
-
-// Cátalogo de Produtos
-Route::get('/catalogo', 'ProdutosController@listandoCatalogo')->name('catalogo');
-Route::get('/catalogo/categoria/{id}', 'CategoriaController@listandoProdutoPorCategoria');
-
-// Filtrar Produto
-Route::get('/filtrar-produtos', 'ProdutosController@filtrarProduto')->name('search');
+Route::get('/cadastrarProdutos', function(){
+    return view('produtos.cadastrarProdutos');
+});
+Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('home');
 
 
-Route::middleware(['auth'])->group(function (){
-    // Listar Produtos
-    Route::get('/produtos', 'ProdutosController@listarProdutos')->name('produtos');
+// // Cátalogo de Produtos
+// Route::get('/catalogo', 'ProdutosController@listandoCatalogo')->name('catalogo');
+// Route::get('/catalogo/categoria/{id}', 'CategoriaController@listandoProdutoPorCategoria');
 
-    // Adicionar Produto
-    Route::get('/produtos/adicionar', 'ProdutosController@cadastrarProdutos')->name('produtos-adicionar');
-    Route::post('/produtos/adicionar', 'ProdutosController@salvandoProduto');
+// // Filtrar Produto
+// Route::get('/filtrar-produtos', 'ProdutosController@filtrarProduto')->name('search');
 
-    // Modificando produto
-    Route::get('/produtos/modificar/{id}', 'ProdutosController@modificandoProduto');
-    Route::put('/produtos/modificar/{id}', 'ProdutosController@alterandoProduto');
 
-    // Excluindo produto
-    Route::delete('/produtos/remover/{id}', 'ProdutoController@removendoProduto');
+// Route::middleware(['auth'])->group(function (){
+//     // Listar Produtos
+//     Route::get('/produtos', 'ProdutosController@listarProdutos')->name('produtos');
 
-    // Listar Gêneros
-    Route::get('/categorias', 'CategoriaController@listandocategorias')->name('categorias');
+//     // Adicionar Produto
+//     Route::get('/produtos/adicionar', 'ProdutosController@cadastrarProdutos')->name('produtos-adicionar');
+//     Route::post('/produtos/adicionar', 'ProdutosController@salvandoProduto');
 
-     // Adicionar Gênero
-    Route::get('/categorias/adicionar', 'CategoriaController@adicionandoCategoria')->name('categorias-adicionar');
-    Route::post('/categorias/adicionar', 'CategoriaController@salvandoCategoria');
+//     // Modificando produto
+//     Route::get('/produtos/modificar/{id}', 'ProdutosController@modificandoProduto');
+//     Route::put('/produtos/modificar/{id}', 'ProdutosController@alterandoProduto');
 
-    // Modificando Gênero
-    Route::get('/categorias/modificar/{id}', 'CategoriaController@modificandoCategoria');
-    Route::put('/categorias/modificar/{id}', 'CategoriaController@alterandoCategoria');
+//     // Excluindo produto
+//     Route::delete('/produtos/remover/{id}', 'ProdutoController@removendoProduto');
 
-    // Excluindo Produto
-    Route::delete('/categoria/remover/{id}', 'CategoriaController@removendoCategoria');
+//     // Listar Gêneros
+//     Route::get('/categorias', 'CategoriaController@listandocategorias')->name('categorias');
+
+//      // Adicionar Gênero
+//     Route::get('/categorias/adicionar', 'CategoriaController@adicionandoCategoria')->name('categorias-adicionar');
+//     Route::post('/categorias/adicionar', 'CategoriaController@salvandoCategoria');
+
+//     // Modificando Gênero
+//     Route::get('/categorias/modificar/{id}', 'CategoriaController@modificandoCategoria');
+//     Route::put('/categorias/modificar/{id}', 'CategoriaController@alterandoCategoria');
+
+//     // Excluindo Produto
+//     Route::delete('/categoria/remover/{id}', 'CategoriaController@removendoCategoria');
 
     
 
 
-    // Listar marcas
-    Route::get('/marcas', 'MarcaController@listandoMarcas')->name('marcas');
+//     // Listar marcas
+//     Route::get('/marcas', 'MarcaController@listandoMarcas')->name('marcas');
 
-    // Adicionar marca
-    Route::get('/marcas/adicionar', 'MarcaController@adicionandoMarca')->name('marcas-adicionar');
-    Route::post('/marcas/adicionar', 'MarcaController@salvandoMarca');
+//     // Adicionar marca
+//     Route::get('/marcas/adicionar', 'MarcaController@adicionandoMarca')->name('marcas-adicionar');
+//     Route::post('/marcas/adicionar', 'MarcaController@salvandoMarca');
 
-    // Modificando marca
-    Route::get('/marcas/modificar/{id}', 'MarcaController@modificandoMarca');
-    Route::put('/marcas/modificar/{id}', 'MarcaController@alterandoMarca');
+//     // Modificando marca
+//     Route::get('/marcas/modificar/{id}', 'MarcaController@modificandoMarca');
+//     Route::put('/marcas/modificar/{id}', 'MarcaController@alterandoMarca');
 
-    // Excluindo marca
-    Route::delete('/marcas/remover/{id}', 'MarcaController@removendoMarca');
+//     // Excluindo marca
+//     Route::delete('/marcas/remover/{id}', 'MarcaController@removendoMarca');
 
 
-});
+// });
