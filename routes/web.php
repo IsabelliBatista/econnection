@@ -56,22 +56,27 @@ Route::get('/loja', function(){
     return view('produtos.loja');
 });
 
-// Route::get('/listarProdutos', function(){
-//     return view('produtos.listarProdutos');
-// });
-
+// Rotas dos Usuarios 
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
 
-Route::post('/cadastrarUsuario', 'UserController@create')->name('user');
+Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
+Route::get('/listarUsuario', function(){
+    return view('usuario.listarUsuario');
+});
+
+// Rotas dos Produtos
 
 Route::get('/cadastrarProdutos', function(){
     return view('produtos.cadastrarProdutos');
 });
 Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
+// Route::get('/listarProdutos', function(){
+//     return view('produtos.listarProdutos');
+// });
 
 // // Cátalogo de Produtos
 // Route::get('/catalogo', 'ProdutosController@listandoCatalogo')->name('catalogo');

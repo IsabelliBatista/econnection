@@ -106,9 +106,9 @@
                             <div class="col-md-7">
                                 <select id="marca" class="form-control" name="marca" value="{{ old('marca') }}" required autocomplete="marca" autofocus>
                                     <option selected>Selecione a Marca</option>
-                                    <option value="marca" name="marca">Eco</option>
-                                    <option value="marca" name="marca">livre</option>
-                                    <option value="marca" name="marca">Cabelo</option>
+                                    <option value="1" name="marca">Eco</option>
+                                    <option value="2" name="marca">livre</option>
+                                    <option value="3" name="marca">Cabelo</option>
                                     <option value="4">Canudo</option>
                                     <option value="5">Dental</option>
                                     <option value="6">Sabonete</option>
