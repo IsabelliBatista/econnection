@@ -67,12 +67,12 @@
     {{-- Barra do topo --}}
     <div class="container-md d-flex justify-content-between mt-1 mb-1 div-header-itens">
       <div>
-        <a class="logo-nav" href="index.php">
+        <a class="logo-nav col-12-sm" href="index.php">
           <img src="{{ asset('img/logo.png') }}" href="{{ url('/') }}" alt="Logo eConnection">
         </a>
       </div>
-      <div class="icons-nav">
-        <form class="form-inline">
+      <div class="icons-nav col-12-sm">
+        <form class="form-inline col-12-sm">
           <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
           <button class="btn" type="submit"><i class="fas fa-search"></i></button>
         </form>
@@ -109,7 +109,7 @@
     {{-- Menu de navegação --}}
       <div>
         <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
           <div class="collapse navbar-collapse justify-content-center" aria-controls="navbarSupportedContent"  id="navbarNav">
