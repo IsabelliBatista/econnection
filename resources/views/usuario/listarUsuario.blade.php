@@ -14,14 +14,14 @@
     </nav>
     <div class="card-body">
       <h2 class="card-title text-xl-center p-2">{{ __('Dados Cadastrados:') }}</h2>
-      <form method="POST" action="/alterandoUsuario">
+      <form method="POST" action="/listar/usuario">
         @csrf
         {{ method_field('POST') }}
         <div class="form-group row">
           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome Completo:') }}</label>
 
           <div class="col-md-6">
-            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="" required autocomplete="name" autofocus>
 
             @error('name')
               <span class="invalid-feedback" role="alert">

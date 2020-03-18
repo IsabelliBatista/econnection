@@ -67,7 +67,7 @@
     {{-- Barra do topo --}}
     <div class="container-md d-flex justify-content-between mt-1 mb-1 div-header-itens">
       <div>
-        <a class="logo-nav col-12-sm" href="index.php">
+        <a class="logo-nav col-12-sm">
           <img src="{{ asset('img/logo.png') }}" href="{{ url('/') }}" alt="Logo eConnection">
         </a>
       </div>
