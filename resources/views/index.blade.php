@@ -71,6 +71,28 @@
   {{-- Primeira seção de produtos --}}
   <section class="container mt-5 mb-5">
     <div class="row row-cols-1 row-cols-md-3">
+    <?php
+      for($i =1; $i < 4; $i++){
+      
+    ?>
+      <div class="col mb-4">
+        <div class="card border-light h-100 text-center">
+          <img id="teste" src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
+          <div class="card-body">
+            <h5 class="card-title">Produto</h5>¢
+            <p class="card-text txt-preco">R$ 10,00</p>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+    <?php    
+      }
+    ?>
+    </div>
+  </section>
+  <!--  
+  <section class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
         <div class="card border-light h-100 text-center">
           <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">

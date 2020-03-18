@@ -56,7 +56,7 @@ Route::get('/loja', function(){
     return view('produtos.loja');
 });
 
-Route::get('/final/Compras', function(){
+Route::get('/finalCompras', function(){
     return view('comprar.finalCompras');
 });
 

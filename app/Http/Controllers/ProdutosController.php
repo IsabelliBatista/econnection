@@ -23,7 +23,7 @@ class ProdutosController extends Controller
     
         $produtos->save();
 
-        return redirect('/home');
+        return redirect('/cadastrarProdutos');
     }
 
     public function update(Request $request)
