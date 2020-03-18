@@ -79,7 +79,7 @@
         <div class="card border-light h-100 text-center">
           <img id="teste" src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
-            <h5 class="card-title">Produto</h5>¢
+            <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
             <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
