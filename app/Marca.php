@@ -10,7 +10,7 @@ class Marca extends Model
     protected $table = 'marca';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'nome'
+        'name'
     ];
 
     public function produto(){
