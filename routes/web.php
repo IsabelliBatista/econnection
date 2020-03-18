@@ -82,7 +82,7 @@ Route::get('/adicionando', function(){
 Route::post('/adicionando', 'MarcasController@create')->name('adicionando');
 
 
-Route::get('/listarUsuario', function(){
+Route::get('/listar/usuario', function(){
     return view('usuario.listarUsuario');
 });
 

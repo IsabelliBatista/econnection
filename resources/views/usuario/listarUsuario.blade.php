@@ -7,7 +7,7 @@
 @section('content')    
   <div class="container">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb mb-5 ">
+      <ol class="breadcrumb mb-1 ">
         <li class="breadcrumb-item"><a href="/index">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Perfil</li>
       </ol>
