@@ -13,7 +13,7 @@
       </ol>
     </nav>
     <div class="card-body">
-      <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro:') }}</h2>
+      <h2 class="card-title text-xl-center p-2">{{ __('Dados Cadastrados:') }}</h2>
       <form method="POST" action="/alterandoUsuario">
         @csrf
         {{ method_field('POST') }}

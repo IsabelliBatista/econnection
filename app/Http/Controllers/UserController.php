@@ -101,32 +101,32 @@ class UserController extends Controller
 
     public function alterandoUsuario(Request $request, $id){
         
-        $user = User::find($id);
+        // $user = User::find($id);
 
-        $request->all();
+        // $request->all();
 
-        $user->name => $request->input('name');
-        $user->password => Hash::make($request->input('password'));
-        $user->telefone => $request->input('telefone');
-        $user->data_nasc => $request->input('dataNasc');
-        $user->sexo => $request->input('sexo');
+        // $user->name => $request->input('name');
+        // $user->password => Hash::make($request->input('password'));
+        // $user->telefone => $request->input('telefone');
+        // $user->data_nasc => $request->input('dataNasc');
+        // $user->sexo => $request->input('sexo');
 
-        $user->save();
+        // $user->save();
 
-        $endereco = Endereco::find($id)
+        $endereco = Endereco::whereIn('user_id', $id);
 
-        $endereco->rua => $request->input('rua'),
-        $endereco->numero => $request->input('numero'),
-        $endereco->bairro => $request->input('bairro'),
-        $endereco->cidade => $request->input('cidade'),
-        $endereco->cep => $request->input('cep'),
-        $endereco->complemento => $request->input('complemento'),
-        $endereco->user_id => $user->id,
+        // $endereco->rua => $request->input('rua'),
+        // $endereco->numero => $request->input('numero'),
+        // $endereco->bairro => $request->input('bairro'),
+        // $endereco->cidade => $request->input('cidade'),
+        // $endereco->cep => $request->input('cep'),
+        // $endereco->complemento => $request->input('complemento'),
+        // $endereco->user_id => $user->id,
 
+        dd($endereco);
+        // $endereco->save();
         
-        $endereco->save();
-        
-        auth()->login($user);
+        // auth()->login($user);
         
         return redirect()->to('/home');
     }
