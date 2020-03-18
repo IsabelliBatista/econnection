@@ -82,7 +82,7 @@
                     </div>
                   </div>
               </div>
-              <a href="#" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
+              <a href="/checkout" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
           </div>
       </section>
   </div> 
