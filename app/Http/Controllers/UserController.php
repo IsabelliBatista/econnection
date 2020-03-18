@@ -98,5 +98,37 @@ class UserController extends Controller
        return redirect()->to('/home');
 
     }
+
+    public function alterandoUsuario(Request $request, $id){
+        
+        $user = User::find($id);
+
+        $request->all();
+
+        $user->name => $request->input('name');
+        $user->password => Hash::make($request->input('password'));
+        $user->telefone => $request->input('telefone');
+        $user->data_nasc => $request->input('dataNasc');
+        $user->sexo => $request->input('sexo');
+
+        $user->save();
+
+        $endereco = Endereco::find($id)
+
+        $endereco->rua => $request->input('rua'),
+        $endereco->numero => $request->input('numero'),
+        $endereco->bairro => $request->input('bairro'),
+        $endereco->cidade => $request->input('cidade'),
+        $endereco->cep => $request->input('cep'),
+        $endereco->complemento => $request->input('complemento'),
+        $endereco->user_id => $user->id,
+
+        
+        $endereco->save();
+        
+        auth()->login($user);
+        
+        return redirect()->to('/home');
+    }
 }
 

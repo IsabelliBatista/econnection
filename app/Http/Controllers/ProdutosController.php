@@ -20,8 +20,7 @@ class ProdutosController extends Controller
             'marca_id' => $request->input('marca'),    
             'categoria_id' => $request->input('category')
         ]);
-            
-        // dd($produtos);
+    
         $produtos->save();
 
         return redirect('/home');

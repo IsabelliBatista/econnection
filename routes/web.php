@@ -56,24 +56,28 @@ Route::get('/loja', function(){
     return view('produtos.loja');
 });
 
-Route::get('/finalCompras', function(){
+Route::get('/final/Compras', function(){
     return view('comprar.finalCompras');
 });
 
+//Rotas do Usuario
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
 
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
-Route::get('/listarUsuario', function(){
+Route::get('/listar/usuario', function(){
     return view('usuario.listarUsuario');
 });
+
+Route::post('/listar/Usuario', 'UserController@alterandoUsuario')->name('alterandoUsuario');
+
+
 
 // Rotas dos Produtos
 
 Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
-// return view('produtos.cadastrarProdutos');
 
 Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
