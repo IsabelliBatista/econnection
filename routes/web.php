@@ -73,6 +73,13 @@ Route::get('/adicionando', function(){
 
 Route::post('/adicionando', 'CategoriasController@create')->name('adicionando');
 
+//add marca
+Route::get('/adicionando', function(){
+    return view('marcas.adicionando');
+});
+
+Route::post('/adicionando', 'MarcasController@create')->name('adicionando');
+
 
 Route::get('/listarUsuario', function(){
     return view('usuario.listarUsuario');
