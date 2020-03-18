@@ -16,6 +16,6 @@ class CategoriasController extends Controller
 
         $category->save();
 
-        return redirect('/home');
+        return redirect('/adicionandoC');
     }
 }

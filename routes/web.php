@@ -68,18 +68,18 @@ Route::get('/cadastrarUsuario', function(){
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
 //add categoria
-Route::get('/adicionando', function(){
-    return view('categorias.adicionando');
+Route::get('/adicionandoC', function(){
+    return view('categorias.adicionandoC');
 });
 
-Route::post('/adicionando', 'CategoriasController@create')->name('adicionando');
+Route::post('/adicionandoC', 'CategoriasController@create')->name('adicionandoC');
 
 //add marca
-Route::get('/adicionando', function(){
-    return view('marcas.adicionando');
+Route::get('/adicionandoM', function(){
+    return view('marcas.adicionandoM');
 });
 
-Route::post('/adicionando', 'MarcasController@create')->name('adicionando');
+Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
 
 
 Route::get('/listarUsuario', function(){
