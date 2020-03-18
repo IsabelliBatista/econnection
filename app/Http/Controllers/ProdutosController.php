@@ -12,7 +12,6 @@ class ProdutosController extends Controller
 {
     protected function create(Request $request)
     {
-
         $produtos = Produto::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
@@ -21,15 +20,25 @@ class ProdutosController extends Controller
             'marca_id' => $request->input('marca'),    
             'categoria_id' => $request->input('category')
         ]);
-
+            
+        // dd($produtos);
         $produtos->save();
 
         return redirect('/home');
     }
+
     public function update(Request $request)
     {
         $path = $request->file('image')->store('image');
 
         return $path;
+    }
+
+    protected function pegarCategoriaMarca()
+    {
+        $marca = Marca::all();
+        $categoria = Categoria::all();
+
+        return view('produtos.cadastrarProdutos')->with(['marcas' => $marca, 'categorias' => $categoria]);
     }
 }

@@ -70,69 +70,37 @@
                               @enderror
                           </div>
                       </div>
-
-                     <div class="form-group row">
-                          <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('marca:') }}</label>
-
-                          <div class="col-md-7">
-                              <input id="marca" type="text" class="form-control @error('marca') is-invalid @enderror" name="marca" required autocomplete="new-marca">
-
-                              @error('marca')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
-                          </div>
-                      </div>
-
-                      <div class="form-group row">
-                          <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('categoria:') }}</label>
-
-                          <div class="col-md-7">
-                              <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" required autocomplete="new-category">
-
-                              @error('category')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
-                          </div>
-                      </div> 
-
-
-                       <!-- <div class="form-group row">
+                          
+                      @if ($marcas)
+                        <div class="form-group row">
                             <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('Marca:') }}</label>
 
                             <div class="col-md-7">
                                 <select id="marca" class="form-control" name="marca" value="{{ old('marca') }}" required autocomplete="marca" autofocus>
                                     <option selected>Selecione a Marca</option>
-                                    <option value="1" name="marca">Eco</option>
-                                    <option value="2" name="marca">livre</option>
-                                    <option value="3" name="marca">Cabelo</option>
-                                    <option value="4">Canudo</option>
-                                    <option value="5">Dental</option>
-                                    <option value="6">Sabonete</option>
-                                    <option value="7">Toalha</option>
+                                    @foreach ($marcas as $marca)
+                                        <option value="{{$marca->id}}">{{$marca->nome}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
-                 
-                         <div class="form-group row">
-                            <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('Categoria:') }}</label>
+                          
+                      @endif
+                      @if ($categorias)
+                            <div class="form-group row">
+                                <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('Categoria:') }}</label>
 
-                            <div class="col-md-7">
-                                <select id="category" class="form-control" name="category" value="{{ old('category') }}" required autocomplete="category" autofocus>
-                                    <option selected>Selecione a Categoria</option>
-                                    <option value="categoria" name="categoria">Copo</option>
-                                    <option value="categoria" name="categoria">Absorvente</option>
-                                    <option value="categoria" name="categoria">Cabelo</option>
-                                    <option value="4">Canudo</option>
-                                    <option value="5">Dental</option>
-                                    <option value="6">Sabonete</option>
-                                    <option value="7">Toalha</option>
-                                </select>
-                            </div>
-                        </div>  -->
+                                <div class="col-md-7">
+                                    <select id="category" class="form-control" name="category" value="{{ old('category') }}" required autocomplete="category" autofocus>
+                                        <option selected>Selecione a Categoria</option>
+                                        @foreach ($categorias as $categoria)
+                                            <option value="{{$categoria->id}}">{{$categoria->nome}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div> 
+                          
+                        @endif
 
                         <div class="form-group row mb-0 ">
                             <div class="col-md-7 offset-md-4">

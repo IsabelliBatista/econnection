@@ -72,9 +72,9 @@ Route::get('/listarUsuario', function(){
 
 // Rotas dos Produtos
 
-Route::get('/cadastrarProdutos', function(){
-    return view('produtos.cadastrarProdutos');
-});
+Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
+// return view('produtos.cadastrarProdutos');
+
 Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
 // Route::get('/listarProdutos', function(){
