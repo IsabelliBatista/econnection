@@ -71,8 +71,8 @@
                           </div>
                       </div>
 
-                      <!-- <div class="form-group row">
-                          <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('m:') }}</label>
+                     <div class="form-group row">
+                          <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('marca:') }}</label>
 
                           <div class="col-md-7">
                               <input id="marca" type="text" class="form-control @error('marca') is-invalid @enderror" name="marca" required autocomplete="new-marca">
@@ -86,7 +86,7 @@
                       </div>
 
                       <div class="form-group row">
-                          <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('c:') }}</label>
+                          <label for="category" class="col-md-4 col-form-label text-md-right">{{ __('categoria:') }}</label>
 
                           <div class="col-md-7">
                               <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" required autocomplete="new-category">
@@ -97,10 +97,10 @@
                                   </span>
                               @enderror
                           </div>
-                      </div> -->
+                      </div> 
 
 
-                       <div class="form-group row">
+                       <!-- <div class="form-group row">
                             <label for="marca" class="col-md-4 col-form-label text-md-right">{{ __('Marca:') }}</label>
 
                             <div class="col-md-7">
@@ -132,7 +132,7 @@
                                     <option value="7">Toalha</option>
                                 </select>
                             </div>
-                        </div> 
+                        </div>  -->
 
                         <div class="form-group row mb-0 ">
                             <div class="col-md-7 offset-md-4">
