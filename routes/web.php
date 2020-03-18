@@ -56,7 +56,10 @@ Route::get('/loja', function(){
     return view('produtos.loja');
 });
 
-// Rotas dos Usuarios 
+Route::get('/finalCompras', function(){
+    return view('comprar.finalCompras');
+});
+
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
@@ -78,59 +81,3 @@ Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos')
 //     return view('produtos.listarProdutos');
 // });
 
-// // Cátalogo de Produtos
-// Route::get('/catalogo', 'ProdutosController@listandoCatalogo')->name('catalogo');
-// Route::get('/catalogo/categoria/{id}', 'CategoriaController@listandoProdutoPorCategoria');
-
-// // Filtrar Produto
-// Route::get('/filtrar-produtos', 'ProdutosController@filtrarProduto')->name('search');
-
-
-// Route::middleware(['auth'])->group(function (){
-//     // Listar Produtos
-//     Route::get('/produtos', 'ProdutosController@listarProdutos')->name('produtos');
-
-//     // Adicionar Produto
-//     Route::get('/produtos/adicionar', 'ProdutosController@cadastrarProdutos')->name('produtos-adicionar');
-//     Route::post('/produtos/adicionar', 'ProdutosController@salvandoProduto');
-
-//     // Modificando produto
-//     Route::get('/produtos/modificar/{id}', 'ProdutosController@modificandoProduto');
-//     Route::put('/produtos/modificar/{id}', 'ProdutosController@alterandoProduto');
-
-//     // Excluindo produto
-//     Route::delete('/produtos/remover/{id}', 'ProdutoController@removendoProduto');
-
-//     // Listar Gêneros
-//     Route::get('/categorias', 'CategoriaController@listandocategorias')->name('categorias');
-
-//      // Adicionar Gênero
-//     Route::get('/categorias/adicionar', 'CategoriaController@adicionandoCategoria')->name('categorias-adicionar');
-//     Route::post('/categorias/adicionar', 'CategoriaController@salvandoCategoria');
-
-//     // Modificando Gênero
-//     Route::get('/categorias/modificar/{id}', 'CategoriaController@modificandoCategoria');
-//     Route::put('/categorias/modificar/{id}', 'CategoriaController@alterandoCategoria');
-
-//     // Excluindo Produto
-//     Route::delete('/categoria/remover/{id}', 'CategoriaController@removendoCategoria');
-
-    
-
-
-//     // Listar marcas
-//     Route::get('/marcas', 'MarcaController@listandoMarcas')->name('marcas');
-
-//     // Adicionar marca
-//     Route::get('/marcas/adicionar', 'MarcaController@adicionandoMarca')->name('marcas-adicionar');
-//     Route::post('/marcas/adicionar', 'MarcaController@salvandoMarca');
-
-//     // Modificando marca
-//     Route::get('/marcas/modificar/{id}', 'MarcaController@modificandoMarca');
-//     Route::put('/marcas/modificar/{id}', 'MarcaController@alterandoMarca');
-
-//     // Excluindo marca
-//     Route::delete('/marcas/remover/{id}', 'MarcaController@removendoMarca');
-
-
-// });

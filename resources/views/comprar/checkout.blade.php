@@ -19,77 +19,32 @@
 
   <div class="py-5 text-center">
     <h2>Checkout</h2>
-    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls.</p>
   </div>
 
   <div class="row">
     <div class="col-md-4 order-md-2 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Your cart</span>
+        <span class="text-muted">Seu carrinho</span>
         <span class="badge badge-secondary badge-pill">3</span>
       </h4>
       <ul class="list-group mb-3">
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
-            <h6 class="my-0">Product name</h6>
-            <small class="text-muted">Brief description</small>
+            <h6 class="my-0">Produto nome</h6>
           </div>
           <span class="text-muted">$12</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Second product</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$8</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Third item</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-light">
-          <div class="text-success">
-            <h6 class="my-0">Promo code</h6>
-            <small>EXAMPLECODE</small>
-          </div>
-          <span class="text-success">-$5</span>
         </li>
         <li class="list-group-item d-flex justify-content-between">
           <span>Total (USD)</span>
           <strong>$20</strong>
         </li>
       </ul>
-
-      <form class="card p-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Código Promocional">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </div>
-      </form>
     </div>
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate>
+      <h4 class="mb-3">Identificação</h4>
+      <form class="needs-validation" action="/finalCompras" novalidate>
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Primeiro Nome</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Segundo Nome</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-          </div>
         </div>
 
         <div class="mb-3">
@@ -106,7 +61,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <label for="email">Email</label>
           <input type="email" class="form-control" id="email" placeholder="email@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
@@ -121,61 +76,39 @@
           </div>
         </div>
 
-        <div class="mb-3">
-          <label for="address2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Perto de">
-        </div>
-
         <div class="row">
           <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Choose...</option>
-              <option>United States</option>
-            </select>
+            <label for="address">Estado</label>
+            <input type="text" class="form-control" id="address" placeholder="são ..." required>
             <div class="invalid-feedback">
-              Please select a valid country.
+              Please enter your shipping address.
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="state">State</label>
-            <select class="custom-select d-block w-100" id="state" required>
-              <option value="">Choose...</option>
-              <option>California</option>
-            </select>
+            <label for="address">Cidade</label>
+            <input type="text" class="form-control" id="address" placeholder="sp .." required>
             <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
-            <div class="invalid-feedback">
-              Zip code required.
+              Please enter your shipping address.
             </div>
           </div>
         </div>
         <hr class="mb-4">
         <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          <label class="custom-control-label" for="save-info">Concordo com tudo</label>
         </div>
         <hr class="mb-4">
 
-        <h4 class="mb-3">Payment</h4>
+        <h4 class="mb-3">Pagamento</h4>
 
         <div class="d-block my-3">
           <div class="custom-control custom-radio">
             <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Credit card</label>
+            <label class="custom-control-label" for="credit">Cartão de Crédito</label>
           </div>
           <div class="custom-control custom-radio">
             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="debit">Debit card</label>
+            <label class="custom-control-label" for="debit">Cartão de Debito</label>
           </div>
           <div class="custom-control custom-radio">
             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
@@ -184,7 +117,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label for="cc-name">Name on card</label>
+            <label for="cc-name">Nome cartão</label>
             <input type="text" class="form-control" id="cc-name" placeholder="" required>
             <small class="text-muted">Full name as displayed on card</small>
             <div class="invalid-feedback">
@@ -192,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="cc-number">Credit card number</label>
+            <label for="cc-number">Número cartão</label>
             <input type="text" class="form-control" id="cc-number" placeholder="" required>
             <div class="invalid-feedback">
               Credit card number is required
@@ -201,7 +134,7 @@
         </div>
         <div class="row">
           <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Expiration</label>
+            <label for="cc-expiration">Validade</label>
             <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
             <div class="invalid-feedback">
               Expiration date required
@@ -216,7 +149,7 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-success btn-lg btn-block" type="submit" href="/finalCompras">Finalizar</button>
       </form>
     </div>
   </div>
