@@ -62,7 +62,7 @@
 
         <div class="mb-3">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="email@example.com">
+          <input type="text" class="form-control" id="email" placeholder="email@example.com" required>
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
           </div>
@@ -79,14 +79,14 @@
         <div class="row">
           <div class="col-md-5 mb-3">
             <label for="address">Estado</label>
-            <input type="text" class="form-control" id="address" placeholder="são ..." required>
+            <input type="text" class="form-control" id="addresse" placeholder="são ..." required>
             <div class="invalid-feedback">
               Please enter your shipping address.
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <label for="address">Cidade</label>
-            <input type="text" class="form-control" id="address" placeholder="sp .." required>
+            <input type="text" class="form-control" id="addresses" placeholder="sp .." required>
             <div class="invalid-feedback">
               Please enter your shipping address.
             </div>
@@ -149,9 +149,62 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-success btn-lg btn-block" type="submit" href="/finalCompras">Finalizar</button>
+        <button type="button" class="btn btn-success btn-lg btn-block" onClick="setLocalStorage()">Finalizar</button>
       </form>
     </div>
   </div>
 </div>
+
+<script>
+    function setLocalStorage(){
+      debugger;
+      var nome = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
+      var end = document.getElementById('address').value;
+      var estado = document.getElementById('addresse').value;
+      var cidade = document.getElementById('addresses').value;
+
+      var metodo;
+
+      let input = document.getElementById('credit');
+      let input2 = document.getElementById('debit');
+      let input3 = document.getElementById('paypal');
+
+      if(input.checked)
+        metodo = "Cartão de Crédito";
+      
+      if(input2.checked)
+        metodo = "Cartão de Debito";
+      
+      if(input3.checked)
+        metodo = "PayPal";
+      
+      var nomecard = document.getElementById('cc-name').value;
+      var numcard = document.getElementById('cc-number').value;
+      var val = document.getElementById('cc-expiration').value;
+      var cvv = document.getElementById('cc-cvv').value;
+
+      let jDados = {
+            "nome": nome,
+            "email": email,
+            "endereco": end,
+            "estado": estado,
+            "cidade": cidade,
+            "metodo": metodo,
+            "nomecard": nomecard,
+            "numcard": numcard,
+            "val": val,
+            "cvv": cvv
+        };
+
+      let validation = document.getElementById('save-info');
+
+      if(!(validation.checked))
+        alert("Favor aceitar os termos e condições para prosseguir");
+        
+    //console.log(JSON.stringify(jDados));
+    localStorage.setItem("Infos", JSON.stringify(jDados));
+    window.location.href = "/finalCompras"; 
+    }
+</script>
 @endsection

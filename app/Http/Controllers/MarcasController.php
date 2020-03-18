@@ -16,6 +16,6 @@ class MarcasController extends Controller
 
         $marca->save();
 
-        return redirect('/home');
+        return redirect('/adicionandoM');
     }
 }

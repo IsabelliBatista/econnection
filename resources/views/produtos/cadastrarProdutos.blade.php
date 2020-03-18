@@ -79,7 +79,7 @@
                                 <select id="marca" class="form-control" name="marca" value="{{ old('marca') }}" required autocomplete="marca" autofocus>
                                     <option selected>Selecione a Marca</option>
                                     @foreach ($marcas as $marca)
-                                        <option value="{{$marca->id}}">{{$marca->nome}}</option>
+                                        <option value="{{$marca->id}}">{{$marca->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -94,7 +94,7 @@
                                     <select id="category" class="form-control" name="category" value="{{ old('category') }}" required autocomplete="category" autofocus>
                                         <option selected>Selecione a Categoria</option>
                                         @foreach ($categorias as $categoria)
-                                            <option value="{{$categoria->id}}">{{$categoria->nome}}</option>
+                                            <option value="{{$categoria->id}}">{{$categoria->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
