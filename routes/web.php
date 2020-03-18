@@ -66,6 +66,14 @@ Route::get('/cadastrarUsuario', function(){
 
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
+//add categoria
+Route::get('/adicionando', function(){
+    return view('categorias.adicionando');
+});
+
+Route::post('/adicionando', 'CategoriasController@create')->name('adicionando');
+
+
 Route::get('/listarUsuario', function(){
     return view('usuario.listarUsuario');
 });
