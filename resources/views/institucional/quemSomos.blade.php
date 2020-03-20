@@ -9,15 +9,15 @@
 <header class="header-somos">
     <article class="bg-header-somos"><h1 class="text-center container">Quem Somos</h1></article>
 
-<!-- CAMINHO DE PÁGINAS-->
-<div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
-        </ol>
-    </nav>
-</div>
+    <!-- CAMINHO DE PÁGINAS-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
+            </ol>
+        </nav>
+    </div>
 
     <section class="container">
         <h2 class="text-center">EConnection</h2>
@@ -29,7 +29,7 @@
 <main class="mt-5 main-somos">
     <article class="">
         <div class="container d-flex">
-            <h5 class="main-somos-h5">Objetivos</h5>
+            <h5 class="main-somos-h5 ">Objetivos</h5>
             <div class="barra"></div>
             <div class="barra2"></div>
             <p class="align-self-center">Lorem Ipsum é simplesmente bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao</p>
@@ -41,8 +41,8 @@
             <div class="card border-light h-100">
             <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" width="100" height="100">
             <div class="card-body">
-                <h5 class="card-title">Marketplace</h5>
-                <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                <h5 class="card-title">Ecommerce</h5>
+                <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
             </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-  eConnection - Produtos sustentáveis
+  Logado eConnection - Produtos sustentáveis
 @endsection
 
 @section('content')
@@ -34,10 +34,10 @@
 <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
   <div class="col mb-4">
     <div class="card border-light h-100">
-      <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" width="100" height="100">
+      <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" id="image-card">
       <div class="card-body">
-        <h5 class="card-title">Marketplace</h5>
-        <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+        <h5 class="card-title">Ecommerce</h5>
+        <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
             <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@
         <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
         <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@
         <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="parceiros.php" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>

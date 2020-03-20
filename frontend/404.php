@@ -8,7 +8,7 @@
     <?php require_once("assets/inc/header.php"); ?>
     <article class="bg-header-somos"><h1 class="text-center container">404</h1></article>
     <div class="container">
-        <h2 class="text-center mt-5">Você entrou na página 404</h2>
+        <h2 class="text-center mt-5">Página não encontrada! :( </h2>
     </div>
 
     <?php require_once("assets/inc/footer.php"); ?>

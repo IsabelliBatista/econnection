@@ -12,7 +12,7 @@
       <!-- CAMINHO DE PÁGINAS-->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
           </ol>
         </nav>
@@ -82,7 +82,7 @@
                     </div>
                   </div>
               </div>
-              <a href="#" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
+              <a href="/checkout" class="btn btn-success mt-3 col-6">Adicionar ao carrinho<br><i class="fas fa-shopping-cart"></i></a> 
           </div>
       </section>
   </div> 
@@ -93,8 +93,8 @@
         <div class="card border-light h-100">
           <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" width="100" height="100">
           <div class="card-body">
-            <h5 class="card-title">Marketplace</h5>
-            <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+            <h5 class="card-title">Ecommerce</h5>
+            <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto</h5>
               <p class="card-text txt-preco">R$ 10,00</p>
-              <a href="comprar.php" class="btn btn-card">Ver detalhes</a>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
             </div>
           </div>
         </div>

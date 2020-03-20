@@ -94,8 +94,8 @@
               <div class="card border-light h-100">
                 <img src="assets/img/itens1.png" class="m-auto" alt="e-connection" width="100" height="100">
                 <div class="card-body">
-                  <h5 class="card-title">Marketplace</h5>
-                  <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+                  <h5 class="card-title">Ecommerce</h5>
+                  <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
                 </div>
               </div>
             </div>

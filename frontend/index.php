@@ -38,10 +38,10 @@
   <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
     <div class="col mb-4">
       <div class="card border-light h-100">
-        <img src="assets/img/itens1.png" class="m-auto" alt="e-connection" width="100" height="100">
+        <img src="assets/img/itens1.png" class="m-auto image-card" alt="e-connection" width="100" height="100">
         <div class="card-body">
-          <h5 class="card-title">Marketplace</h5>
-          <p class="card-text">Somos um Marketplace de empresas sustentáveis</p>
+          <h5 class="card-title">Ecommerce</h5>
+          <p class="card-text">Somos um Ecommerce de empresas sustentáveis</p>
         </div>
       </div>
     </div>
