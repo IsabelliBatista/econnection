@@ -28,7 +28,7 @@ Route::get('/parceiros', function(){
 });
 
 Route::get('/quemsomos', function(){
-    return view('quemsomos');
+    return view('quemSomos');
 });
 
 Route::get('/politica', function(){
@@ -57,5 +57,13 @@ Route::get('/comprar', function(){
 
 Route::get('/checkout', function(){
     return view('checkout');
+});
+
+Route::get('/minha-conta', function(){
+    return view('minhaConta');
+});
+
+Route::get('/minha-conta?type=pedidos', function(){
+    return view('minhaConta');
 });
 
