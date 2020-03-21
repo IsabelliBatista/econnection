@@ -84,6 +84,13 @@ Route::get('/listar/usuario', function(){
     return view('usuario.listarUsuario');
 });
 
+Route::get('/minha-conta', function(){
+    return view('minhaConta');
+});
+
+Route::get('/minha-conta?type=pedidos', function(){
+    return view('minhaConta');
+});
 Route::post('/listar/Usuario', 'UserController@alterandoUsuario')->name('alterandoUsuario');
 
 
