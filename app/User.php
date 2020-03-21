@@ -20,7 +20,9 @@ class User extends Authenticatable
         'name', 'email', 'password', 'cpf', 'telefone', 'data_nasc', 'sexo'
     ];
 
-
+    public function endereco(){
+        return $this->hasMany(Endereco::class, 'id', 'user_id');
+    }
     /**
      * The attributes that should be hidden for arrays.
      *

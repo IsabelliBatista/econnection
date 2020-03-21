@@ -19,6 +19,7 @@ class CreateEnderecoTable extends Migration
             $table->string('numero');
             $table->string('bairro');
             $table->string('cidade');
+            $table->string('estado');
             $table->bigInteger('cep');
             $table->string('complemento');
             $table->timestamps();

@@ -61,13 +61,15 @@ class UserController extends Controller
     public function listandoUsuario() 
     {
         $user = Auth::user();
-        return view('usuario.listarUsuario')->with('user', $user);
+        $endereco = Endereco::where('user_id', $user->id)->get();
+        return view('usuario.editarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
     }
 
     public function editarUsuario() 
     {
         $user = Auth::user();
-        return view('usuario.editarUsuario')->with('user', $user);
+        $endereco = Endereco::where('user_id', $user->id)->get();
+        return view('usuario.editarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
     }
     
     //public function alterandoUsuario(Request $request, $id){
