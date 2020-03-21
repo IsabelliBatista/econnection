@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 use App\Produto;
 use App\Categoria;
 use App\Marca;
-
 
 class ProdutosController extends Controller
 {

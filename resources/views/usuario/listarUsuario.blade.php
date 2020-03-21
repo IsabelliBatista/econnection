@@ -4,7 +4,7 @@
     Carrinho - eConnection
 @endsection
 
-@section('content')    
+@section('content')  
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb mb-1 ">
@@ -14,14 +14,15 @@
     </nav>
     <div class="card-body">
       <h2 class="card-title text-xl-center p-2">{{ __('Dados Cadastrados:') }}</h2>
-      <form method="POST" action="/listar/usuario">
+
+    <form method="POST" action="/listar/usuario">
         @csrf
         {{ method_field('POST') }}
         <div class="form-group row">
           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome Completo:') }}</label>
 
           <div class="col-md-6">
-            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="" required autocomplete="name" autofocus>
+          <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" required autocomplete="name" autofocus>
 
             @error('name')
               <span class="invalid-feedback" role="alert">
@@ -35,7 +36,7 @@
           <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail:') }}</label>
 
           <div class="col-md-6">
-            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}" required autocomplete="email">
 
             @error('email')
               <span class="invalid-feedback" role="alert">

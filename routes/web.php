@@ -65,6 +65,9 @@ Route::get('/cadastrarUsuario', function(){
 
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
+
+//Route::post('/listar/Usuario', 'UserController@alterandoUsuario')->name('alterandoUsuario');
+
 //add categoria
 Route::get('/adicionandoC', function(){
     return view('categorias.adicionandoC');
@@ -80,19 +83,6 @@ Route::get('/adicionandoM', function(){
 Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
 
 
-Route::get('/listar/usuario', function(){
-    return view('usuario.listarUsuario');
-});
-
-Route::get('/minha-conta', function(){
-    return view('minhaConta');
-});
-
-Route::get('/minha-conta?type=pedidos', function(){
-    return view('minhaConta');
-});
-Route::post('/listar/Usuario', 'UserController@alterandoUsuario')->name('alterandoUsuario');
-
 
 
 // Rotas dos Produtos
@@ -102,6 +92,26 @@ Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
 Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
 // Route::get('/listarProdutos', function(){
-//     return view('produtos.listarProdutos');
-// });
+    //     return view('produtos.listarProdutos');
+    // });
+    
+    
+Route::get('/minha-conta', function(){
+    return view('minhaConta');
+});
 
+Route::get('/minha-conta?type=pedidos', function(){
+    return view('minhaConta');
+});
+
+
+//Route::get('/listar/usuario', 'UserController@listandoUsuario');
+Route::middleware(['auth'])->group(function (){
+
+    Route::get('/listar/usuario','UserController@listandoUsuario');
+    Route::get('/editar/usuario','UserController@editarUsuario');
+
+    
+});
+
+//Route::put('/listar/usuario/{user}','UserController@alterandoUsuario');
