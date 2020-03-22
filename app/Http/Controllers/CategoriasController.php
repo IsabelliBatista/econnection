@@ -20,13 +20,13 @@ class CategoriasController extends Controller
     }
     public function listandoCategoria() 
     {
-        $category = Categoria::category();
+        $category = Categoria::all();
         return view('categorias.listandoC')->with(['category' => $category]);
     }
 
     public function editarCategoria()
     {
-        $category = Categoria::category();
+        $category = Categoria::all();
         return view('categorias.listandoC')->with(['category' => $category]);
     }
 
