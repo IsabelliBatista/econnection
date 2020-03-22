@@ -86,8 +86,8 @@
           </div>
           <div class="form-group col-md-4">
             <label for="estado">{{ __('Estado:') }}</label>
-            <select id="estado" class="form-control"  name="estado"  selected value="{{ $endereco[0]->estado }}">
-              <option  selected value="{{ $endereco[0]->estado }}">{{ $endereco[0]->estado }}</option>
+            <select id="estado" class="form-control"  name="estado" value="{{ $endereco[0]->estado }}">
+              <option selected value="{{ $endereco[0]->estado }}">{{ $endereco[0]->estado }}</option>
               <option disabled>Selecione o Estado</option>
               <option value="Acre">Acre</option>
               <option value="Alagoas">Alagoas</option>

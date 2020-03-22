@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Endereco;
 use App\Http\Controllers\Controller;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -76,8 +75,9 @@ class UserController extends Controller
         return view('usuario.editarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
     }
 
-    public function atualizarUsuario(Request $request, User $user) 
+    public function atualizarUsuario(Request $request) 
     {
+        $user = Auth::user();
         $user->update([
             'name' => $request->input('name'),
             'telefone' => $request->input('telefone'),
@@ -85,9 +85,7 @@ class UserController extends Controller
             'sexo' => $request->input('sexo'),
         ]);
 
-        $endereco = Endereco::where('user_id', $user->id)->get();
-
-        $endereco->update([
+        Endereco::where('user_id', $user->id)->update([
             'rua' => $request->input('rua'),
             'numero' => $request->input('numero'),
             'bairro' => $request->input('bairro'),
@@ -95,28 +93,9 @@ class UserController extends Controller
             'cep' => $request->input('cep'),
             'estado' => $request->input('estado'),
             'complemento' => $request->input('complemento'),
-        ]);
+            ]);
         
-        // $user = Auth::user();        
-        
-        // $user->name = $request->input('name');
-        // $user->telefone = $request->input('telefone');
-        // $user->data_nasc = $request->input('dataNasc');
-        // $user->sexo = $request->input('sexo');
-        
-        // $user->save();
-
-        // $endereco = Endereco::where('user_id', $user->id)->get();;
-
-        // $endereco[0]->rua = $request->input('rua');
-        // $endereco[0]->numero = $request->input('numero');
-        // $endereco[0]->bairro = $request->input('bairro');
-        // $endereco[0]->cidade = $request->input('cidade');
-        // $endereco[0]->estado = $request->input('estado');
-        // $endereco[0]->cep = $request->input('cep');
-        // $endereco[0]->complemento = $request->input('complemento');
-        
-        // $endereco->save();
+        $endereco = Endereco::where('user_id', $user->id)->get();
 
         return view('usuario.listarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
 
