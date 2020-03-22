@@ -15,9 +15,9 @@
           </ol>
         </nav>
 
-      <div class="col-md-8 order-md-2 mb-4 m-auto mt-5">
+      <div class="col-md-12 order-md-2 mb-4 m-auto mt-5">
         <div class="row">
-          <div class="col-md-4 order-md-2 mb-4">
+          <div class="col-md-10 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
               <span class="text-muted">Seu carrinho</span>
               <span class="badge badge-secondary badge-pill">3</span>
@@ -27,11 +27,11 @@
                 <div>
                   <h6 class="my-0">Produto nome</h6>
                 </div>
-                <span class="text-muted">$12</span>
+                <span class="text-muted">R$12</span>
               </li>
               <li class="list-group-item d-flex justify-content-between">
-                <span>Total (USD)</span>
-                <strong>$20</strong>
+                <span>Total</span>
+                <strong>R$20</strong>
               </li>
             </ul>
         </div>

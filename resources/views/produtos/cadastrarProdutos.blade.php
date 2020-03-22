@@ -7,9 +7,9 @@
 @section('content')
 
 <div class="container">
-  <div class="row justify-content-center mt-5 mb-5">
+  <div class="row justify-content-center">
       <div class="col-md-10 p-2">
-          <div class="card">
+          <div class="card border-0">
               <div class="card-body">
                 <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro do Produto:') }}</h2>
                   <form method="POST" action="/cadastrarProdutos">
@@ -56,20 +56,6 @@
                               @enderror
                           </div>
                       </div>
-
-                      <div class="form-group row">
-                          <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Imagem:') }}</label>
-
-                          <div class="col-md-7">
-                              <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" required autocomplete="new-image">
-
-                              @error('image')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{ $message }}</strong>
-                                  </span>
-                              @enderror
-                          </div>
-                      </div>
                           
                       @if ($marcas)
                         <div class="form-group row">
@@ -101,6 +87,20 @@
                             </div> 
                           
                         @endif
+
+                        <div class="form-group row">
+                            <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Imagem:') }}</label>
+  
+                            <div class="col-md-7">
+                                <input id="image" type="file" class="form-control border-0 @error('image') is-invalid @enderror" name="image" required autocomplete="new-image">
+  
+                                @error('image')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0 ">
                             <div class="col-md-7 offset-md-4">
