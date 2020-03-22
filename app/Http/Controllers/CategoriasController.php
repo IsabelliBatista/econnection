@@ -18,4 +18,26 @@ class CategoriasController extends Controller
 
         return redirect('/adicionandoC');
     }
+    public function listandoCategoria() 
+    {
+        $category = Categoria::category();
+        return view('categorias.listandoC')->with(['category' => $category]);
+    }
+
+    public function editarCategoria()
+    {
+        $category = Categoria::category();
+        return view('categorias.listandoC')->with(['category' => $category]);
+    }
+
+    public function atualizarCategoria(Request $request, Categoria $category) 
+    {
+        $category->update([
+            'name' => $request->input('name')
+        ]);
+        
+
+        return view('categorias.listandoC')->with(['category' => $category]);
+
+    }
 }

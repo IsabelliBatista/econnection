@@ -116,3 +116,13 @@ Route::middleware(['auth'])->group(function (){
 });
 
 //Route::put('/listar/usuario/{user}','UserController@alterandoUsuario');
+
+// listando categorias
+Route::middleware(['category'])->group(function (){
+
+    //Rotas do categ
+    Route::get('/categorias.listandoC','CategoriasController@listandoCategoria');
+    Route::get('/categorias.listandoC','CategoriasController@editarCategoria');
+    Route::put('/categorias.listandoC','CategoriasController@atualizarCategoria');
+    
+});
