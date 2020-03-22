@@ -27,11 +27,11 @@
       {{-- Tab Dados Pessoais --}}
       <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
         <div class="form-row mb-2">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label for="name">{{ __('Nome Completo:') }}</label>
             <input id="name" type="text" class="form-control" name="name" value="{{ $user->name }}" autofocus>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label>{{ __('Email:') }}</label>
             <input class="form-control" value="{{ $user->email }}" disabled> 
           </div>
@@ -47,11 +47,11 @@
           </div>
         </div>
         <div class="form-row mb-3">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label for="dataNasc">{{ __('Data de Nascimento:') }}</label>
             <input id="dataNasc" type="date" class="form-control"  name="dataNasc" value="{{ $user->data_nasc }}">
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label for="sexo">{{ __('Gênero:') }}</label>
             <select id="sexo" class="form-control" name="sexo" value="{{ $user->sexo}}">
               <option disabled>Selecione seu Gênero</option>

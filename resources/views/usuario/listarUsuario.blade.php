@@ -24,11 +24,11 @@
       {{-- Tab Dados Pessoais --}}
       <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
         <div class="form-row mb-2">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label>{{ __('Nome Completo:') }}</label>
             <input class="form-control" value="{{ $user->name }}" disabled> 
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label>{{ __('Email:') }}</label>
             <input class="form-control" value="{{ $user->email }}" disabled> 
           </div>
@@ -44,11 +44,11 @@
           </div>
         </div>
         <div class="form-row mb-3">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label>{{ __('Data de Nascimento:') }}</label>
             <input class="form-control" value="{{$user->data_nasc}}" type="date" disabled> 
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <label>{{ __('Gênero:') }}</label>
             <input class="form-control" value="{{ $user->sexo }}" disabled> 
           </div>

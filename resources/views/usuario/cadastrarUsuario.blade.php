@@ -16,7 +16,7 @@
             @csrf
             {{ method_field('POST') }}
             <div class="form-row mb-2">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="name">{{ __('Nome Completo:') }}</label>
                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                   @error('name')
@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-row mb-2">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="password">{{ __('Senha:') }}</label>
                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                   @error('password')
@@ -64,11 +64,11 @@
             </div>
 
             <div class="form-row mb-3">
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="dataNasc">{{ __('Data de Nascimento:') }}</label>
                 <input id="dataNasc" type="date" class="form-control"  name="dataNasc" value="{{ old('dataNasc') }}" autocomplete="dataNasc">
               </div>
-              <div class="col">
+              <div class="col-md-6 col-sm-12">
                 <label for="sexo">{{ __('Gênero:') }}</label>
                 <select id="sexo" class="form-control" name="sexo" value="{{ old('sexo') }}" required autocomplete="sexo">
                   <option selected disabled>Selecione seu Gênero</option>
