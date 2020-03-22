@@ -73,6 +73,12 @@ h5:hover {
 .home-section-card {
   margin: 0 auto;
 }
+.home-section-card img:hover{
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+  transition-duration: 1s;
+}
 
 /*LOGO*/
 .logo-nav img {
@@ -350,7 +356,13 @@ h5:hover {
 h4 {
   text-align: center;
 }
-
+.card-img-top:hover
+{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .teste {
