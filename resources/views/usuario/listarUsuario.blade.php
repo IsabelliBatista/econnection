@@ -91,5 +91,10 @@
         </div>
       </div>
     <a href="/editar/usuario" class="btn btn-success">Editar Cadastro</a>
+    @if(session()->has('mensagem'))
+      <div class="alert alert-success mt-2">
+        {{ session()->get('mensagem') }}
+      </div>
+    @endif
   </div>
 @endsection

@@ -23,7 +23,8 @@ class ProdutosController extends Controller
     
         $produtos->save();
 
-        return redirect('/cadastrarProdutos');
+        return redirect()->to('/cadastrarProdutos')->with('message', 'Produto cadastrado com sucesso!');
+
     }
 
     public function update(Request $request)

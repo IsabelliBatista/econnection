@@ -16,6 +16,6 @@ class MarcasController extends Controller
 
         $marca->save();
 
-        return redirect('/adicionandoM');
+        return redirect()->to('adicionandoM')->with('message', 'Marca Cadastrada com sucesso!');
     }
 }

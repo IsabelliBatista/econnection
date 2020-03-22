@@ -36,7 +36,6 @@ class CategoriasController extends Controller
             'name' => $request->input('name')
         ]);
         
-
         return view('categorias.listandoC')->with(['category' => $category]);
 
     }

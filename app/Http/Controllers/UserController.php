@@ -97,7 +97,7 @@ class UserController extends Controller
         
         $endereco = Endereco::where('user_id', $user->id)->get();
 
-        return view('usuario.listarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
+        return redirect()->to('/listar/usuario')->with(['user' => $user, 'endereco' => $endereco, 'mensagem' => 'Dados atualizados com sucesso!']);
 
     }
     
