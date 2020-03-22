@@ -6,7 +6,7 @@
     <section class="container mt-5 mb-5">
         <h2>Cadastro de Categorias</h2>
 
-        <form method="POST" action="/adicionandoC">
+        <form method="POST" action="/adicionar/categoria">
             @csrf
             {{ method_field('POST') }}
             <div class="form-group col-md-6 col-sm-12">

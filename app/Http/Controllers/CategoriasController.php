@@ -16,19 +16,18 @@ class CategoriasController extends Controller
 
         $category->save();
 
-        return redirect('/adicionandoC');
+        return redirect('/adicionar/categoria');
     }
     public function listandoCategoria() 
     {
         $category = Categoria::all();
-        //dd($category);
-        return view('categorias.listandoC')->with('category', $category);
+        return view('categorias.listarCategoria')->with('category', $category);
     }
 
     public function editarCategoria()
     {
         $category = Categoria::all();
-        return view('categorias.listandoC')->with('category', $category);
+        return view('categorias.listarCategoria')->with('category', $category);
     }
 
     public function atualizarCategoria(Request $request, Categoria $category) 
@@ -37,7 +36,7 @@ class CategoriasController extends Controller
             'name' => $request->input('name')
         ]);
         
-        return view('categorias.listandoC')->with('category', $category);
+        return view('categorias.listarCategoria')->with('category', $category);
 
     }
 }

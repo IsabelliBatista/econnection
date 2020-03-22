@@ -92,7 +92,7 @@
                 <a class="dropdown-item" href="/carrinho">Meus Pedidos</i></a>    
                 <a class="dropdown-item" href="/listar/usuario">Meu Perfil</i></a>
                 <a class="dropdown-item" href="/cadastrarProdutos">Cadastrar Produtos</i></a>
-                <a class="dropdown-item" href="/adicionandoC">Cadastrar Categorias</i></a>
+                <a class="dropdown-item" href="/adicionar/categoria">Cadastrar Categorias</i></a>
                 <a class="dropdown-item" href="/adicionandoM">Cadastrar Marcas</i></a>    
                   <a class="dropdown-item" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
