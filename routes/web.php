@@ -73,11 +73,11 @@ Route::middleware(['auth'])->group(function (){
     Route::put('/editar/usuario','UserController@atualizarUsuario');
 
     //Rotas Categorias
-    Route::get('/adicionandoC', function(){
-    return view('categorias.adicionandoC');
+    Route::get('/adicionando/C', function(){
+        return view('categorias.adicionandoC');
     });
     Route::post('/adicionandoC', 'CategoriasController@create')->name('adicionandoC');
-    Route::get('/listar/categ','CategoriasController@listandoCategoria');
+    Route::get('/listar/categoria','CategoriasController@listandoCategoria');
     Route::get('/editar/categ','CategoriasController@editarCategoria');
     Route::put('/editar/categ','CategoriasController@atualizarCategoria');
 
@@ -87,7 +87,7 @@ Route::middleware(['auth'])->group(function (){
 
     //Rotas Marcas
     Route::get('/adicionandoM', function(){
-    return view('marcas.adicionandoM');
+        return view('marcas.adicionandoM');
     });
     Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
     

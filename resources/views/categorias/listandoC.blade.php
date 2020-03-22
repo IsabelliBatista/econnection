@@ -12,21 +12,26 @@
       <li class="breadcrumb-item active" aria-current="page">Categorias</li>
     </ol>
   </nav>
-  <ul class="nav nav-tabs mb-3" id="categoriaTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">cadastrar categorias</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    {{-- Tab cadastrar categ --}}
-    <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
-      <div class="form-row mb-2">
-        <div class="col">
-          <label>{{ __('category:') }}</label>
-          <input class="form-control" value="{{ $category->name }}" disabled> 
-        </div>
-      </div>
-    </div>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach ($category as $categories)
+        <tr>
+        <th scope="row">{{$categories->id}}</th>
+          <td>{{$categories->name}}</td>
+          <td><i class="fas fa-edit"></i></td>
+          <td><i class="far fa-trash-alt"></i></td>
+        </tr> 
+      @endforeach
+    </tbody>
+  </table>
   <a href="/editar/categoria" class="btn btn-success">Editar Categoria</a>
 </div>
 @endsection
