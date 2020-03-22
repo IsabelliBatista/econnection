@@ -112,17 +112,21 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/listar/usuario','UserController@listandoUsuario');
     Route::get('/editar/usuario','UserController@editarUsuario');
     Route::put('/editar/usuario','UserController@atualizarUsuario');
+
+    Route::get('/listar/categ','CategoriasController@listandoCategoria');
+    Route::get('/editar/categ','CategoriasController@editarCategoria');
+    Route::put('/editar/categ','CategoriasController@atualizarCategoria');
     
 });
 
 //Route::put('/listar/usuario/{user}','UserController@alterandoUsuario');
 
 // listando categorias
-Route::middleware(['category'])->group(function (){
+// Route::middleware(['categoria'])->group(function (){
 
-    //Rotas do categ
-    Route::get('/categorias.listandoC','CategoriasController@listandoCategoria');
-    Route::get('/categorias.listandoC','CategoriasController@editarCategoria');
-    Route::put('/categorias.listandoC','CategoriasController@atualizarCategoria');
+//     //Rotas do categ
+//     Route::get('/categorias.listandoC','CategoriasController@listandoCategoria');
+//     Route::get('/categorias.listandoC','CategoriasController@editarCategoria');
+//     Route::put('/categorias.listandoC','CategoriasController@atualizarCategoria');
     
-});
+// });
