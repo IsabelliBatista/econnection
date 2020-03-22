@@ -9,7 +9,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-10 p-2">
-      <div class="card">
+      <div class="card border-0">
         <div class="card-body">
           <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro:') }}</h2>
           <form method="POST" action="/cadastrarUsuario" enctype="multipart/form-data">
