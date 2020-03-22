@@ -9,13 +9,10 @@
 |
 */
 
+//Rotas Guest
 Route::get('/', function () {
     return view('index');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/parceiros', function(){
     return view('institucional.parceiros');
@@ -41,7 +38,6 @@ Route::get('/carrinho', function(){
     return view('comprar.carrinho');
 });
 
-
 Route::get('/comprar', function(){
     return view('comprar.comprar');
 });
@@ -58,43 +54,45 @@ Route::get('/finalCompras', function(){
     return view('comprar.finalCompras');
 });
 
-//Rotas do Usuario
+//Rotas do Cadastro do Usuario
 Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
 
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
+Auth::routes();
 
-//Route::post('/listar/Usuario', 'UserController@alterandoUsuario')->name('alterandoUsuario');
-
-//add categoria
-Route::get('/adicionandoC', function(){
-    return view('categorias.adicionandoC');
-});
-
-Route::post('/adicionandoC', 'CategoriasController@create')->name('adicionandoC');
-
-//add marca
-Route::get('/adicionandoM', function(){
-    return view('marcas.adicionandoM');
-});
-
-Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
-
-
-
-
-// Rotas dos Produtos
-
-Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
-
-Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
-
-// Route::get('/listarProdutos', function(){
-    //     return view('produtos.listarProdutos');
-    // });
+Route::middleware(['auth'])->group(function (){
     
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    //Rotas do Usuario
+    Route::get('/listar/usuario','UserController@listandoUsuario');
+    Route::get('/editar/usuario','UserController@editarUsuario');
+    Route::put('/editar/usuario','UserController@atualizarUsuario');
+
+    //Rotas Categorias
+    Route::get('/adicionandoC', function(){
+    return view('categorias.adicionandoC');
+    });
+    Route::post('/adicionandoC', 'CategoriasController@create')->name('adicionandoC');
+    Route::get('/listar/categ','CategoriasController@listandoCategoria');
+    Route::get('/editar/categ','CategoriasController@editarCategoria');
+    Route::put('/editar/categ','CategoriasController@atualizarCategoria');
+
+    //Rotas Produtos
+    Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
+    Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
+
+    //Rotas Marcas
+    Route::get('/adicionandoM', function(){
+    return view('marcas.adicionandoM');
+    });
+    Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
+    
+});
+
     
 Route::get('/minha-conta', function(){
     return view('minhaConta');
@@ -104,29 +102,3 @@ Route::get('/minha-conta?type=pedidos', function(){
     return view('minhaConta');
 });
 
-
-//Route::get('/listar/usuario', 'UserController@listandoUsuario');
-Route::middleware(['auth'])->group(function (){
-
-    //Rotas do Usuario
-    Route::get('/listar/usuario','UserController@listandoUsuario');
-    Route::get('/editar/usuario','UserController@editarUsuario');
-    Route::put('/editar/usuario','UserController@atualizarUsuario');
-
-    Route::get('/listar/categ','CategoriasController@listandoCategoria');
-    Route::get('/editar/categ','CategoriasController@editarCategoria');
-    Route::put('/editar/categ','CategoriasController@atualizarCategoria');
-    
-});
-
-//Route::put('/listar/usuario/{user}','UserController@alterandoUsuario');
-
-// listando categorias
-// Route::middleware(['categoria'])->group(function (){
-
-//     //Rotas do categ
-//     Route::get('/categorias.listandoC','CategoriasController@listandoCategoria');
-//     Route::get('/categorias.listandoC','CategoriasController@editarCategoria');
-//     Route::put('/categorias.listandoC','CategoriasController@atualizarCategoria');
-    
-// });
