@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Endereco;
 use App\Http\Controllers\Controller;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -19,7 +20,8 @@ class UserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'cpf' => ['required', 'integer', 'max:11', 'unique:users']
+            'cpf' => ['required', 'integer', 'max:11', 'unique:users'],
+            'cep' => ['required', 'integer', 'max:8']
         ]);
     }
 
@@ -44,6 +46,7 @@ class UserController extends Controller
             'bairro' => $request->input('bairro'),
             'cidade' => $request->input('cidade'),
             'cep' => $request->input('cep'),
+            'estado' => $request->input('estado'),
             'complemento' => $request->input('complemento'),
             'user_id' => $user->id,
         ]);
@@ -56,56 +59,68 @@ class UserController extends Controller
 
        return redirect()->to('/home');
 
+
     }
     
     public function listandoUsuario() 
     {
         $user = Auth::user();
         $endereco = Endereco::where('user_id', $user->id)->get();
-        return view('usuario.editarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
+        return view('usuario.listarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
     }
 
-    public function editarUsuario() 
+    public function editarUsuario()
     {
         $user = Auth::user();
         $endereco = Endereco::where('user_id', $user->id)->get();
         return view('usuario.editarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
     }
+
+    public function atualizarUsuario(Request $request, User $user) 
+    {
+        $user->update([
+            'name' => $request->input('name'),
+            'telefone' => $request->input('telefone'),
+            'data_nasc' => $request->input('dataNasc'),
+            'sexo' => $request->input('sexo'),
+        ]);
+
+        $endereco = Endereco::where('user_id', $user->id)->get();
+
+        $endereco->update([
+            'rua' => $request->input('rua'),
+            'numero' => $request->input('numero'),
+            'bairro' => $request->input('bairro'),
+            'cidade' => $request->input('cidade'),
+            'cep' => $request->input('cep'),
+            'estado' => $request->input('estado'),
+            'complemento' => $request->input('complemento'),
+        ]);
+        
+        // $user = Auth::user();        
+        
+        // $user->name = $request->input('name');
+        // $user->telefone = $request->input('telefone');
+        // $user->data_nasc = $request->input('dataNasc');
+        // $user->sexo = $request->input('sexo');
+        
+        // $user->save();
+
+        // $endereco = Endereco::where('user_id', $user->id)->get();;
+
+        // $endereco[0]->rua = $request->input('rua');
+        // $endereco[0]->numero = $request->input('numero');
+        // $endereco[0]->bairro = $request->input('bairro');
+        // $endereco[0]->cidade = $request->input('cidade');
+        // $endereco[0]->estado = $request->input('estado');
+        // $endereco[0]->cep = $request->input('cep');
+        // $endereco[0]->complemento = $request->input('complemento');
+        
+        // $endereco->save();
+
+        return view('usuario.listarUsuario')->with(['user' => $user, 'endereco' => $endereco]);
+
+    }
     
-    //public function alterandoUsuario(Request $request, $id){
-        
-    //     // // Get the currently authenticated user's ID...
-    //     // $id = Auth::id();
-    //     // $user = User::find($id);
-        
-    //     $request->all();
-        
-    //     $user = Auth::user();
-        
-    //     $user->name => $request->input('name');
-    //     $user->password => Hash::make($request->input('password'));
-    //     $user->telefone => $request->input('telefone');
-    //     $user->data_nasc => $request->input('dataNasc');
-    //     $user->sexo => $request->input('sexo');
-
-    //     $user->save();
-
-    //     $endereco = Endereco::whereIn('user_id', $id);
-
-    //     $endereco->rua => $request->input('rua'),
-    //     $endereco->numero => $request->input('numero'),
-    //     $endereco->bairro => $request->input('bairro'),
-    //     $endereco->cidade => $request->input('cidade'),
-    //     $endereco->cep => $request->input('cep'),
-    //     $endereco->complemento => $request->input('complemento'),
-    //     $endereco->user_id => $user->id,
-
-    //     dd($endereco);
-    //     $endereco->save();
-        
-    //     auth()->login($user);
-        
-    //     return redirect()->to('/home');
-   // }
 }
 

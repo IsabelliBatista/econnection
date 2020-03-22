@@ -20,7 +20,6 @@
       <a class="nav-link" id="endereco-tab" data-toggle="tab" href="#endereco" role="tab" aria-controls="endereco" aria-selected="false">Endereço</a>
     </li>
   </ul>
-  <form action="">
   <div class="tab-content" id="myTabContent">
     {{-- Tab Dados Pessoais --}}
     <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
@@ -47,7 +46,7 @@
       <div class="form-row mb-3">
         <div class="col">
           <label>{{ __('Data de Nascimento:') }}</label>
-          <input class="form-control" value="{{ $user->data_nasc }}" disabled> 
+          <input class="form-control" value="{{$user->data_nasc}}" disabled> 
         </div>
         <div class="col">
           <label>{{ __('Gênero:') }}</label>
@@ -91,7 +90,6 @@
         <input class="form-control" value="{{ $endereco[0]->complemento }}" disabled>         
       </div>
     </div>
-  <button type="submit" class="btn btn-success">Editar Cadastro</button>
-  </form>
+  <a href="/editar/usuario" class="btn btn-success">Editar Cadastro</a>
 </div>
 @endsection

@@ -108,9 +108,10 @@ Route::get('/minha-conta?type=pedidos', function(){
 //Route::get('/listar/usuario', 'UserController@listandoUsuario');
 Route::middleware(['auth'])->group(function (){
 
+    //Rotas do Usuario
     Route::get('/listar/usuario','UserController@listandoUsuario');
     Route::get('/editar/usuario','UserController@editarUsuario');
-
+    Route::put('/editar/usuario','UserController@atualizarUsuario');
     
 });
 
