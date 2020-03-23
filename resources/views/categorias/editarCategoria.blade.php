@@ -1,22 +1,26 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('title', 'Editando Categorias')
+@section('title', 'Editar Categorias ')
 
 @section('content')
-    <h1>Modificando Categorias</h1>
-
-    <form method="POST" action="/categorias/modificar/{{$categorias->id}}">
+  <section class="container mt-5 mb-5">
+    <h2>Editar Categorias:</h2>
+    <form method="POST" action="/editar/categoria/{{$categoria->id}}">
         @csrf
         {{ method_field('PUT') }}
-
-        <div class="form-group col-md-6 col-sm-12">
-            <label for="descricao">Descrição</label>
-            <input type="text" name="descricao" value="{{ $categoria->descricao }}" class="form-control{{$errors->has('descricao') ? ' is-invalid':''}}" id="descricao">
-            <div class="invalid-feedback">{{ $errors->first('descricao') }}</div>
+        <div class="form-row mb-2">
+            <div class="col-md-6 col-sm-12">
+              <label for="id">{{ __('ID:') }}</label>
+              <input class="form-control" value="{{ $categoria->id }}" disabled > 
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label for="name">{{ __('Descrição:') }}</label>
+                <input type="text" id="name" class="form-control" name="name" value="{{ $categoria->name }}" > 
+            </div>
         </div>
-
-        <div class="form-group col-md-2">
-            <button type="submit" class="form-control btn btn-primary">Enviar</button>
-        </div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a href="/listar/categoria" type="submit" class="btn btn-dark">Cancelar</a>
     </form>
+  </section>
 @endsection
+

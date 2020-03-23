@@ -30,17 +30,25 @@ class CategoriasController extends Controller
         return view('categorias.editarCategoria')->with('categoria', $categoria);
     }
 
-    public function atualizarCategoria(Request $request) 
+    public function atualizarCategoria(Request $request, $id) 
     {
+        $categoria = Categoria::find($id);
         $categoria->update([
             'name' => $request->input('name')
         ]);
-        
+
+        $categoria = Categoria::all();
         return view('categorias.listarCategoria')->with('categoria', $categoria);
     }
 
     public function excluirCategoria($id)
     {
+        $categoria = Categoria::find($id);
+        dd($categoria);
+        $categoria->delete();
+
+        $categoria = Categoria::all();
+        return view('categorias.listarCategoria')->with('categoria', $categoria);
 
     }
 }

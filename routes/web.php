@@ -76,11 +76,11 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/adicionar/categoria', function(){
         return view('categorias.adicionarCategoria');
     });
-    Route::post('/adicionar/categoria', 'CategoriasController@create')->name('adicionar/categoria');
+    Route::post('/adicionar/categoria', 'CategoriasController@create');
     Route::get('/listar/categoria','CategoriasController@listandoCategoria');
-    Route::get('/editar/categoria','CategoriasController@editarCategoria');
-    Route::put('/editar/categoria','CategoriasController@atualizarCategoria');
-    Route::delete('/excluir/categoria','CategoriasController@excluirCategoria');
+    Route::get('/editar/categoria/{id}','CategoriasController@editarCategoria');
+    Route::put('/editar/categoria/{id}','CategoriasController@atualizarCategoria');
+    Route::delete('/excluir/categoria/{id}','CategoriasController@excluirCategoria');
 
     //Rotas Produtos
     Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
