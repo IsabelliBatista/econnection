@@ -73,13 +73,14 @@ Route::middleware(['auth'])->group(function (){
     Route::put('/editar/usuario','UserController@atualizarUsuario');
 
     //Rotas Categorias
-    Route::get('/adicionando/C', function(){
-        return view('categorias.adicionandoC');
+    Route::get('/adicionar/categoria', function(){
+        return view('categorias.adicionarCategoria');
     });
-    Route::post('/adicionandoC', 'CategoriasController@create')->name('adicionandoC');
+    Route::post('/adicionar/categoria', 'CategoriasController@create')->name('adicionar/categoria');
     Route::get('/listar/categoria','CategoriasController@listandoCategoria');
-    Route::get('/editar/categ','CategoriasController@editarCategoria');
-    Route::put('/editar/categ','CategoriasController@atualizarCategoria');
+    Route::get('/editar/categoria','CategoriasController@editarCategoria');
+    Route::put('/editar/categoria','CategoriasController@atualizarCategoria');
+    Route::delete('/excluir/categoria','CategoriasController@excluirCategoria');
 
     //Rotas Produtos
     Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
