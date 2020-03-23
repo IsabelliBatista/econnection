@@ -25,8 +25,8 @@
         <tr>
         <th scope="row">{{$marcas->id}}</th>
           <td>{{$marcas->name}}</td>
-          <td><i class="fas fa-edit"></i></td>
-          <td><i class="far fa-trash-alt"></i></td>
+          <td><a href="/editar/marca/{{$marcas->id}}"><i class="fas fa-edit"></i></a></td>
+          <td><a href="/excluir/marca/{{$marcas->id}}"><i class="far fa-trash-alt"></i></a></td>
         </tr> 
       @endforeach
     </tbody>

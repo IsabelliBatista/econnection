@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'Editando Marcas')
+@section('title', 'Editando marca')
 
 @section('content')
-    <h1>Modificando Marcas</h1>
+    <h1>Modificando marca</h1>
 
-    <form method="POST" action="/marcas/modificar/{{$marca->id}}">
+    <form method="POST" action="/marca/modificar/{{$marca->id}}">
         @csrf
         {{ method_field('PUT') }}
 
         <div class="form-group col-md-6 col-sm-12">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" value="{{ $marca->nome }}" class="form-control{{$errors->has('nome') ? ' is-invalid':''}}" id="nome">
-            <div class="invalid-feedback">{{ $errors->first('nome') }}</div>
+            <label for="name">Descrição</label>
+            <input type="text" name="name" value="{{ $marca->name }}" class="form-control{{$errors->has('name') ? ' is-invalid':''}}" id="name">
+            <div class="invalid-feedback">{{ $errors->first('name') }}</div>
         </div>
 
         <div class="form-group col-md-2">
