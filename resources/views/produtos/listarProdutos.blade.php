@@ -6,7 +6,7 @@
 
 @section('content')
 
-@if($produtos->isEmpty())
+@if($produto->isEmpty())
         <div class="col-12">
             <h1 class="col-12 text-center">Que pena! Não temos produtos cadastrados na plataforma</h1>
         </div>
@@ -32,7 +32,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($produtos as $produto)
+                        @foreach($produto as $produto)
                         <tr>
                             <td scope="row">
                                 <img width="80" height="80" src="{{ $produto->imagem_image }}" alt="">
@@ -79,7 +79,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center">
-                    {{ $produtos->appends(['search' => isset($search) ? $search : ''])->links() }}
+                    {{ $produto->appends(['search' => isset($search) ? $search : ''])->links() }}
                 </div>
             </article>
         </section>

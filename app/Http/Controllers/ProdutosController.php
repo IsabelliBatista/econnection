@@ -38,7 +38,6 @@ class ProdutosController extends Controller
             'description' => $request->input('description'),
             'price' => $request->input('price'),
             'image' => $caminhoRelativo,
-            'image' => $request->input('image'),
             'marca_id' => $request->input('marca'),    
             'categoria_id' => $request->input('category')
         ]);
@@ -58,13 +57,13 @@ class ProdutosController extends Controller
     public function listandoProduto() 
     {
         $produtos = Produto::all();
-        return view('produtos.listarProduto')->with('produto', $produtos);
+        return view('produtos.listarProdutos')->with('produto', $produtos);
     }
 
     public function editarproduto($id)
     {
         $produto = Produto::find($id);
-        return view('produtos.editarProduto')->with('produto', $produto);
+        return view('produtos.editarProdutos')->with('produto', $produto);
     }
 
     public function atualizarproduto(Request $request, $id) 
@@ -75,7 +74,7 @@ class ProdutosController extends Controller
         ]);
 
         $produto = Produto::all();
-        return view('produtos.listarProduto')->with('produto', $produto);
+        return view('produtos.listarProdutos')->with('produto', $produto);
     }
 
     public function excluirproduto($id)
@@ -84,7 +83,7 @@ class ProdutosController extends Controller
         $produto->delete();
 
         $produto = Produto::all();
-        return view('produtos.listarProduto')->with('produto', $produto);
+        return view('produtos.listarProdutos')->with('produto', $produto);
 
     }
 }
