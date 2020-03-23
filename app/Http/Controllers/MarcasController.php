@@ -16,6 +16,28 @@ class MarcasController extends Controller
 
         $marca->save();
 
-        return redirect()->to('adicionandoM')->with('message', 'Marca Cadastrada com sucesso!');
+        return redirect()->to('/listar/marca')->with('message', 'Marca Cadastrada com sucesso!');
+    }
+    public function listandoMarca() 
+    {
+        $marca = Marca::all();
+        //dd($marca);
+        return view('marcas.listandoMarca')->with('marca', $marca);
+    }
+
+    public function editarMarca()
+    {
+        $marca = Marca::all();
+        return view('marcas.listandoMarca')->with('marca', $marca);
+    }
+
+    public function atualizarMarca(Request $request, Marca $marca) 
+    {
+        $marca->update([
+            'name' => $request->input('name')
+        ]);
+        
+        return view('marcas.listandoMarca')->with('marca', $marca);
+
     }
 }

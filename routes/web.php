@@ -86,10 +86,13 @@ Route::middleware(['auth'])->group(function (){
     Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
 
     //Rotas Marcas
-    Route::get('/adicionandoM', function(){
-        return view('marcas.adicionandoM');
+    Route::get('/adicionandoMarca', function(){
+        return view('marcas.adicionandoMarca');
     });
-    Route::post('/adicionandoM', 'MarcasController@create')->name('adicionandoM');
+    Route::post('/adicionandoMarca', 'MarcasController@create')->name('adicionandoMarca');
+    Route::get('/listar/marca','MarcasController@listandoMarca');
+    Route::get('/editar/marca','MarcasController@editarMarca');
+    Route::put('/editar/marca','MarcasController@atualizarMarca');
     
 });
 
