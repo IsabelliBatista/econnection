@@ -37,7 +37,7 @@ class ProdutosController extends Controller
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'price' => $request->input('price'),
-            //'image' => $caminhoRelativo,
+            'image' => $caminhoRelativo,
             'image' => $request->input('image'),
             'marca_id' => $request->input('marca'),    
             'categoria_id' => $request->input('category')
