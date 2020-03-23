@@ -12,7 +12,7 @@
           <div class="card border-0">
               <div class="card-body">
                 <h2 class="card-title text-xl-center p-2">{{ __('Fazer Cadastro do Produto:') }}</h2>
-                  <form method="POST" action="/cadastrarProdutos">
+                  <form method="POST" action="/cadastrar/produtos" enctype="multipart/form-data">
                       @csrf
                       {{ method_field('POST') }}
                       <div class="form-group row">
@@ -92,13 +92,7 @@
                             <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Imagem:') }}</label>
   
                             <div class="col-md-7">
-                                <input id="image" type="file" class="form-control border-0 @error('image') is-invalid @enderror" name="image" required autocomplete="new-image">
-  
-                                @error('image')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                <input type="file" id="image" class="form-control border-0" name="image" >
                             </div>
                         </div>
 

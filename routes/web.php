@@ -83,8 +83,8 @@ Route::middleware(['auth'])->group(function (){
     Route::delete('/excluir/categoria/{id}','CategoriasController@excluirCategoria');
 
     //Rotas Produtos
-    Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');
-    Route::post('/cadastrarProdutos', 'ProdutosController@create')->name('produtos');
+    Route::get('/cadastrar/produtos', 'ProdutosController@pegarCategoriaMarca');
+    Route::post('/cadastrar/produtos', 'ProdutosController@create');
 
     //Rotas Marcas
     Route::get('/adicionandoMarca', function(){

@@ -18,5 +18,10 @@
         <button type="submit" class="btn btn-success">Salvar</button>
         <a href="/listar/categoria" type="submit" class="btn btn-dark">Cancelar</a>
     </form>
+    @if(session()->has('mensagem'))
+      <div class="alert alert-success mt-2">
+        {{ session()->get('mensagem') }}
+      </div>
+    @endif
   </section>
 @endsection

@@ -22,8 +22,4 @@ class Produto extends Model
         return $this->hasOne(Marca::class, 'id', 'marca_id');
     }
 
-    public function getImagemImageAttribute($value) {
-        return $this->imagem == null ? asset('img/null.jpeg') : asset($this->imagem);
-    }
-
 }

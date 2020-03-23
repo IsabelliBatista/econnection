@@ -16,7 +16,7 @@ class CategoriasController extends Controller
 
         $categoria->save();
 
-        return redirect('/adicionar/categoria');
+        return redirect('/adicionar/categoria')->with('mensagem', 'Categoria cadastrada com sucesso');
     }
     public function listandoCategoria() 
     {
