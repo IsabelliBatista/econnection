@@ -33,7 +33,7 @@
 <!-- CARD COM EXPLICAÇÃO BREVE -->
 <section class="container row row-cols-1 row-cols-md-3 home-section-card text-center mt-5 mb-5">
   <div class="col mb-4">
-    <div class="card border-light h-100">
+    <div class="card border-white h-100">
       <img src="{{asset ('/img/itens1.png')}}" class="m-auto" alt="e-connection" width="100" height="100">
       <div class="card-body">
         <h5 class="card-title">Ecommerce</h5>
@@ -42,7 +42,7 @@
     </div>
   </div>
   <div class="col mb-4">
-    <div class="card border-light h-100">
+    <div class="card border-white h-100">
       <img src="{{asset ('/img/itens2.png')}}" class="m-auto" alt="e-connection"  width="100" height="100">
       <div class="card-body">
         <h5 class="card-title">Produtos Sustentáveis</h5>
@@ -51,7 +51,7 @@
     </div>
   </div>
   <div class="col mb-4">
-    <div class="card border-light h-100">
+    <div class="card border-white h-100">
       <img src="{{asset ('/img/itens3.png')}}" class="m-auto" alt="e-connection"  width="100" height="100">
       <div class="card-body">
         <h5 class="card-title">Loja</h5>
@@ -76,7 +76,7 @@
       
     ?>
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img id="teste" src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -94,7 +94,7 @@
   <section class="container mt-5 mb-5">
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -114,7 +114,7 @@
         </div>
       </div>
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -129,7 +129,7 @@
   <section class="container mt-5 mb-5">
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
           <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
           <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -169,7 +169,7 @@
   </h2>
   <div class="row row-cols-1 row-cols-md-3">
     <div class="col mb-4">
-      <div class="card border-light h-100 text-center">
+      <div class="card border-white h-100 text-center">
         <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
@@ -178,7 +178,7 @@
       </div>
     </div>
     <div class="col mb-4">
-      <div class="card border-light h-100 text-center">
+      <div class="card border-white h-100 text-center">
         <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
@@ -187,7 +187,7 @@
       </div>
     </div>
     <div class="col mb-4">
-      <div class="card border-light h-100 text-center">
+      <div class="card border-white h-100 text-center">
         <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
