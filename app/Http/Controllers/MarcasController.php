@@ -40,4 +40,11 @@ class MarcasController extends Controller
         return view('marcas.listandoMarca')->with('marca', $marca);
 
     }
+    public function excluirMarca(){
+        $marca = Marca::all();
+
+        $marca->delete();
+
+        return redirect('/listar/marca');
+    }
 }

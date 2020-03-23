@@ -22,7 +22,7 @@
     </div>
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://ecoconsumo.com.br/"> <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://www.pazemgaia.com.br/"> <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://insectashoes.com/"> <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -55,7 +55,7 @@
 <section class="container mt-5 mb-5">
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://ecoconsumo.com.br/"> <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://www.pazemgaia.com.br/"> <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="col mb-4">
-        <div class="card border-light h-100 text-center">
+        <div class="card border-white h-100 text-center">
             <a href="https://insectashoes.com/"> <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200"> </a>
             <div class="card-body">
             <h5 class="card-title">Produto</h5>
