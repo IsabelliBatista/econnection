@@ -31,20 +31,25 @@ class MarcasController extends Controller
         return view('marcas.listandoMarca')->with('marca', $marca);
     }
 
-    public function atualizarMarca(Request $request, Marca $marca) 
+    public function atualizarMarca(Request $request, $id) 
     {
+        $marca = Marca::find($id);
         $marca->update([
             'name' => $request->input('name')
         ]);
-        
+
+        $marca = Marca::all();
         return view('marcas.listandoMarca')->with('marca', $marca);
-
     }
-    public function excluirMarca($id){
-        $marca = Marca::all($id);
 
+    public function excluirMarca($id)
+    {
+        $marca = Marca::find($id);
+        dd($marca);
         $marca->delete();
 
-        return redirect('/listar/marca');
+        $marca = Marca::all();
+        return view('marcas.listandoMarca')->with('marca', $marca);
+
     }
 }

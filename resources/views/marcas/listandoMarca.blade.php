@@ -26,13 +26,11 @@
         <th scope="row">{{$marcas->id}}</th>
           <td>{{$marcas->name}}</td>
           <td><a href="/editar/marca/{{$marcas->id}}"><i class="fas fa-edit"></i></a></td>
-          @csrf
-          {{ method_field('DELETE') }}
           <td><a href="/excluir/marca/{{$marcas->id}}"><i class="far fa-trash-alt"></i></a></td>
         </tr> 
       @endforeach
     </tbody>
   </table>
-  <a href="/adicionandoMarca" class="btn btn-success col-5 mx-auto">CADASTRAR MARCA</a>
+  <a href="/adicionandoMarca" class="btn btn-success col-5 mx-auto">Cadastrar novas categorias</a>
 </div>
 @endsection
