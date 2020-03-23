@@ -86,4 +86,16 @@ class ProdutosController extends Controller
         return view('produtos.listarProdutos')->with('produtos', $produtos);
 
     }
+    public function filtrarProduto(Request $request){
+        $categoria = Produto::all();
+
+        $search = $request->input('search');
+
+        $marca = Produto::
+              where('name', 'like', '%'.$search.'%')
+              ->orWhere('descricao', 'like', '%'.$search.'%')
+              ->paginate(2);
+
+        return view('catalogo')->with(['marca' => $marca, 'search' => $search, 'categoria' => $categoria]);
+    }
 }

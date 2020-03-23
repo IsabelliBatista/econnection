@@ -59,6 +59,11 @@ Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
 
+
+// Filtrar 
+Route::get('/filtrar/produtos', 'ProdutosController@filtrarProduto')->name('search');
+
+
 Route::post('/cadastrarUsuario', 'UserController@create')->name('cadastrarUsuario');
 
 Auth::routes();
