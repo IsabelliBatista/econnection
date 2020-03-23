@@ -58,7 +58,7 @@ class ProdutosController extends Controller
     public function listandoProduto() 
     {
         $produtos = Produto::all();
-        return view('produtos.listarProduto')->with('produto', $produtos);
+        return view('produtos.listarProduto')->with('produtos', $produtos);
     }
 
     public function editarproduto($id)
