@@ -26,9 +26,6 @@
             <th scope="col" class="">ID</th>
             <th scope="col" class="">Produto</th>
             <th scope="col" class="">Descrição</th>
-            <th scope="col" class="">Preço</th>
-            <th scope="col" class="">Marca</th>
-            <th scope="col" class="">Categoria</th>
             <th scope="col" class="">Editar</th>
             <th scope="col" class="">Excluir</th>
           </tr>
@@ -38,7 +35,8 @@
             <tr>
               <th>{{$produto->id}}</th>
               <td>{{$produto->name}}</td>
-              <td><a href="/editar/produto/{{$produto->id}}"><i class="fas fa-edit"></i></a></td>
+              <td>{{$produto->description}}</td>
+              <td><a href="/editar/produtos/{{$produto->id}}"><i class="fas fa-edit"></i></a></td>
               <td><a href="#" data-toggle="modal" data-target="#excluirproduto"><i class="far fa-trash-alt"></i></a></td>
               <!-- Modal Excluir produto -->
               <div class="modal fade" id="excluirproduto" tabindex="-1" role="dialog" aria-labelledby="excluirprodutoTitle" aria-hidden="true">
@@ -55,7 +53,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                      <form method="POST" action="/excluir/produto/{{$produto->id}}">
+                      <form method="POST" action="/excluir/produtos/{{$produto->id}}">
                         @csrf
                         {{ method_field('DELETE') }}
                         <button type="submit" class="btn btn-primary">Excluir</button>
@@ -69,6 +67,6 @@
         </tbody>
       </table>
     @endif
-    <a class="btn btn-success btn-md mt-3" href="/adicionar/categoria" role="button">Cadastrar novas categorias</a>
+    <a class="btn btn-success btn-md mt-3" href="/cadastrar/produtos" role="button">Cadastrar novas categorias</a>
   </div>
 @endsection

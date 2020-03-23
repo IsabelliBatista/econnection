@@ -44,7 +44,7 @@ class ProdutosController extends Controller
     
         $produtos->save();
 
-        return redirect()->to('/cadastrar/produtos')->with('message', 'Produto cadastrado com sucesso!');
+        return redirect()->to('/listar/produtos')->with('message', 'Produto cadastrado com sucesso!');
 
     }
     
@@ -57,33 +57,33 @@ class ProdutosController extends Controller
     public function listandoProduto() 
     {
         $produtos = Produto::all();
-        return view('produtos.listarProduto')->with('produtos', $produtos);
+        return view('produtos.listarProdutos')->with('produtos', $produtos);
     }
 
-    public function editarproduto($id)
+    public function editarProduto($id)
     {
-        $produto = Produto::find($id);
-        return view('produtos.editarProdutos')->with('produto', $produto);
+        $produtos = Produto::find($id);
+        return view('produtos.editarProdutos')->with('produtos', $produtos);
     }
 
-    public function atualizarproduto(Request $request, $id) 
+    public function atualizarProduto(Request $request, $id) 
     {
-        $produto = Produto::find($id);
-        $produto->update([
+        $produtos = Produto::find($id);
+        $produtos->update([
             'name' => $request->input('name')
         ]);
 
-        $produto = Produto::all();
-        return view('produtos.listarProdutos')->with('produto', $produto);
+        $produtos = Produto::all();
+        return view('produtos.listarProdutos')->with('produtos', $produtos);
     }
 
-    public function excluirproduto($id)
+    public function excluirProduto($id)
     {
-        $produto = produto::find($id);
-        $produto->delete();
+        $produtos = Produto::find($id);
+        $produtos->delete();
 
-        $produto = Produto::all();
-        return view('produtos.listarProdutos')->with('produto', $produto);
+        $produtos = Produto::all();
+        return view('produtos.listarProdutos')->with('produtos', $produtos);
 
     }
 }
