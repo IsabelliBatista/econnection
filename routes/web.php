@@ -80,6 +80,7 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/listar/categoria','CategoriasController@listandoCategoria');
     Route::get('/editar/categoria','CategoriasController@editarCategoria');
     Route::put('/editar/categoria','CategoriasController@atualizarCategoria');
+    Route::delete('/excluir/categoria','CategoriasController@excluirCategoria');
 
     //Rotas Produtos
     Route::get('/cadastrarProdutos', 'ProdutosController@pegarCategoriaMarca');

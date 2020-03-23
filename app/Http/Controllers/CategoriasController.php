@@ -10,33 +10,37 @@ class CategoriasController extends Controller
 {
     protected function create(Request $request)
     {
-        $category = Categoria::create([
+        $categoria = Categoria::create([
             'name' => $request->input('name')
         ]);
 
-        $category->save();
+        $categoria->save();
 
         return redirect('/adicionar/categoria');
     }
     public function listandoCategoria() 
     {
-        $category = Categoria::all();
-        return view('categorias.listarCategoria')->with('category', $category);
+        $categoria = Categoria::all();
+        return view('categorias.listarCategoria')->with('categoria', $categoria);
     }
 
-    public function editarCategoria()
+    public function editarCategoria($id)
     {
-        $category = Categoria::all();
-        return view('categorias.listarCategoria')->with('category', $category);
+        $categoria = Categoria::find($id);
+        return view('categorias.editarCategoria')->with('categoria', $categoria);
     }
 
-    public function atualizarCategoria(Request $request, Categoria $category) 
+    public function atualizarCategoria(Request $request) 
     {
-        $category->update([
+        $categoria->update([
             'name' => $request->input('name')
         ]);
         
-        return view('categorias.listarCategoria')->with('category', $category);
+        return view('categorias.listarCategoria')->with('categoria', $categoria);
+    }
+
+    public function excluirCategoria($id)
+    {
 
     }
 }
