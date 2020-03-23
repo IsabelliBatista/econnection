@@ -37,7 +37,8 @@ class ProdutosController extends Controller
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'price' => $request->input('price'),
-            'image' => $caminhoRelativo,
+            //'image' => $caminhoRelativo,
+            'image' => $request->input('image'),
             'marca_id' => $request->input('marca'),    
             'categoria_id' => $request->input('category')
         ]);
@@ -53,5 +54,37 @@ class ProdutosController extends Controller
         $path = $request->file('image')->store('image');
 
         return $path;
+    }
+    public function listandoProduto() 
+    {
+        $produtos = Produto::all();
+        return view('produtos.listarProduto')->with('produto', $produtos);
+    }
+
+    public function editarproduto($id)
+    {
+        $produto = Produto::find($id);
+        return view('produtos.editarProduto')->with('produto', $produto);
+    }
+
+    public function atualizarproduto(Request $request, $id) 
+    {
+        $produto = Produto::find($id);
+        $produto->update([
+            'name' => $request->input('name')
+        ]);
+
+        $produto = Produto::all();
+        return view('produtos.listarProduto')->with('produto', $produto);
+    }
+
+    public function excluirproduto($id)
+    {
+        $produto = produto::find($id);
+        $produto->delete();
+
+        $produto = Produto::all();
+        return view('produtos.listarProduto')->with('produto', $produto);
+
     }
 }

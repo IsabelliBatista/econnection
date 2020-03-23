@@ -22,13 +22,13 @@ class MarcasController extends Controller
     {
         $marca = Marca::all();
         //dd($marca);
-        return view('marcas.listandoMarca')->with('marca', $marca);
+        return view('marcas.listarMarca')->with('marca', $marca);
     }
 
     public function editarMarca()
     {
-        $marca = Marca::all();
-        return view('marcas.listandoMarca')->with('marca', $marca);
+        $marca = Marca::all($id);
+        return view('marcas.editarMarca')->with('marca', $marca);
     }
 
     public function atualizarMarca(Request $request, $id) 
@@ -39,17 +39,17 @@ class MarcasController extends Controller
         ]);
 
         $marca = Marca::all();
-        return view('marcas.listandoMarca')->with('marca', $marca);
+        return view('marcas.listarMarca')->with('marca', $marca);
     }
 
     public function excluirMarca($id)
     {
         $marca = Marca::find($id);
-        dd($marca);
+        // dd($marca);
         $marca->delete();
 
         $marca = Marca::all();
-        return view('marcas.listandoMarca')->with('marca', $marca);
+        return view('marcas.listarMarca')->with('marca', $marca);
 
     }
 }

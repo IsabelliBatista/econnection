@@ -86,11 +86,15 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/cadastrar/produtos', 'ProdutosController@pegarCategoriaMarca');
     Route::post('/cadastrar/produtos', 'ProdutosController@create');
 
+    Route::get('/listar/produtos','UserController@listandoProduto');
+    Route::get('/editar/produtos','UserController@editarProduto');
+    Route::put('/editar/produtos','UserController@atualizarProduto');
+
     //Rotas Marcas
-    Route::get('/adicionandoMarca', function(){
-        return view('marcas.adicionandoMarca');
+    Route::get('/adicionar/marca', function(){
+        return view('marcas.adicionarMarca');
     });
-    Route::post('/adicionandoMarca', 'MarcasController@create')->name('adicionandoMarca');
+    Route::post('/adicionar/marca', 'MarcasController@create')->name('adicionarMarca');
     Route::get('/listar/marca','MarcasController@listandoMarca');
     Route::get('/editar/marca/{id}','MarcasController@editarMarca');
     Route::put('/editar/marca/{id}','MarcasController@atualizarMarca');
