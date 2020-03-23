@@ -35,7 +35,31 @@
             <th>{{$categorias->id}}</th>
               <td>{{$categorias->name}}</td>
               <td><a href="/editar/categoria/{{$categorias->id}}"><i class="fas fa-edit"></i></a></td>
-              <td><a href="/excluir/categoria/{{$categorias->id}}"><i class="far fa-trash-alt"></i></a></td>
+              <td><a href="#" data-toggle="modal" data-target="#excluirCategoria"><i class="far fa-trash-alt"></i></a></td>
+              <!-- Modal Excluir categoria -->
+              <div class="modal fade" id="excluirCategoria" tabindex="-1" role="dialog" aria-labelledby="excluirCategoriaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="excluirCategoriaTitle">Excluir Categoria</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Deseja realmente excluir a categoria {{ $categorias->name }}?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                      <form method="POST" action="/excluir/categoria/{{$categorias->id}}">
+                        @csrf
+                        {{ method_field('DELETE') }}
+                        <button type="submit" class="btn btn-primary">Excluir</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </tr> 
           @endforeach
         </tbody>
