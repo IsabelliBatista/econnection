@@ -23,16 +23,15 @@ class ProdutosController extends Controller
     protected function create(Request $request)
     {
         $arquivo = $request->file('image');
-        dd($arquivo);
-        // if (empty($arquivo)) {
-        //     $caminhoRelativo = null;
-        // } else {
-        //     $arquivo->storePublicly('uploads');
-        //     $caminhoAbsoluto = public_path()."/storage/uploads";
-        //     $nomeArquivo = $arquivo->getClientOriginalName();
-        //     $caminhoRelativo = "storage/uploads/$nomeArquivo";
-        //     $arquivo->move($caminhoAbsoluto, $nomeArquivo);
-        // }
+        if (empty($arquivo)) {
+            $caminhoRelativo = null;
+        } else {
+            $arquivo->storePublicly('uploads');
+            $caminhoAbsoluto = public_path()."/storage/uploads";
+            $nomeArquivo = $arquivo->getClientOriginalName();
+            $caminhoRelativo = "storage/uploads/$nomeArquivo";
+            $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+        }
 
         $produtos = Produto::create([
             'name' => $request->input('name'),
