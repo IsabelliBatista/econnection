@@ -56,6 +56,21 @@
                               @enderror
                           </div>
                       </div>
+
+                      
+                      <div class="form-group row">
+                          <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Imagem:') }}</label>
+
+                          <div class="col-md-7">
+                              <input id="image" type="text" class="form-control @error('image') is-invalid @enderror" name="image" required autocomplete="new-image">
+
+                              @error('image')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                          </div>
+                      </div>
                           
                       @if ($marcas)
                         <div class="form-group row">
@@ -88,13 +103,13 @@
                           
                         @endif
 
-                        <div class="form-group row">
+                        <!-- <div class="form-group row">
                             <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Imagem:') }}</label>
   
                             <div class="col-md-7">
                                 <input type="file" id="image" class="form-control border-0" name="image" >
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group row mb-0 ">
                             <div class="col-md-7 offset-md-4">
