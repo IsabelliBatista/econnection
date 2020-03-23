@@ -44,7 +44,6 @@ class CategoriasController extends Controller
     public function excluirCategoria($id)
     {
         $categoria = Categoria::find($id);
-        dd($categoria);
         $categoria->delete();
 
         $categoria = Categoria::all();
