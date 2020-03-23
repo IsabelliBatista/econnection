@@ -94,7 +94,7 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/listar/marca','MarcasController@listandoMarca');
     Route::get('/editar/marca','MarcasController@editarMarca');
     Route::put('/editar/marca','MarcasController@atualizarMarca');
-    Route::delete('/excluir/marca','MarcasController@excluirMarca');
+    Route::delete('/excluir/marca/{id}','MarcasController@excluirMarca');
 
     
 });

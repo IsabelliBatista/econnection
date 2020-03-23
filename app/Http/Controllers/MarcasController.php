@@ -40,8 +40,8 @@ class MarcasController extends Controller
         return view('marcas.listandoMarca')->with('marca', $marca);
 
     }
-    public function excluirMarca(){
-        $marca = Marca::all();
+    public function excluirMarca($id){
+        $marca = Marca::all($id);
 
         $marca->delete();
 
