@@ -6,7 +6,7 @@
   <section class="container mt-5 mb-5">
     <h2>Cadastro de Marcas</h2>
 
-    <form method="POST" action="/adicionandoMarca">
+    <form method="POST" action="/adicionar/marca">
       @csrf
       {{ method_field('POST') }}
       <div class="form-row mb-2">
@@ -18,5 +18,10 @@
         <button type="submit" class="btn btn-success">Salvar</button>
         <a href="/listar/marca" type="submit" class="btn btn-dark">Cancelar</a>
     </form>
+    @if(session()->has('mensagem'))
+      <div class="alert alert-success mt-2">
+        {{ session()->get('mensagem') }}
+      </div>
+    @endif
   </section>
 @endsection
