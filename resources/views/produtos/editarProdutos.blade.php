@@ -27,15 +27,25 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <label for="marca">{{ __('Marca:') }}</label>
-                <input type="text" id="marca" class="form-control" name="marca" value="{{ $produtos->marca->name }}" > 
+                <select id="marca" class="form-control" name="marca" value="{{ $produtos->marca->name }}">
+                    <option  value="{{$produtos->marca->id}}" selected>{{ $produtos->marca->name }}</option>
+                    @foreach ($marcas as $marca)
+                        <option value="{{$marca->id}}">{{$marca->name}}</option>
+                    @endforeach
+                </select> 
             </div>
             <div class="col-md-6 col-sm-12">
                 <label for="category">{{ __('Categoria:') }}</label>
-                <input type="text" id="category" class="form-control" name="category" value="{{ $produtos->category_id }}" > 
+                <select id="category" class="form-control" name="category" value="{{$produtos->categoria->name  }}">
+                    <option value="{{$produtos->categoria->id}}" selected>{{$produtos->categoria->name}}</option>
+                    @foreach ($categorias as $categoria)
+                        <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                    @endforeach
+                </select>  
             </div>
             <div class="col-md-6 col-sm-12">
                 <label for="image">{{ __('Imagem:') }}</label>
-                <input type="file" id="image" class="form-control" name="image" value="{{ $produtos->image }}" > 
+                <input type="file" id="image" class="form-control border-0" name="image" value="{{ $produtos->image }}" > 
             </div>
         </div>
         <button type="submit" class="btn btn-success">Salvar</button>

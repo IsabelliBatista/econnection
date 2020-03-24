@@ -5,13 +5,13 @@
 @endsection
 
 @section('content')
-    <article class="bg-header-somos"><h1 class="text-center container">Pedidos</h1></article>
+    <article class="bg-header-somos"><h1 class="text-center container">Carinhho</h1></article>
     
     <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-5 ">
             <li class="breadcrumb-item"><a href="/index">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Pedidos</li>
+            <li class="breadcrumb-item active" aria-current="page">Carinhho</li>
           </ol>
         </nav>
 
@@ -19,7 +19,7 @@
         <div class="row">
           <div class="col-md-12 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
-              <span class="text-muted">Seus Pedidos</span>
+              <span class="text-muted">Seus Produtos</span>
               <span class="badge badge-secondary badge-pill">1</span>
             </h4>
             <ul class="list-group mb-3">

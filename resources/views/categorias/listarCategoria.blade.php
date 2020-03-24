@@ -47,7 +47,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p>Deseja realmente excluir a categoria {{ $categorias->name }}?</p>
+                      <p>Deseja realmente excluir a categoria <strong>{{ $categorias->name }}</strong>?</p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

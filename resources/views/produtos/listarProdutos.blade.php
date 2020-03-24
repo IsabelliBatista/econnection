@@ -26,6 +26,9 @@
             <th scope="col" class="">ID</th>
             <th scope="col" class="">Produto</th>
             <th scope="col" class="">Descrição</th>
+            <th scope="col" class="">Preço</th>
+            <th scope="col" class="">Marca</th>
+            <th scope="col" class="">Categoria</th>
             <th scope="col" class="">Editar</th>
             <th scope="col" class="">Excluir</th>
           </tr>
@@ -36,6 +39,9 @@
               <th>{{$produto->id}}</th>
               <td>{{$produto->name}}</td>
               <td>{{$produto->description}}</td>
+              <td>R${{$produto->price}}</td>
+              <td>{{$produto->marca->name}}</td>
+              <td>{{$produto->categoria->name}}</td>
               <td><a href="/editar/produtos/{{$produto->id}}"><i class="fas fa-edit"></i></a></td>
               <td><a href="#" data-toggle="modal" data-target="#excluirproduto"><i class="far fa-trash-alt"></i></a></td>
               <!-- Modal Excluir produto -->
@@ -49,7 +55,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p>Deseja realmente excluir a produto {{ $produto->name }}?</p>
+                      <p>Deseja realmente excluir a produto <strong>{{ $produto->name }}</strong>?</p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

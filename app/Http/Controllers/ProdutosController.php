@@ -74,16 +74,41 @@ class ProdutosController extends Controller
 
     public function editarProduto($id)
     {
+        $marca = Marca::all();
+        $categoria = Categoria::all();
         $produtos = Produto::find($id);
-        return view('produtos.editarProdutos')->with('produtos', $produtos);
+        return view('produtos.editarProdutos')->with([
+            'produtos' => $produtos, 
+            'marcas' => $marca, 
+            'categorias' => $categoria]);
     }
 
     public function atualizarProduto(Request $request, $id) 
     {
         $produtos = Produto::find($id);
+
+        $arquivo = $request->file('image');
+
+        if (empty($arquivo)) {
+            $caminhoRelativo = $produtos->image;
+        } else {
+            $arquivo->storePublicly('uploads');
+            $caminhoAbsoluto = public_path()."/storage/uploads";
+            $nomeArquivo = $arquivo->getClientOriginalName();
+            $caminhoRelativo = "storage/uploads/$nomeArquivo";
+            $arquivo->move($caminhoAbsoluto, $nomeArquivo);
+        }
+
         $produtos->update([
-            'name' => $request->input('name')
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+            'price' => $request->input('price'),
+            'image' => $caminhoRelativo,
+            'marca_id' => $request->input('marca'),    
+            'categoria_id' => $request->input('category')
         ]);
+
+
 
         $produtos = Produto::all();
         return view('produtos.listarProdutos')->with('produtos', $produtos);
