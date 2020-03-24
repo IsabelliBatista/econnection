@@ -182,7 +182,10 @@ h5:hover {
 }
 
 .header-somos section article p {
-  padding: 20px 90px 0 50px;
+  padding: 20px 0px 0 0px;
+}
+.txt-somos{
+  text-align: center;
 }
 
 .header-somos section article {
