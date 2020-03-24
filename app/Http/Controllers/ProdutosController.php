@@ -59,7 +59,7 @@ class ProdutosController extends Controller
     {
         $marcas = Marca::all();
         $categorias = Categoria::all();
-        $produtos = Produto::all();
+        $produtos = Produto::orderBy('id', 'ASC')->paginate(9);
         return view('produtos.loja')->with([
             'marcas' => $marcas, 
             'categorias' => $categorias, 
