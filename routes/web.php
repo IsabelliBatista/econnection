@@ -14,6 +14,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('', function () {
+    return view('home');
+});
+
 Route::get('/parceiros', function(){
     return view('institucional.parceiros');
 });
@@ -59,7 +63,7 @@ Route::get('/cadastrarUsuario', function(){
 //Listar Produtos
 Route::get('/loja', 'ProdutosController@listarLoja');
 Route::get('index', 'ProdutosController@listarLojaIndex');
-Route::get('home', 'ProdutosController@listarLojaHome');
+Route::get('/home', 'ProdutosController@listarLojaHome');
 
 // Filtrar 
 Route::get('/filtrar/produtos', 'ProdutosController@filtrarProduto')->name('search');
@@ -71,7 +75,7 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function (){
     
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('home', 'HomeController@index')->name('home');
 
     //Rotas do Usuario
     Route::get('/listar/usuario','UserController@listandoUsuario');

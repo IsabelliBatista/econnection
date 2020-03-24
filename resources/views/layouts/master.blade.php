@@ -119,7 +119,7 @@
             <ul class="navbar-nav justify-content-around">
               <li class="nav-item">
                 <div class="dropdown">
-                  <a class="btn text-white text-uppercase" href="/">Início</a>
+                  <a class="btn text-white text-uppercase" href="index">Início</a>
                 </div>
               </li>
               <li class="nav-item">
