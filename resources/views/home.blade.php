@@ -102,6 +102,9 @@
         </div>
       </div>
     </div>
+    <div class="card-body btn-ver-mais">
+      <a href="/loja" class="btn btn-card col-3 ">Ver Mais</a>
+    </div>
   </section>
   
 <!--PARCEIROS-->

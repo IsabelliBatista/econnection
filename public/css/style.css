@@ -79,6 +79,22 @@ h5:hover {
   transform: rotateZ(-30deg);
   transition-duration: 1s;
 }
+.btn-ver-mais{
+  display: flex;
+  justify-content: center;
+}
+.btn-ver-mais a{
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: transparent;
+  color: #899f37;
+  border: 2px solid #899f37;
+}
+.btn-ver-mais a:hover{
+  background-color: #899f37;
+  color: #fff;
+}
 
 /*LOGO*/
 .logo-nav img {
@@ -392,9 +408,9 @@ h4 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   
-  .container {
+  /* .container {
     width: 70%;
-  }
+  } */
   .mobile-dropdown {
     display: none;
   }

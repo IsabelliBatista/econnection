@@ -85,6 +85,9 @@
         </div>
       @endforeach
     </div>
+    <div class="card-body btn-ver-mais">
+      <a href="/loja" class="btn btn-card col-3 ">Ver Mais</a>
+    </div>
   </section>
 </section>
 
@@ -99,7 +102,7 @@
         <img src="{{asset ('/img/Parceiro1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -108,7 +111,7 @@
         <img src="{{asset ('/img/Parceiro2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
@@ -117,7 +120,7 @@
         <img src="{{asset ('/img/Parceiro3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
         <div class="card-body">
           <h5 class="card-title">Produto</h5>
-          <a href="pa/rceiror" class="btn btn-card">Ver Mais</a>
+          <a href="/parceiros" class="btn btn-card">Ver Mais</a>
         </div>
       </div>
     </div>
