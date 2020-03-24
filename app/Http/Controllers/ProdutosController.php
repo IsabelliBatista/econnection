@@ -69,8 +69,8 @@ class ProdutosController extends Controller
     {
         $marcas = Marca::all();
         $categorias = Categoria::all();
-        $produtos = Produto::orderBy('id', 'ASC');
-        return view('/index')->with([
+        $produtos = Produto::orderBy('id', 'ASC')->paginate(3);
+        return view('index')->with([
             'marcas' => $marcas, 
             'categorias' => $categorias, 
             'produtos' => $produtos]);
@@ -79,8 +79,8 @@ class ProdutosController extends Controller
     {
         $marcas = Marca::all();
         $categorias = Categoria::all();
-        $produtos = Produto::orderBy('id', 'ASC');
-        return view('/home')->with([
+        $produtos = Produto::orderBy('id', 'ASC')->paginate(3);
+        return view('home')->with([
             'marcas' => $marcas, 
             'categorias' => $categorias, 
             'produtos' => $produtos]);
