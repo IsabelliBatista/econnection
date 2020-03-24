@@ -46,9 +46,6 @@ Route::get('/checkout', function(){
     return view('comprar.checkout');
 });
 
-Route::get('/loja', function(){
-    return view('produtos.loja');
-});
 
 Route::get('/finalCompras', function(){
     return view('comprar.finalCompras');
@@ -59,6 +56,8 @@ Route::get('/cadastrarUsuario', function(){
     return view('usuario.cadastrarUsuario');
 });
 
+//Listar Produtos
+Route::get('/loja', 'ProdutosController@listarLoja');
 
 // Filtrar 
 Route::get('/filtrar/produtos', 'ProdutosController@filtrarProduto')->name('search');

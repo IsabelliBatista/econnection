@@ -54,6 +54,18 @@ class ProdutosController extends Controller
 
         return $path;
     }
+
+    public function listarLoja() 
+    {
+        $marcas = Marca::all();
+        $categorias = Categoria::all();
+        $produtos = Produto::all();
+        return view('produtos.loja')->with([
+            'marcas' => $marcas, 
+            'categorias' => $categorias, 
+            'produtos' => $produtos]);
+    }
+
     public function listandoProduto() 
     {
         $produtos = Produto::all();

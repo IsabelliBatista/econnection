@@ -16,7 +16,7 @@ class MarcaTableSeeder extends Seeder
             "name" => "Paz em Gaia"
         ]);
         Marca::create([
-            "name" => "Isecta Shoes"
+            "name" => "Insecta Shoes"
         ]);
         Marca::create([
             "name" => "Eco Consumo"
