@@ -89,8 +89,8 @@
               </a>
 
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/carrinho">Meus Pedidos</i></a>    
                 <a class="dropdown-item" href="/listar/usuario">Meu Perfil</i></a>
+                <a class="dropdown-item" href="/carrinho">Meus Pedidos</i></a>    
                 <a class="dropdown-item" href="/listar/produtos">Cadastrar Produtos</i></a>
                 <a class="dropdown-item" href="/listar/categoria">Cadastrar Categorias</i></a>
                 <a class="dropdown-item" href="/listar/marca">Cadastrar Marcas</i></a>       

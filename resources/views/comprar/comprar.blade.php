@@ -13,7 +13,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/index">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
+            <li class="breadcrumb-item active" aria-current="page">Comprar</li>
           </ol>
         </nav>
 
@@ -26,16 +26,7 @@
                   <div id="#carouselExampleControls" class="carousel slide carousel-slide" data-ride="carousel">
                       <div class="carousel-inner">
                           <div class="carousel-item active">
-                              <img src="{{asset ('/img/prodAmostra1.jpg')}}" class="rounded img-amostra " alt="Copo Black" width="400" height="400">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="{{asset ('/img/prodAmostra2.jpg')}}" class="rounded " alt="Copo Pink" width="400" height="400">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="{{asset ('/img/prodAmostra3.jpg')}}" class="rounded " alt="Copo Yellow" width="400" height="400">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="{{asset ('/img/prodAmostra4.jpg')}}" class="rounded " alt="Copo Yellow" width="400" height="400">
+                              <img src="{{asset ('/img/Produto2.jpg')}}" class="rounded img-amostra " alt="Copo Black" width="400" height="400">
                           </div>
                       </div>
                       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -54,8 +45,8 @@
       <section class="d-flex desc-prod">
           <div class="desc-produto">
               <!-- DESCRIÇÃO DO PRODUTO -->
-              <h2>COPO SUSTENTAVEL DIVERSAS CORES</h2>
-              <h2>R$ 0,00</h2>
+              <h2>KIT ECO COPO E TALHERES</h2>
+              <h2>R$ 30,00</h2>
               <p class="text-justify">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
                   como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
               <div>
