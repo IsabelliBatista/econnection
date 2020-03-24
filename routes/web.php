@@ -58,6 +58,8 @@ Route::get('/cadastrarUsuario', function(){
 
 //Listar Produtos
 Route::get('/loja', 'ProdutosController@listarLoja');
+Route::get('/index', 'ProdutosController@listarLojaIndex');
+Route::get('/home', 'ProdutosController@listarLojaHome');
 
 // Filtrar 
 Route::get('/filtrar/produtos', 'ProdutosController@filtrarProduto')->name('search');

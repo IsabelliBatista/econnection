@@ -65,6 +65,27 @@ class ProdutosController extends Controller
             'categorias' => $categorias, 
             'produtos' => $produtos]);
     }
+    public function listarLojaIndex() 
+    {
+        $marcas = Marca::all();
+        $categorias = Categoria::all();
+        $produtos = Produto::orderBy('id', 'ASC');
+        return view('/index')->with([
+            'marcas' => $marcas, 
+            'categorias' => $categorias, 
+            'produtos' => $produtos]);
+    }
+    public function listarLojaHome() 
+    {
+        $marcas = Marca::all();
+        $categorias = Categoria::all();
+        $produtos = Produto::orderBy('id', 'ASC');
+        return view('/home')->with([
+            'marcas' => $marcas, 
+            'categorias' => $categorias, 
+            'produtos' => $produtos]);
+    }
+
 
     public function listandoProduto() 
     {
