@@ -25,9 +25,9 @@ class MarcasController extends Controller
         return view('marcas.listarMarca')->with('marca', $marca);
     }
 
-    public function editarMarca()
+    public function editarMarca($id)
     {
-        $marca = Marca::all($id);
+        $marca = Marca::find($id);
         return view('marcas.editarMarca')->with('marca', $marca);
     }
 
