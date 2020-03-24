@@ -71,71 +71,21 @@
   {{-- Primeira seção de produtos --}}
   <section class="container mt-5 mb-5">
     <div class="row row-cols-1 row-cols-md-3">
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
+      @foreach ($produtos as $produto)
+        <div class="col mb-4">
+          <div class="card border-white h-100 text-center">
+            <img src="{{$produto->image}}" class="card-img-top" width="300" height="200">
+            <div class="card-body">
+              <h5 class="card-title">{{$produto->name}}</h5>
+              <p class="card-text txt-preco">R${{$produto->price}}</p>
+              <a href="/comprar" class="btn btn-card">Ver detalhes</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
-  </section>
-  {{-- Segunda seção de produtos --}}
-  <section class="container mt-5 mb-5">
-    <div class="row row-cols-1 row-cols-md-3">
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto3.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto2.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card border-white h-100 text-center">
-          <img src="{{asset ('/img/Produto1.jpg')}}" class="card-img-top" alt="Canudo" width="300" height="200">
-          <div class="card-body">
-            <h5 class="card-title">Produto</h5>
-            <p class="card-text txt-preco">R$ 10,00</p>
-            <a href="/comprar" class="btn btn-card">Ver detalhes</a>
-          </div>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center align-content-center">
+      {{ $produtos->links() }}
     </div>
   </section>
 </section>

@@ -113,7 +113,7 @@
       <div>
         <nav class="navbar navbar-expand-lg">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-align-justify icon-menu"></i></span>
         </button>
           <div class="collapse navbar-collapse justify-content-center" aria-controls="navbarSupportedContent"  id="navbarNav">
             <ul class="navbar-nav justify-content-around">

@@ -13,7 +13,7 @@
 </header>
 <section class="container categorias">
   
-    <form action=""  class="d-flex mt-5">
+    <form action=""  class="mt-5 form-filtrar">
       <div class="form-row">
           <div class="form-group col-sm-12 col-md-9">
             <label for="categoria"><h2>Categoria</h2></label>

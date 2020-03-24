@@ -22,5 +22,6 @@ class UsersTableSeeder extends Seeder
             'data_nasc' => '1990-12-01' ,
             'sexo' => 'Feminino'
         ]);
+        
     }
 }

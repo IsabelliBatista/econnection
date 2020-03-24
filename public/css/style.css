@@ -108,10 +108,9 @@ h5:hover {
 .navbar {
   background-color: #000;
 }
-.navbar-toggler {
-  border-color: #fff;
+.icon-menu{
+  display: none;
 }
-
 .logo-nav {
   margin: 0 auto;
 }
@@ -138,6 +137,10 @@ h5:hover {
   letter-spacing: 1.8px;
   font-size: 15px;
   font-weight: bold;
+}
+/*LOJA*/
+.form-filtrar{
+  display: flex;
 }
 
 /* FOOTER  */
@@ -264,6 +267,10 @@ h5:hover {
 
 /* MEDIA QUERYS */
 @media only screen and (max-width: 900px) {
+  .icon-menu{
+    display: block;
+    color:#fff;
+  }
   .section-comprar {
     display: flex;
     flex-direction: column;
@@ -273,6 +280,12 @@ h5:hover {
 
 /* HEADER */
 @media only screen and (max-width: 768px) {
+  
+  /*LOJA*/
+  .form-filtrar{
+    display: flex;
+    flex-direction: column;
+  }
   .form-inline {
     display: none;
   }
@@ -375,6 +388,7 @@ h4 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  
   .container {
     width: 70%;
   }
