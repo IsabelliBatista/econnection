@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\User;
+
 
 class UsersTableSeeder extends Seeder
 {
@@ -17,7 +19,7 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt("123456789"),
             'cpf' => 12345678901,
             'telefone' => 1112341234,
-            'data_nasc' => 1990-12-01 ,
+            'data_nasc' => '1990-12-01' ,
             'sexo' => 'Feminino'
         ]);
     }

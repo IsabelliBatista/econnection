@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Endereco;
 
 class EnderecoTableSeeder extends Seeder
 {
@@ -16,8 +17,8 @@ class EnderecoTableSeeder extends Seeder
             'numero' => 10,
             'bairro' => 'Centro',
             'cidade' => 'São Paulo',
-            'cep' => 02124000,
             'estado' => 'São Paulo',
+            'cep' => 02124000,
             'complemento' => 'lado ímpar',
             'user_id' => 1,
         ]);

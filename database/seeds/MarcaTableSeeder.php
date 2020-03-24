@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Marca;
 
 class MarcaTableSeeder extends Seeder
 {
