@@ -10,13 +10,11 @@
 */
 
 //Rotas Guest
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/loja', 'ProdutosController@listarLoja');
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'ProdutosController@listarLojaIndex');
+Route::get('/index', 'ProdutosController@listarLojaIndex');
+Route::get('/home', 'ProdutosController@listarLojaIndex');
 
 Route::get('/parceiros', function(){
     return view('institucional.parceiros');
@@ -50,7 +48,6 @@ Route::get('/checkout', function(){
     return view('comprar.checkout');
 });
 
-
 Route::get('/finalCompras', function(){
     return view('comprar.finalCompras');
 });
@@ -62,8 +59,7 @@ Route::get('/cadastrarUsuario', function(){
 
 //Listar Produtos
 Route::get('/loja', 'ProdutosController@listarLoja');
-Route::get('index', 'ProdutosController@listarLojaIndex');
-Route::get('/home', 'ProdutosController@listarLojaHome');
+
 
 // Filtrar 
 Route::get('/filtrar/produtos', 'ProdutosController@filtrarProduto')->name('search');

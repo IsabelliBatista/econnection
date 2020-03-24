@@ -65,27 +65,18 @@ class ProdutosController extends Controller
             'categorias' => $categorias, 
             'produtos' => $produtos]);
     }
-    public function listarLojaIndex() 
+
+    public function listarLojaIndex2() 
     {
-        $marcas = Marca::all();
-        $categorias = Categoria::all();
         $produtos = Produto::orderBy('id', 'ASC')->paginate(3);
-        return view('index')->with([
-            'marcas' => $marcas, 
-            'categorias' => $categorias, 
-            'produtos' => $produtos]);
-    }
-    public function listarLojaHome() 
-    {
-        $marcas = Marca::all();
-        $categorias = Categoria::all();
-        $produtos = Produto::orderBy('id', 'ASC')->paginate(3);
-        return view('home')->with([
-            'marcas' => $marcas, 
-            'categorias' => $categorias, 
-            'produtos' => $produtos]);
+        return view('home')->with('produtos', $produtos);
     }
 
+    public function listarLojaIndex() 
+    {
+        $produtos = Produto::orderBy('id', 'ASC')->paginate(3);
+        return view('index')->with('produtos', $produtos);
+    }
 
     public function listandoProduto() 
     {

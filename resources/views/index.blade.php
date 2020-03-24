@@ -85,9 +85,6 @@
         </div>
       @endforeach
     </div>
-    <div class="d-flex justify-content-center align-content-center">
-      {{ $produtos->links() }}
-    </div>
   </section>
 </section>
 
