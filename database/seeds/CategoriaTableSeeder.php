@@ -11,6 +11,19 @@ class CategoriaTableSeeder extends Seeder
      */
     public function run()
     {
-        
+        Categoria::create([
+        "name" => "Casa"
+        ]);
+
+        Categoria::create([
+        "name" => "Cuidados"
+        ]);
+
+        Categoria::create([
+        "name" => "100Plástico"
+        ]);
+        Categoria::create([
+        "name" => "Acessórios"
+        ]);
     }
 }
